@@ -1,0 +1,68 @@
+\pagenumbering{gobble}
+\thispagestyle{empty}
+
+\pagenumbering{gobble}
+\maketitle
+\vspace{0.5cm}
+\hrule
+\vspace{1cm}
+
+\noindent\begin{tikzpicture}[remember picture, overlay, shift={(current page.south west)}]
+    %Images
+    \node[anchor=north west] at (2,27.7) {\includegraphics[height=1.225cm, keepaspectratio]{cover/meta/idmc.png}};
+    \node[anchor=north] at (21/2+1,27.7) {\includegraphics[height=1.225cm, keepaspectratio]{cover/meta/UL.jpg}};
+    %\node[anchor=north east] at (21-2,27.7) {\includegraphics[height=1.225cm, keepaspectratio]{cover/meta/laas.jpg}};
+    \node[anchor=north east] at (21-2,27.7) {\includegraphics[height=1.225cm, keepaspectratio]{cover/meta/loria.png}};
+\end{tikzpicture}
+
+\begin{center}
+    \textbf{Students :}
+    \vspace{0.25cm}
+    
+    \begin{tabular}{lll}
+        \students
+    \end{tabular}
+\end{center}
+\vspace{0.5cm}
+
+\begin{center}
+    \textbf{Tutors :}
+    \vspace{0.25cm}
+    
+    \begin{tabular}{lll}
+        \tutors
+    \end{tabular}
+\end{center}\vspace{0.2cm}
+
+\begin{center}
+    \textbf{Keywords:}
+    \varkeywords
+\end{center}
+\vspace{0.5cm}
+
+\begin{center}
+    \Large{\textbf{Abstract :}}
+\end{center}
+\input{content/abstract}
+
+\newpage
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{\projecttitle}
+\cfoot{}
+\rfoot{}
+\doublespacing
+\tableofcontents
+\singlespacing
+\newpage
+
+\pagenumbering{arabic}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{\projecttitle}
+\cfoot{}
+\rfoot{\thepage}
