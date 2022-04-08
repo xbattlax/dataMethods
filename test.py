@@ -14,7 +14,7 @@ from sklearn.manifold import MDS
 
 
 #Get dataset
-data,labels=map(io.loadmat('globe.mat').get,['data','labels'])
+data,labels=map(io.loadmat('globe.mat').get, ['data', 'labels'])
 
 #Embed dataset
 #model=ClassNeRV(perplex=32,scale_out=None,tradeoff_intra=1,tradeoff_inter=0)
