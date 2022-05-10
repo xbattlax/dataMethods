@@ -24,7 +24,18 @@ from rpy2.robjects import pandas2ri
 from rpy2.robjects.vectors import IntVector
 from rpy2.robjects import numpy2ri
 
+import pandas as pd
+import rpy2.robjects as ro
+from rpy2.robjects.packages import importr
+from rpy2.robjects import pandas2ri
+
 from rpy2.robjects.conversion import localconverter
+
+from rpy2.robjects.conversion import localconverter
+
+
+crit = ["Czekanowski_Dice", "Folkes_Mallows", "Hubert","Jaccard", "Kulczynski", "McNemar","Phi","Precision","Rand","Recall" ,"Rogers_Tanimoto", "Russel_Rao", "Sokal_Sneath1", "Sokal_Sneath2"]
+
 
 utils = rpackages.importr('utils')
 utils.chooseCRANmirror(ind=1)
@@ -37,8 +48,6 @@ utils.install_packages(StrVector(packnames))
 clusterCrit = importr('clusterCrit')
 pandas2ri.activate()
 
-
-json_data={}
 
 # sklearn2ri.activate()
 
@@ -62,87 +71,74 @@ def mds():
 def tSNE():
     data, labels = dataSet()
     Y = tsne(data, 2, 50, 20.0)
-    return Y, labels
+    return Y
 
 
 def pca():
     model = PCA(n_components=2)
     data, labels = dataSet()
     pos = model.fit_transform(data, labels)
-    return pos
+    km = KMeans(n_clusters=3)
+    km.fit(data)
+    p2 = km.predict(pos)
+    p2 = p2.flatten()
+    print(p2)
+    return p2
 
 
 def dataSet():
     data, labels = map(io.loadmat('globe.mat').get, ['data', 'labels'])
     return data, labels
 
+def kmeans(data, labels):
+    km = KMeans(n_clusters=3)
+    km.fit(data, labels)
+
 
 # tous critere
 def metricsCalcul(originDataSet, dataSet):
-    metrics = clusterCrit.__dict__['_rpy2r']
-
-    metrics = str((metrics))
-    metrics = metrics.replace("\'", "\"")
-    metrics = json.loads(metrics)
-    # metrics.
-    for m in metrics:
-        if not m.startswith("_"):
-            if m == "extCriteria":
-                try:
-                    f = getattr(clusterCrit, m)
-                    print(f)
-                    return f(originDataSet, dataSet, "all")
-                    #print("%s : %ƒ", m, f(originDataSet, dataSet, "all"))
-                except AttributeError:
-                    print("Methode non disponible dans ClusterCrit \n")
-                except RRuntimeError:
-                    print(traceback.format_exc())
-                    print("skip")
+    data_j={}
+    f = getattr(clusterCrit, "extCriteria")
+    for m in crit:
+        try:
+            res = f(originDataSet, dataSet, m)
+            data_j[m] = res[0][0]
+        except AttributeError:
+            print("Methode non disponible dans ClusterCrit \n")
+        except RRuntimeError:
+            print(traceback.format_exc())
+            print("skip")
+    return data_j
 
 def calculate(method, iteration):
+    json_data={}
     for i in range(iteration):
         dsOriginal = dataset.dataset1()
-        p2 = mds()
-        km = KMeans(n_clusters=3)
-        km.fit(p2)
-        p2 = km.predict(p2)
-        p2 = p2.flatten()
-
+        p2 = method()
+        #km = KMeans(n_clusters=3)
+        #km.fit(p2)
+        #p2 = km.predict(p2)
+        #p2 = p2.flatten()
+        print(p2)
         km2 = KMeans(n_clusters=3).fit(dsOriginal)
         p1 = km2.predict(dsOriginal)
         p1 = p1.flatten()
         r_ds = IntVector(p2)
         r_dsOriginal = IntVector(p1)
-        json_data[method][iteration] = metricsCalcul(r_dsOriginal, r_ds)
-
+        json_data[i] = metricsCalcul(r_dsOriginal, r_ds)
+    return json_data
 
 
 if __name__ == "__main__":
-    dsOriginal = dataset.dataset1()
+    method = [mds, pca, tSNE, classNeRV]
+    json_data= {}
+    for f in method:
+        name=f.__name__.__str__()
+        res= calculate(f, 1)
+        print(res)
+        json_data[name]=res
+    #calculate("mds", 10)
+    json.dump(json_data, open("mds.json", "w"))
 
-    p2 = mds()
-    km = KMeans(n_clusters=3)
-    km.fit(p2)
-    p2 = km.predict(p2)
-    p2= p2.flatten()
-
-    km2 = KMeans(n_clusters=3).fit(dsOriginal)
-    p1 = km2.predict(dsOriginal)
-    p1= p1.flatten()
-
-    print(p1)
-    # ds = pd.DataFrame([ds.where(), labels]).T
-    # ds = pd.DataFrame(ds, index = labels)
-    # r_ds = ro.conversion.py2rpy(ds)
-    # r_dsOriginal = ro.conversion.py2rpy(dsOriginal)
-    r_ds = IntVector(p2)
-    r_dsOriginal = IntVector(p1)
-
-    print(type(r_ds))
-    # print(p1.head())
-    # print(p2.head())
-
-    # r_ds = robjects.r('r_ds[is.nan(as.numeric(r_ds))] = NA')
-    metricsCalcul(r_dsOriginal, r_ds)
 
     # metricsCalcul(p1, p2)
