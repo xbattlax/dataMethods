@@ -10,10 +10,9 @@
 \contentsline {subsection}{\numberline {2.1}Visualisation du stress}{8}{subsection.0.2.1}%
 \contentsline {subsection}{\numberline {2.2}Les critères de mesure}{8}{subsection.0.2.2}%
 \contentsline {subsubsection}{Clustering}{9}{section*.3}%
-\contentsline {subsubsection}{Techniques de clustering}{9}{section*.4}%
-\contentsline {subsubsection}{Outlying}{11}{section*.5}%
-\contentsline {subsubsection}{Critères de formes}{12}{section*.6}%
-\contentsline {subsubsection}{Critère de densité}{12}{section*.7}%
-\contentsline {subsubsection}{Score de Projection \textit {(seulement pour ACP)}}{12}{section*.8}%
-\contentsline {subsection}{\numberline {2.3}Conclusion de la partie :}{13}{subsection.0.2.3}%
-\contentsline {section}{Conclusion}{14}{section*.9}%
+\contentsline {subsubsection}{Outlying}{9}{section*.4}%
+\contentsline {subsubsection}{Critères de formes}{10}{section*.5}%
+\contentsline {subsubsection}{Critère de densité}{10}{section*.6}%
+\contentsline {subsubsection}{Score de Projection \textit {(seulement pour l'ACP)}}{11}{section*.7}%
+\contentsline {subsection}{\numberline {2.3}Conclusion de la partie}{11}{subsection.0.2.3}%
+\contentsline {section}{Conclusion}{12}{section*.8}%

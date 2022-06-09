@@ -2,14 +2,14 @@
 
 Comme nous l’avons vu dans le chapitre précédent, la projection d'un jeu de données multidimensionnel passe par un processus de réduction de dimension. 
 Or, celui-ci a un coût : il implique une perte de données qui va se répercuter lors de la représentation finale de celles-ci.\smallskip
-La réduction induit une erreur : le “stress” qui a un impact sur l’approximation des distances au sein de la représentation.
+La réduction induit une erreur : le stress qui a un impact sur l’approximation des distances au sein de la représentation.
 
-Par définition, une “bonne projection” est une projection qui représente le plus fidèlement
+Par définition, une bonne projection est une projection qui représente le plus fidèlement
 possible la structure sous-jacente du jeu de données. Par conséquent, une
 bonne configuration de projection est une configuration qui minimise le stress de la
 projection. En d'autres termes: plus les distances entre le jeu de données et la projection seront proches, moins il y aura d’erreurs.
 Ainsi, le but dans une projection est de minimiser le stress. \newline 
-Mathématiquement parlant, le stress est défini comme la somme
+Mathématiquement parlant, le stress peut être défini comme la somme
 quadratique des écarts de distances :  \[\epsilon_\psi = \sum_{i,j}^{n}[(d_m (x_i , x_j )- d_p (y_i ,y_j )]^{2} \] 
 
 
@@ -21,7 +21,7 @@ plusieurs façons de le quantifier :
 
 Les mesures peuvent être locales, c'est-à-dire qu'elles sont visualisées en chaque point et aident à expliquer
 la projection. C’est possible en utilisant un diagramme de Shepard \cite{kruskal1964multidimensional} \cite{HeulotThese}.
-D'autres méthodes utilisent un “jitter disc” autour de chaque point. Cela permet de visualiser le
+D'autres méthodes utilisent un jitter disc autour de chaque point. Cela permet de visualiser le
 stress, mais ne donne pas des informations sur les origines de celui-ci \cite{HeulotAnEvaluation}.
 
 Il est également possible de le visualiser en utilisant un encodage colorimétrique, qui en
@@ -46,30 +46,30 @@ vues statiques qui peuvent l’aider à filtrer.
 
 \subsection{Les critères de mesure}
 
-Pour évaluer la qualité d’une projection, plusieurs approches se basant sur des critères existent.
+Pour évaluer la qualité d’une projection, plusieurs approches se basant sur différents ritères existant.
 Ces critères peuvent être relatifs à la structure des données projetées avec le taux d’oublier de la projection (outlying), le taux de cluster et à leurs qualités(visual clustering, class consistency, cluster separator, class density), et à la forme de la projection (clumpy, skinny).
 Nous allons les détailler au cours de ce chapitre.
 
 \subsubsection{Clustering}
-Le clustering d’une projection sert à partitionner les données en groupe homogènes. En d’autres termes, cela consiste à évaluer si la projection contient des “groupes”(ou clusters) ainsi que leur qualité (c'est-à-dire s’ ils sont séparés et facilement identifiables).
+Le clustering sert à partitionner les données en groupe homogènes. En d’autres termes, cela consiste à évaluer si le jeu de données contient des “groupes”(ou clusters) ainsi que leur qualité (c'est-à-dire s’ ils sont séparés et facilement identifiables).
 Pour cela, il existe plusieurs critères.
 
 \begin{itemize}
 \item
 \textbf{Class consistency : }
 \smallskip
-Tout d'abord, il y a la mesure de la “class consistency”\cite{bertini2011Class-Consistency}.
- Dans un jeu de données,chaque classe est composée d’un sous-ensemble du data-space qui lui est assigné, ainsi
+Tout d'abord, il y a la mesure de la \textit{class consistency} \cite{bertini2011Class-Consistency}.
+ Dans un jeu de données,chaque classe est composée d’un sous-ensemble de l'espace de données qui lui est assigné. Ainsi
 chaque point est assigné à une classe. L’ensemble des classes du data-space est appelé
-“class structure".
+\textit{class structure}.
 L'objectif est donc de vérifier si la séparation des classes est correcte en fonction des
 dimensions étudiées, sachant qu’une bonne représentation visuelle d’une “Class structure”
 doit être fidèle à cette même structure de classe. Pour déterminer cela, nous pouvons le
-calculer selon la règle de la “distance to centroid”(distance consistency) : c’est-à-dire que
+calculer selon la règle de la \textit{distance to centroid}: c’est-à-dire que
 chaque point d’une classe doit être à une distance inférieure de son centroïde(i.e le centre de sa
 classe) qu’à celui d’une autre classe.
 Or c’est une des propriétés qui est très souvent perdue lors de la projection.
-Par conséquent, si la “class consistency” est bonne, les classes seront situées à des régions
+Par conséquent, si la \textit{class consistency} est bonne, les classes seront situées à des régions
 visuellement séparées dans la projection graphique, les clusters seront donc plus
 facilement discriminables et la projection potentiellement de meilleure qualité.
 
@@ -77,15 +77,15 @@ facilement discriminables et la projection potentiellement de meilleure qualité
 \textbf{Class density : }
 \smallskip
  Pour justifier de la qualité du clustering d’une projection, nous pouvons également
-mesurer la densité de classe (ou “class density”).
+mesurer la densité de classe (ou \textit{class density}).
 Le principe est de retenir les graphes avec le moins de chevauchement \cite{AndradaTatu2010visual}.
 Ainsi, lors d’une projection, les points appartenant à un cluster forment une image, c'est -à
 -dire que chaque classe forme une image.
 L’algorithme se fait en fonction de la densité basée sur le voisinage : pour chaque pixel, la
 distance de son voisin le plus proche de la même classe est enregistrée. Puis, la densité
-locale est calculée dans une sphère de rayon de la “distance maximum possible”.
+locale est calculée dans une sphère de rayon de la distance maximum possible.
 Le chevauchement global des classes est ensuite estimé en calculant la somme de la
-différence de chaque paire de pixels à la valeur absolue). Puis la visualisation avec le
+différence de chaque paire de pixels à la valeur absolue. Puis la visualisation avec le
 chevauchement le plus faible sera retenue.
 \[CDM =  \sum_{k=1}^{m-1} \sum_{l=k+1}^{m} \sum_{i=1}^{P} \lVert P_{k}^{i} - P_{l}^{i} \rVert \]
 
@@ -93,88 +93,29 @@ chevauchement le plus faible sera retenue.
 \item
 \textbf{Histogram density : }
 \smallskip
-Il y a aussi la mesure de l`”histogram density” \cite{HeulotThese} \cite{AndradaTatu2009combining} qui est une mesure de l’entropie de la projection
+Il y a aussi la mesure de l`\textit{histogram density} \cite{HeulotThese} \cite{AndradaTatu2009combining} qui est une mesure de l’entropie de la projection
 (i.e l'information moyenne de différentes portions de la projection découpée en grille). La
-projection est séparée en plusieurs “bin” (à l'image des histogrammes). Dans chacun de
+projection est séparée en plusieurs barres (à l'image des histogrammes). Dans chacun de
 ces bins on comptabilise le nombre de points et leur étiquette de classe. L’entropie de
 chaque bin se calcule de cette façon. \[ H(p) = - \sum_{c} * \frac{P_c}{\sum_{c}*P_c} * \log_2 * \frac{P_c}{\sum_c * P_c} \]
-Ainsi, si tous les points d’un bin sont de la même classe, alors l’entropie est égale à zéro. Par conséquent le clustering sera de bonne qualité.
+Ainsi, si tous les points d’une barre sont de la même classe, alors l’entropie est égale à zéro. Par conséquent le clustering sera de bonne qualité.
 
 \end{itemize}
 \smallskip
 
-\subsubsection{Techniques de clustering}
-Deux des techniques de clustering les plus efficaces sont \textbf{Clique} et \textbf{DBscan} \cite{abbas2019clustme}. Leurs fonctionnements ne sont pas similaires et c’est pourquoi nous allons les développer ici.
-\medskip
 
-\textbf{Clique} \newline
-Il s'agit d'un algorithme de clustering de sous-espaces qui est "density-based" et "grid-based" .\newline
-"Grid - based", car il traduit l'espace de données sous la forme d'une grille et estime la densité en comptant le nombre de points dans une cellule de grille.\newline
-"Density-based", car il définit un cluster comme étant un ensemble maximal d'unités denses connectées dans un sous-espace.\newline
-Un regroupement de sous-espaces est un ensemble de cellules denses voisines dans un sous-espace arbitraire.\newline
-\newline
-Dans un grand jeu de données, l'algorithme Clique identifie automatiquement les sous-espaces qui permettent un meilleur regroupement de l'espace d’origine.
-\newline
-Il se déroule en plusieurs étapes. Premièrement, il identifie les sous-espaces qui contiennent des clusters :\newline
-pour ce faire, il répartit l'espace de données et trouve le nombre de points qui se trouvent à l'intérieur de chaque cellule de la répartition. Ensuite, il identifie les sous-espaces qui contiennent des clusters par raisonnement \textit{a priori} : si une collection de points $S$ est un cluster dans un espace à $k$ dimensions, alors $S$ fait également partie d'un cluster dans toute projection à $(k-1)$ dimensions de cet espace).\newline
-Ensuite, il identifie les clusters :\newline
-Il va déterminer les unités denses dans tous les sous-espaces d’intérêt. Par la suite, il va déterminer les unités denses connectées dans tous les sous-espaces d’intérêt. \newline
-Enfin, il génère des descriptions minimales pour les clusters: \newline
-Pour cela, il détermine les régions maximales qui couvrent un cluster d'unités denses connectées pour chaque cluster, et détermine la couverture minimale pour chaque cluster.
-\newline
-Cette technique est insensible à l'ordre des enregistrements en entrée et ne présume pas d'une distribution canonique des données. De plus, il s'échelonne linéairement avec la taille de l'entrée et possède une bonne adaptabilité lorsque le nombre de dimensions dans les données augmente.
-C’est également une méthode simple avec des résultats faciles à interpréter\cite{agrawal1998automatic}.
-
-Néanmoins, comme dans toutes les approches de clustering "grid bases", la qualité des résultats dépend du choix du nombre et de la largeur des cellules de la grille \cite{agrawal1998automatic}
-\medskip
-\newline
-\textbf{DBscan} \newline
-Pour déterminer les clusters il est possible d'utiliser le DbScan(Density Based Spatial Clustering of Applications with noise), un algorithme non supervisé et non paramétriques \cite{abbas2019clustme} . Il recherche les voisins par densité(Minimum Points) dans une sphère de $n$-dimension et de rayon $\epsilon$ .
-L'idée principale est que pour qu’un point appartienne à un cluster il doit se trouver en présence d’autre point appartenant à ce même cluster.
-Spécifier le nombre cluster au préalable n'est pas obligatoire. Il fonctionne aussi bien avec les clusters de taille arbitraire. Par ailleurs, DBscan est robuste et détecte les valeurs aberrantes, il peut donc être aussi bien 
-utilisé pour détecter les clusters que les outliers dans des distributions \cite{towardsdatascience-DBSCAN};
-
-Cette méthode sépare les points d'une projection en 3 catégories :
-\begin{itemize}
-    \item Les “cores points”, qui sont des points dont le nombre de voisins est supérieur ou égal au paramètre “Minimum Point” qui est défini par l’utilisateur. Et qui correspond au nombre de voisins minimum qu’un point doit avoir pour être considéré comme “Core point”.
-    \item Les “Border point”, qui sont des points dont le nombre de voisins est inférieur à “Minimum point” mais sont toujours “density reachable” par les points à l’intérieur du cluster. C'est-à-dire qu'il existe un ensemble de "core point" reliant deux points entre eux. .
-    \item Les “outliers”, qui sont des points qui ne sont dans aucun cluster : Ceux qui ne sont pas density reachable par les points dans le cluster.
-\end{itemize}
-
-Pour les catégoriser , il fonctionne suivant ce principe : 
-Un point $Q$ est atteignable, en partant du point $P$” s’il y a un chemin $p1…pn$ tel que $p_1 = P$ et $p_n = Q$. Dans lequel $pi +1$ est directement atteignable en partant de $p_i$. 
-Ainsi, tous les points du chemin peuvent être des “core points" avec comme seule exception de $Q$.
-Deux points ($p et q$) sont “density connected” s’il y a un point $O$ qui est “density reachable”’ par $p$ et $q$ (il y a une symétrie).
-\smallskip
-L'algorithme se déroule en 3 phases :
-Dans un premier temps, il détermine $\epsilon$ et $minPts$ . Par la suite, il choisit aléatoirement un point de départ et détermine son voisinage à l'aide du rayon ($\epsilon$). Pour finir, il choisit à nouveau aléatoirement un point parmi les points qui n'ont pas été visités lors des étapes précédentes et applique la même procédure en boucle.
-Quand tous les points sont visités, le processus prend fin.\newline
-
-Il est possible d’utiliser dbScan avec Sci-Kit Learn\cite{towardsdatascience-DBSCAN2}. Il y a deux paramètres importants dans l'implémentation :
-\begin{itemize}
-    \item Les unités spatiales : si l’espace est de 2 ou 3 dimensions la distance euclidienne sera préférée, dans le cas d’un espace à $n$-dimension(avec $n>3$) on préfèrera utiliser la distance de Manhattan.
-    \item Epsylon ($\epsilon$) : qui correspond à la distance spécifiant les voisinages. Lorsque la distance qui sépare deux points est inférieure ou égale à eps, ces deux points sont considérés comme voisins. 
-    Il faut prêter une attention toute particulière à ce paramètre, car si sa valeur est trop haute il y aura trop peu de clusters, à l’inverse, si elle est trop basse il y aura trop de clusters sans sens. En général on la fixe entre $0.25$ et $0.75$
-\end{itemize}
-
-\medskip
-Enfin, il y a d’autres approches qui visent à mettre le clustering en évidence telle que la
-Local Affine MDS (LAMP) \cite{joia2011local-LAMP} ou l’ ACP sous contraintes . L’objectif est d’adapter la projection
-en fonction de contraintes de positions choisies par l'utilisateur ou définie sur la matrice de
-similarité. Ces approches ne permettent toujours pas de mettre de côté les artefacts et ne
-sont pas forcément optimales dans le contrôle de la position.
 
 \subsubsection{Outlying}
 
-Le taux d’outliers est important à définir pour justifier de la qualité d’une projection.
-Un “outlier” est une donnée aberrante. Pour déterminer si un point est un outlier, il y a plusieurs méthodes.
+Le taux d’outliers est important à définir pour justifier de la qualité du clustering.
+Un \textit{outlier} est une donnée aberrante. Pour déterminer si un point est un outlier, il y a plusieurs méthodes.
 
 \textbf{Critères utilisant les graphes :}
 \begin{itemize}
-    \item Une des façons de raisonner en graphe et d'utiliser le concept de Minimum Spanning Tree(MST) \cite{wilkinson2005graph-MST} , c'est-à-dire l'arbre le moins long que l'on peut créer à partir du nuage de points de la projection. 
+    \item Une des façons de raisonner en graphe et d'utiliser le concept de \textit{Minimum Spanning Tree}(MST) \cite{wilkinson2005graph-MST} , c'est-à-dire l'arbre le moins long que l'on peut créer à partir du nuage de points de la projection. 
     En prenant comme référentiel le MST, les outliers sont soit des points qui sont localisés aux extrémités de l’arbre ou en intérieur dans des régions relativement vides. Ainsi, on peut les définir comme des nœuds de degrés 1, et dont la somme des poids des arêtes adjacentes est supérieure à ‘w’ selon la formule suivante  \[ \omega = q_{75} + 1.5 (q_{75} - q_{25} ) \].
     Puis, nous pouvons calculer le taux d’outliers dans la projection (outlying) en divisant la longueur totale de tous les outliers par la longueur totale de l’arbre selon la formule suivante : \[c_{outlying} = length(T_{outliers} )/length(T) \] .
-    \item Il y a également la méthode de “l’isolation Forest”. Dans celle-ci, l’algorithme choisit une feature du jeu donnée et une valeur “split” comprise entre le maximum et le minimum des valeurs. Cette étape est effectuée pour toutes les observations, par la suite la moyenne des tous les arbres est faite pour construire la forêt. L'entraînement de l’algorithme consiste à comparer les observations avec la splitting value dans un nœud. Ce nœud comprendra également deux “sous-noeuds” dans lesquels on fera aussi la même comparaison. Ainsi le nombre de “splitting” est égal à la longueur du chemin. Toutes les comparaisons auront un score allant de 0 à 1. 0 signifiant "normalité", et 1 signifiant qu’il y a un grand nombre d’outlier\cite{togbe2020anomaly-IsolationForest}. Elle est implémentable en python avec scikit Learn.
+    \item Il y a également la méthode de l’\textit{isolation Forest}. Dans celle-ci, l’algorithme choisit une caractéristique du jeu donnée et une valeur \textit{split} comprise entre le maximum et le minimum des valeurs. Cette étape est effectuée pour toutes les observations. Par la suite la moyenne des tous les arbres est faite pour construire la forêt.L'apprentissage de l’algorithme consiste à comparer les observations avec la \textit{splitting value} dans un nœud. Ce nœud comprendra également deux sous-noeuds dans lesquels on fera aussi la même comparaison. Ainsi le nombre de \textit{splitting} est égal à la longueur du chemin. Toutes les comparaisons auront un score allant de 0 à 1. 0 signifiant "normalité", et 1 signifiant qu’il y a un grand nombre d’outlier\cite{togbe2020anomaly-IsolationForest}. Elle est implémentée en python avec scikit Learn.
 \end{itemize} 
 
 Puis, nous pouvons calculer le taux d’outliers dans la projection (outlying) en divisant la
@@ -193,12 +134,12 @@ Cette mesure est très utile pour détecter des outliers dans les clusters extr�
 \subsubsection{Critères de formes}
 
 Les informations sur la forme de la projection sont également très importantes.\cite{wilkinson2005graph-MST}
-La forme est souvent définie par le critère “skinny”. Ce critère représente grossièrement la
-finesse de la courbe. Celui-ci est défini en calculant le ratio air/périmètre d’une projection
+La forme est souvent définie par le critère \textit{skinny}. Ce critère représente grossièrement la
+finesse de la courbe. Celui-ci est défini en calculant le ratio aire/périmètre d’une projection
 (avec normalisation) \[ C_{skinny} = 1 - \sqrt{4\pi area(A)}/perimeter(A) \]
 
 Dans le cas où le chemin le plus court d’un Minimum Spanning Tree est quasiment aussi
-long que le somme des arêtes de l’arbre d’origine, la courbe peut être qualifiée de “stringy” \[C_{stringy} = diameter(T)/length(T) \]
+long que la somme des arêtes de l’arbre d’origine, la courbe peut être qualifiée de \textit{stringy} \[C_{stringy} = diameter(T)/length(T) \]
 
 \subsubsection{Critère de densité}
 Dans une configuration éparpillée (scattered) il y a également le critère de densité qui
@@ -207,26 +148,26 @@ informations sur la densité relative de points.
 Le calcul de cette densité se base sur la mesure des quantiles de la longueur des arêtes : 
 \[c_{skew} = (q_{90}-q_{50})/(q_{90}-q_{10})\]
 Ainsi, si la dimension d’un Minimum Spanning Tree est extrêmement asymétrique, les
-clusters y seront mal représentés. Dans ce cas, elle est qualifiée de "clumpy". \cite{wilkinson2005graph-MST}
+clusters y seront mal représentés. Dans ce cas, elle est qualifiée de \textit{clumpy}. \cite{wilkinson2005graph-MST}
 
 
-\subsubsection{Score de Projection \textit{(seulement pour ACP)}}
-Les informations d’une projection par ACP sont mesurées en comparant la variance totale du data set et celle qui a été retenue après la réduction de dimension. Ce qui la rend très dépendante du nombre de dimensions du jeu de donnée de base.\newline
+\subsubsection{Score de Projection \textit{(seulement pour l'ACP)}}
+Les informations d’une projection par ACP sont mesurées en comparant la variance totale du jeu de données et celle qui a été retenue après la réduction de dimension. Ce qui la rend très dépendante du nombre de dimensions du jeu de données de base.\newline
 Ainsi, contrairement aux petits jeux de données, il est quasiment impossible que les trois composantes principales d’un grand jeu de données retiennent 100 pourcents(ou quasiment 100 pourcents) de la variance. Et ce, même si le jeu de données est composé de variables non aléatoires avec des structures très facilement interprétables.
 \smallskip
-Le but de cette méthode est de quantifier l’informativité de la projection non pas par la variance finale, MAIS par l'excès de variance de ce qui est attendu après réduction d’un dataset aléatoire.
-Pour calculer le "projection score": on calcule la variance totale qui est retenue par les 3 principaux composants. Ensuite, on estime la valeur de ces mêmes entités, mais pour un set de variable complètement aléatoire.\newline
-Enfin, on calcule le score de projection en faisant différence entre la racine carrée de la quantité observée et de la racine carrée de la valeur attendue (celle du random dataset).  Ainsi, si le résultat est grand(s’éloigne positivement de zéro) cela veut dire qu’il y a plus d’informations (relatives au calcul de la variance) pour le vrai jeu de donné que pour celui du random data set.
+Le but de cette méthode est de quantifier l’informativité de la projection non pas par la variance finale, mais par l'excès de variance de ce qui est attendu après réduction d’un dataset aléatoire.
+Pour calculer le score de projection: on calcule la variance totale qui est retenue par les 3 principaux composants. Ensuite, on estime la valeur de ces mêmes entités, mais pour un jeu de variables complètement aléatoire.\newline
+Enfin, on calcule le score de projection en faisant différence entre la racine carrée de la quantité observée et de la racine carrée de la valeur attendue (celle du random dataset).  Ainsi, si le résultat est grand(s’éloigne positivement de zéro) cela veut dire qu’il y a plus d’informations (relatives au calcul de la variance) pour le vrai jeu de donné que pour celui du jeu de données aléatoire.
 Par conséquent, la projection est plus susceptible de proposer des structures fidèles et intéressantes, qui ne sont pas dues au hasard\cite{fontes2011ProjectionScore}.
 
 
 
 
-\subsection{Conclusion de la partie :} 
-Ces mesures de qualités sont donc utiles pour les personnes non spécialistes, ce qui leur permet d’appréhender au mieux la visualisation obtenue après projection.
-Ils peuvent également être utilisés de façon automatique dans des algorithmes qui permettent de trier et de déterminer si la projection qui va être affichée est fidèle au jeu de données\cite{bertini2011quality-AutomatisationAlgo}. 
+\subsection{Conclusion de la partie} 
+Ces mesures de qualité sont donc utiles pour les personnes non spécialistes, ce qui leur permet d’appréhender au mieux la visualisation obtenue après projection.
+Elles peuvent également être utilisées de façon automatique dans des algorithmes qui permettent de trier et de déterminer si la projection qui va être affichée est fidèle au jeu de données\cite{bertini2011quality-AutomatisationAlgo}. 
 \newline
-Comme nous l’avons brièvement abordé dans l'introduction, les facteurs numériques à eux seuls ne suffisent pas à l’interprétation d’une projection : il faut rajouter le facteur “humain” à l’équation.
+Comme nous l’avons brièvement abordé dans l'introduction, les facteurs numériques à eux seuls ne suffisent pas à l’interprétation d’une projection : il faut rajouter le facteur humain à l’équation.
 Malgré l’utilité de toutes ces mesures, le jugement humain reste toujours le plus important\cite{AndradaTatu2010visual}. De plus, c'est également l’être humain qui a pour rôle d’interpréter la projection.  C’est pour cela qu’il existe des évaluations à faire passer aux humains, qui servent à mesurer l’impact des techniques de projection, la qualité des graphiques et leur compréhension par l’utilisateur. Par exemple ,nous pouvons tester directement les utilisateurs avec plusieurs types de tâches telles que le “data outlier validation”, le “clustering validation”, le “cluster énumération”, et le “class outliers validation” \cite{HeulotAnEvaluation}. 
 Ces tests consistent en la détection des structures et des données aberrantes dans les projections.
 Ainsi si une projection a une bonne qualité (suivant les critères numériques) et permet aux utilisateurs de discriminer rapidement et correctement les structures,elle tend alors vers ce que l’on peut considérer comme étant une “bonne projection”.
