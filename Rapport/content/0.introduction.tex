@@ -10,10 +10,9 @@ Différentes techniques de visualisation existent \cite{HeulotThese}, mais c’e
     Les projections permettent également d’inférer des propriétés sur les données et de les vérifier. Par exemple, il est possible de vérifier si les clusters sont séparables linéairement (notamment à l’aide d’une projection linéaire) \cite{HeulotThese} .
 \smallskip
 
-D’une façon générale dans la visualisation, le plus compliqué n’est pas tant d’acquérir ou de traiter directement des données, au contraire ces deux étapes sont de moins en moins compliquées et coûteuses. Le défi est celui de la représenter fidèlelement des jeux de données qui se font de plus en plus grands; jusqu’à atteindre des tailles allant jusqu’à des dizaines milliers de dimensions.
-C'est pour cela que pour projeter en 2D ou en 3D  un jeu de données de n dimensions, il faut passer par un processus de réduction de dimension.
- Cependant, ce processus a un coût, étant donné qu'il est lié à une perte d'information causée par l'étirement ou la compression de la plupart des distances entre paires, 
- car la dimension de l'espace couvert par les données d'origine est généralement supérieure à la dimension de l'espace de projection.  ce qui cause l’apparition d’artefacts dans la projection. Ces artefacts compromettent ainsi grandement la fiabilité et la bonne interprétation de ces graphiques\cite{scarlet}. 
+Dans le cas de la visualisation, acquérir les données et les traiter sont deux étapes qui sont de plus en plus simples. Le défi est de représenter fidèlement les jeux de données. En effet, dans une projection les jeux de données peuvent atteindre jusqu’à des dizaines de milliers de dimensions et doivent être réduit en 2 ou 3 dimensions pour être visualisable et compréhensible par l’homme. Or ce processus de dimension a un coût : des pertes d’informations.
+Cependant, ce processus a un coût, étant donné qu'il est lié à une perte d'information causée par l'étirement ou la compression de la plupart des distances entre paires, 
+car la dimension de l'espace couvert par les données d'origine est généralement supérieure à la dimension de l'espace de projection.  ce qui cause l’apparition d’artefacts dans la projection. Ces artefacts compromettent ainsi grandement la fiabilité et la bonne interprétation de ces graphiques\cite{scarlet}. 
 Dans une projection, les axes ne jouent pas forcément un rôle : c’est principalement la distance entre les points qui donne un sens et une interprétabilité à la projection\cite{koffka1997PsychoGesttalt}. 
 Néanmoins, représenter fidèlement une distance euclidienne après réduction et projection est tout bonnement impossible. 
 
@@ -24,7 +23,7 @@ et donc d'évaluer si les caractéristiques observées dans l'espace de projecti
 Les artéfacts sont définis comme des points "mal placés”(en comparaison aux points d’origine). Ils sont dus au processus de réduction qui peine à respecter fidèlement les distances. Il existe deux types d’artefacts : les artefacts géométriques et les artefacts topologiques \cite{HeulotAnEvaluation}.
 \begin{itemize}
     \item Les artefacts géométriques sont causés par de légères distorsions des distances, dans ce cas précis les distances sont fausses, mais le voisinage des points est conservé,  l’interprétation n’est donc pas (ou très peu) perturbée.
-    \item Les artefacts topologiques sont causés par des distorsions trop importantes des distances, c'est-à-dire que dans ce cas ni les distances ni le voisinage des points ne sont conservés. Cela peut par exemple mener à des situations qui nuisent grandement à la qualité de la visualisation. Il est possible de retrouver deux clusters différents dans la même zone (on parle dans ce cas de faux voisinages), ou bien que des clusters soient séparés en plusieurs parties(on parle dans ce cas d’artefacts de déchirure \cite{HeulotThese}). Par conséquent, cela engendre forcément des problèmes d’interprétation.
+    \item Les artefacts topologiques sont causés par des distorsions trop importantes des distances. Par conséquent, cela engendre forcément des problèmes d’interprétation.
 \end{itemize}
 
 Parmi ces types d'artefacts, nous pouvons distinguer 4 sous-types d'artefacts :\cite{aupetit2007visualizing} :
@@ -46,62 +45,13 @@ Les artefacts ayant des causes techniques peuvent être annulés alors que ceux 
 
 
 \smallskip
-Pour tenter de pallier aux difficultés induites par les artefacts, des techniques ont été mises en place pour assister l’utilisateur dans la visualisation. Parmi ces techniques, nous pouvons noter l’utilisation d’échelles colorimétriques\cite{CheckViz}, qui permettent de mesurer les différents artefacts, mais ne permettent pas de mettre en valeur les clusters cachés ni de donner une idée claire ou de préciser de la qualité de la projection. Dans ce cas, il est compliqué d’exploiter une projection de n dimensions de façon fiable sans prendre en compte les artefacts qu’elle présente\cite{aupetit2007visualizing}.    
+Pour tenter de pallier les difficultés induites par les artefacts, des techniques ont été mises en place pour assister l’utilisateur dans la visualisation. Parmi ces techniques, nous pouvons noter l’utilisation d’échelles colorimétriques\cite{CheckViz}, qui permettent de mesurer les différents artefacts, mais ne permettent pas de mettre en valeur les clusters cachés ni de donner une idée claire ou de préciser de la qualité de la projection. Dans ce cas, il est compliqué d’exploiter une projection de n dimensions de façon fiable sans prendre en compte les artefacts qu’elle présente\cite{aupetit2007visualizing}.    
 Dans l’article “Visualizing Dimensionality Reduction Artifacts : An evaluation”(Heulot) une technique colorimétrique est utilisée pour voir s’il est possible de surmonter les difficultés dues aux artefacts dans d’interprétation d’échelles multidimensionnelles. Ils ont donc mis en place une méthode s'appelant “ProxiViz”. Grâce à celle-ci, sur un jeu de test , les informations locales d’un item sont beaucoup mieux représentées. Cette méthode permettrait de détecter plus facilement les outlier et les clusters. Elle pourrait donc, en partie, aider les non "spécialistes des data" à mieux distinguer certaines informations. Même si encore une fois cela est limité par la qualité de l’écran, le contraste et la vision de l'humain qui peut peiner à distinguer les nuances entre les couleurs\cite{HeulotAnEvaluation} \cite{tran2021approaching} \cite{deering1998human_vision}.
 L’idée a notamment été reprise par Heulot\cite{HeulotThese}, il se base sur le concept de la “visualisation interactive des proximités'' afin de mettre en évidence les artefacts. Cela permet de visualiser sur la projection les proximités d’origines des différents points en fonction d’une référence choisie par l’utilisateur.
 
 
 \medskip
-\textbf{Importance du facteur humain}
-\newline Même si nous allons fortement nous limiter aux facteurs numériques qui interviennent dans la projection, le facteur humain est également à prendre en compte, il est d’autant plus compliqué à contrôler à cause de sa subjectivité et son irrégularité. En effet, l'humain peut commettre des erreurs de compréhension et d’interprétation à plusieurs étapes de l’analyse.
-D’une part dans la sélection des métriques il est susceptible de commettre des erreurs, alors que c’est une partie clé de l'analyse \cite{barchard2011preventing}.
-De plus, le rapport "humain-materiel" peut également être limitant dans la visualisation de données. Par exemple, la taille de l’écran et sa résolution jouent grandement dans la lecture d’une visualisation. Si on couple ce facteur à la vision humaine, qui est également limitée, l’apparition de biais dans l’appréhension de certaines représentations telle que les distances ou la nuance de couleur semble inévitable. Cela ajoute donc de l’incertitude et de la variabilité, ce qui finit par rendre l'interprétation finale biaisée.
 
-\smallskip
-Ces biais peuvent se manifester dans différents cas d'analyse de données. 
-Un des cas proches de notre sujet est celui de l’analyse de données progressive ou Progressive Visual Analytics(PVA)  qui consiste en l’analyse des données intermédiaires. Elle est utilisée dans de nombreux domaines scientifiques comme la biologie. Dans un cas d'une projection elle peut par exemple être appliquée à des méthode l’ACP, ce qui donne la PrACP (Progressiv ACP)\cite{PR-ACP}.
-\smallskip
-Le fait que l’analyse soit “en cours de traitement” est encore plus susceptible de générer des biais chez ceux qui analysent. 
-C’est pour cela que dans un contexte analyse de visualisation de données il faut mettre l’accent sur la compréhension du facteur humain. 
-Une des approches possibles est de catégoriser les différents types d’utilisateurs des projections et de la PVA. C’est ce qui a été fait par Micallef dans son article "\textit{The Human user In Progressive Visual Analytic}"\cite{micallef2019HumanProgressiv}, dans lequel il distingue trois principaux types d'utilisateurs de l'analyse progressive :
-
-\begin{itemize}
-    \item Le “progressiv searcher” : 
-    Son but est de trouver rapidement des informations précises pour répondre à une question concrète dans un temps limité. Il va utiliser l’analyse progressive pour déterminer si les données de certaines recherches sont suffisantes et tenter de prédire au mieux les résultats finaux(avant le compte rendu final). Il pourra également, en fonction des résultats qui sont affichés, affiner sa zone de recherche. La PVA lui permet donc d’étudier de plusieurs façons les modèles qu’il étudie : d’une part de mettre en valeur des fluctuations, des singularités (pour pointer certains problèmes) et d’étudier en parallèle plusieurs modèles.D’une autre, d’avoir un aperçu de la qualité des données au cours de l’analyse.
-    \item Le “progressiv observer” : 
-    Il n’a pas de connaissance particulière sur la PVA et son mécanisme. Dans son cas, la compréhension de l’algorithme sous-jacent et son fonctionnement n'est pas primordiale, bien que conseillée.
-    Son intérêt va principalement se porter sur l’output, c'est-à-dire qu’il veut juger la qualité et la quantité des données obtenues et raisonner à partir des graphiques. Dans son cas, la PVA permettrait de vulgariser certaines notions et de réduire la complexité visuelle des processus. Pour s’aider, il peut également utiliser des ancres entre les périodes d’avancement et réduire la vitesse des calculs trop rapides.
-    \item Le “progressiv explorer” :  
-    Son but est de comprendre globalement l’analyse des données et les processus sous-jacents. Il est intéressé par la répercussion de ses manipulations et des changements de paramètres sur les résultats, il veut ainsi être capable de simuler différents scénarios. Dans son cas, la PVA lui permet de rendre les paramètres plus ajustables, de lui donner une idée plus claire des outputs dans le but de lui permettre de tester différents scénarios alternatifs, on parle dans ce cas d’”Interactiv Simulation”.            
-\end{itemize}
-
-\smallskip
-Suivant cette idée de distinctions entre types d'utilisateurs, on peut différencier trois types de contextes d'utilisation des projections de données \cite{HeulotThese} . 
-
-\begin{itemize}
-    \item Le contexte “exploratoire” : 
-    Ce contexte d’utilisation n’est pas lié à un modèle scientifique en particulier, le but sera d’identifier visuellement les outliers et les clusters . Cela pourra permettre d’une part d’identifier de potentielles anomalies (les outliers) et d’y remédier, et également de classifier les clusters. La pratique exploratoire peut se montrer très fastidieuse en fonction du type de données, la projection peut donc être utilisée comme un outil pour organiser ce travail d’exploration et guider au mieux l’utilisateur.
-    \item Le “contexte confirmatoire” : 
-    Ce contexte d’utilisation dépend d’un modèle. En fonction des clusters et de la classification qui s'ensuit, le modèle pourra être validé ou non. Le but est d'étudier la proximité entre les classes et leur potentiel chevauchement avec notamment la détection d’outlier de classe \cite{HeulotThese} \cite{hetlerovicdetekce-OUTLIER-Thesis}.
-    \item Le contexte “présentation des données” : 
-    L’objectif est de communiquer des observations d’une analyse de la façon la plus claire et concise possible.           
-\end{itemize}
-\smallskip
-
-Même si plusieurs profils ont été définis, et qu'il est possible de les utiliser pour adapter au mieux l’interface et les processus, cela n’empêchera pas les erreurs qui peuvent se manifester de plusieurs manières \cite{baron1988heuristics}. Par exemple, l’utilisateur peut tout simplement se tromper : il peut trouver et interpréter un résultat qui n’existe pas et/ou mal juger les résultats intermédiaires. 
-Il peut également y avoir des “biais de confirmation”, c'est-à-dire que les utilisateurs confirment leurs hypothèses favorites alors que les résultats sont incomplets\cite{micallef2019HumanProgressiv}. On peut également se retrouver dans des situations dans lesquelles l’utilisateur attend trop longtemps des résultats qui ne sont pas pertinents pour répondre à sa problématique.
-\smallskip
-La réduction dimensionnelle est souvent pensée comme un processus de fond, peu intuitif et qui est géré en totalité par le programme et les algorithmes.
- Ainsi, plusieurs études ont tenté de rendre celui-ci beaucoup plus intuitif et d'incorporer le facteur humain dans sa réalisation\cite{micallef2019HumanProgressiv}\cite{mahoney1977Biais}. C’est dans ce concept “réduction interactive” que Sara et Jimmy Johansson ont mis en place une méthode dans laquelle les paramètres et les filtres de réductions sont sélectionnés par l’utilisateur lui-même\cite{scarlet}.
-La démarche d’utilisation est la suivante : 
-l’utilisateur commence par sélectionner les "quality-metric" et le programme va par la suite analyser la qualité de celles-ci et donner un feedback à l’utilisateur concernant le taux de perte d’information. À partir de cela, l’utilisateur pourra choisir le poids des variables ainsi que leur classement. Ensuite à partir de cela le programme se charge de la réduction dimensionnelle, l’utilisateur sélectionne ensuite les variables à garder à supprimer. Par la suite, la réduction finale sera affichée en fonction des paramètres choisis par l'utilisateur. Il pourra également revenir sur sa décision concernant les paramètres et changer le poids des variables ainsi que leur hiérarchie.
-Ce système a pour objectif de rendre le processus de projection  plus interactif. Cela permet à l’utilisateur de cibler ce qu’il recherche et à connaître le taux de perte dans de la représentation qu’il va analyser.
-Tout cela va rendre le processus de projection plus compréhensible pour l’utilisateur. Néanmoins, en diminuant le poids du facteur machine on augmente le poids du facteur humain, et ce dernier peut se montrer encore plus imprévisible de par sa subjectivité.
-\medskip
-
-Dans cette introduction, nous avons pu voir les enjeux et les problématiques liés à la projection de données.
-\newline Dans ce papier, nous allons nous limiter au facteur numérique en tentant de déterminer comment évaluer fidélité des projections de données.
-Ainsi, dans les prochaines parties nous parlerons de différentes méthodes de projections en expliquant leur principe et leurs avantages, en les illustrant à l’aide du jeu de données Globe\cite{colange_steering_2020}. Puis nous aborderons également les différents critères existants qui permettent d’évaluer la qualité d’une projection.
 
 
 

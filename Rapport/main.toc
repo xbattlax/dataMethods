@@ -1,20 +1,19 @@
 \contentsline {section}{Introduction}{1}{section*.2}%
-\contentsline {section}{\numberline {1}Les méthodes de projection}{5}{section.0.1}%
-\contentsline {subsection}{\numberline {1.1}Analyse en Composantes Principales(ACP)}{6}{subsection.0.1.1}%
-\contentsline {subsection}{\numberline {1.2}Linear Multidimensional Scaling (MDS)}{6}{subsection.0.1.2}%
-\contentsline {subsection}{\numberline {1.3}ClassNerv}{7}{subsection.0.1.3}%
-\contentsline {subsection}{\numberline {1.4}S-Isomap}{8}{subsection.0.1.4}%
-\contentsline {subsection}{\numberline {1.5}t-SNE}{9}{subsection.0.1.5}%
-\contentsline {subsection}{\numberline {1.6}Autres méthodes de projection non linéaires}{10}{subsection.0.1.6}%
-\contentsline {subsection}{\numberline {1.7}Conclusion partie}{10}{subsection.0.1.7}%
-\contentsline {section}{\numberline {2}Les critères d'évaluation des projections}{11}{section.0.2}%
-\contentsline {subsection}{\numberline {2.1}Visualisation du stress}{11}{subsection.0.2.1}%
-\contentsline {subsection}{\numberline {2.2}Les critères de mesure}{11}{subsection.0.2.2}%
-\contentsline {subsubsection}{Clustering}{12}{section*.3}%
-\contentsline {subsubsection}{Techniques de clustering}{12}{section*.4}%
-\contentsline {subsubsection}{Outlying}{14}{section*.5}%
-\contentsline {subsubsection}{Critères de formes}{15}{section*.6}%
-\contentsline {subsubsection}{Critère de densité}{15}{section*.7}%
-\contentsline {subsubsection}{Score de Projection \textit {(seulement pour ACP)}}{15}{section*.8}%
-\contentsline {subsection}{\numberline {2.3}Conclusion de la partie :}{16}{subsection.0.2.3}%
-\contentsline {section}{Conclusion}{17}{section*.9}%
+\contentsline {section}{\numberline {1}Les méthodes de projection}{3}{section.0.1}%
+\contentsline {subsection}{\numberline {1.1}Analyse en Composantes Principales(ACP)}{4}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {1.2}Multidimensional Scaling (MDS)}{4}{subsection.0.1.2}%
+\contentsline {subsection}{\numberline {1.3}ClassNerv}{5}{subsection.0.1.3}%
+\contentsline {subsection}{\numberline {1.4}t-SNE}{5}{subsection.0.1.4}%
+\contentsline {subsection}{\numberline {1.5}Autres méthodes de projection non linéaires}{6}{subsection.0.1.5}%
+\contentsline {subsection}{\numberline {1.6}Conclusion partie}{7}{subsection.0.1.6}%
+\contentsline {section}{\numberline {2}Les critères d'évaluation des projections}{8}{section.0.2}%
+\contentsline {subsection}{\numberline {2.1}Visualisation du stress}{8}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {2.2}Les critères de mesure}{8}{subsection.0.2.2}%
+\contentsline {subsubsection}{Clustering}{9}{section*.3}%
+\contentsline {subsubsection}{Techniques de clustering}{9}{section*.4}%
+\contentsline {subsubsection}{Outlying}{11}{section*.5}%
+\contentsline {subsubsection}{Critères de formes}{12}{section*.6}%
+\contentsline {subsubsection}{Critère de densité}{12}{section*.7}%
+\contentsline {subsubsection}{Score de Projection \textit {(seulement pour ACP)}}{12}{section*.8}%
+\contentsline {subsection}{\numberline {2.3}Conclusion de la partie :}{13}{subsection.0.2.3}%
+\contentsline {section}{Conclusion}{14}{section*.9}%

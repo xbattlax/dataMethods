@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  17 DEC 2021 23:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  9 JUN 2022 12:19
 entering extended mode
-**c:/Users/Cyril/Desktop/projetTut_etat_de_lart/main.tex
-(c:/Users/Cyril/Desktop/projetTut_etat_de_lart/main.tex
+**c:/Users/Cyril/Desktop/dataMethods/Rapport/main.tex
+(c:/Users/Cyril/Desktop/dataMethods/Rapport/main.tex
 LaTeX2e <2021-11-15>
 L3 programming layer <2021-11-22> (C:\Users\Cyril\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
@@ -1066,7 +1066,6 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 22.
 LaTeX Info: Redefining \pageref on input line 22.
 LaTeX Info: Redefining \nameref on input line 22.
- (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
@@ -1087,26 +1086,51 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 6.
  (C:\Users\Cyril\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd) [1
 
 {C:/Users/Cyril/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-<cover/meta/idmc.png, id=70, 438.63875pt x 115.43124pt>
-File: cover/meta/idmc.png Graphic file (type png)
-<use cover/meta/idmc.png>
-Package pdftex.def Info: cover/meta/idmc.png  used on input line 12.
-(pdftex.def)             Requested size: 132.44934pt x 34.8548pt.
-<cover/meta/UL.jpg, id=71, 1806.75pt x 579.66562pt>
+
+LaTeX Warning: File `cover/meta/idmc.png' not found on input line 12.
+
+
+cover/cover_in.tex:12: Package pdftex.def Error: File `cover/meta/idmc.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 ...5cm, keepaspectratio]{cover/meta/idmc.png}
+                                                  };
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 12.
+(C:\Users\Cyril\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+<cover/meta/UL.jpg, id=14, 1806.75pt x 579.66562pt>
 File: cover/meta/UL.jpg Graphic file (type jpg)
 <use cover/meta/UL.jpg>
 Package pdftex.def Info: cover/meta/UL.jpg  used on input line 13.
 (pdftex.def)             Requested size: 108.62086pt x 34.8548pt.
-<cover/meta/loria.png, id=72, 235.88126pt x 215.80624pt>
-File: cover/meta/loria.png Graphic file (type png)
-<use cover/meta/loria.png>
-Package pdftex.def Info: cover/meta/loria.png  used on input line 15.
-(pdftex.def)             Requested size: 38.0945pt x 34.8548pt.
- (content/abstract.tex)pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+
+
+LaTeX Warning: File `cover/meta/loria.png' not found on input line 15.
+
+
+cover/cover_in.tex:15: Package pdftex.def Error: File `cover/meta/loria.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...cm, keepaspectratio]{cover/meta/loria.png}
+                                                  };
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+(content/abstract.tex)pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.48 \newpage
-              [1 <./cover/meta/idmc.png> <./cover/meta/UL.jpg> <./cover/meta/loria.png>] (main.toc)
+              [1 <./cover/meta/UL.jpg>]
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
@@ -1116,59 +1140,306 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 l.59 \newpage
               [2
 
-]) (content/__all__.tex (content/0.introduction.tex [1] [2] [3]) [4] (content/1.part.tex
-Overfull \hbox (10.27219pt too wide) in paragraph at lines 3--8
-[]\T1/cmr/m/n/10.95 Lorsque l'on souhaite représen-ter en 2D ou en 3D de grands jeux de don-nées multidimensionnels(au-
+]) (content/__all__.tex (content/0.introduction.tex
+
+LaTeX Warning: Citation `HeulotAnEvaluation' on page 1 undefined on input line 3.
+
+
+LaTeX Warning: Citation `card1999readings' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `keim2008visual' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `HeulotThese' on page 1 undefined on input line 5.
+
+
+LaTeX Warning: Citation `HeulotThese' on page 1 undefined on input line 8.
+
+
+LaTeX Warning: Citation `HeulotThese' on page 1 undefined on input line 10.
+
+
+LaTeX Warning: Citation `scarlet' on page 1 undefined on input line 15.
+
+
+LaTeX Warning: Citation `koffka1997PsychoGesttalt' on page 1 undefined on input line 16.
+
+
+LaTeX Warning: Citation `HeulotAnEvaluation' on page 1 undefined on input line 23.
+
+[1]
+
+LaTeX Warning: Citation `aupetit2007visualizing' on page 2 undefined on input line 29.
+
+
+LaTeX Warning: Citation `aupetit2007visualizing' on page 2 undefined on input line 38.
+
+
+LaTeX Warning: Citation `CheckViz' on page 2 undefined on input line 48.
+
+
+LaTeX Warning: Citation `aupetit2007visualizing' on page 2 undefined on input line 48.
+
+
+LaTeX Warning: Citation `HeulotAnEvaluation' on page 2 undefined on input line 49.
+
+
+LaTeX Warning: Citation `tran2021approaching' on page 2 undefined on input line 49.
+
+
+LaTeX Warning: Citation `deering1998human_vision' on page 2 undefined on input line 49.
+
+
+LaTeX Warning: Citation `HeulotThese' on page 2 undefined on input line 50.
+
+) [2] (content/1.part.tex
+
+LaTeX Warning: Citation `dzemyda2016big' on page 3 undefined on input line 3.
+
+
+LaTeX Warning: Citation `HeulotThese' on page 3 undefined on input line 3.
+
+
+LaTeX Warning: Citation `HeulotThese' on page 3 undefined on input line 4.
+
+
+Overfull \hbox (34.90182pt too wide) in paragraph at lines 3--8
+[]\T1/cmr/m/n/10.95 Lorsque l'on souhaite représen-ter en 2 ou 3 di-men-sions de grands jeux de don-nées multidimensionnels(au-
  []
+
+
+LaTeX Warning: Citation `HeulotThese' on page 3 undefined on input line 10.
+
+
+LaTeX Warning: Citation `somorjai2011Dissimilarity' on page 3 undefined on input line 12.
+
+
+LaTeX Warning: Citation `HeulotThese' on page 3 undefined on input line 12.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--13
 
  []
 
-[5]
-<imports/PCA.png, id=198, 462.528pt x 346.896pt>
-File: imports/PCA.png Graphic file (type png)
-<use imports/PCA.png>
-Package pdftex.def Info: imports/PCA.png  used on input line 51.
-(pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<imports/MDS.png, id=203, 462.528pt x 346.896pt>
-File: imports/MDS.png Graphic file (type png)
-<use imports/MDS.png>
-Package pdftex.def Info: imports/MDS.png  used on input line 71.
-(pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 80.
- (C:\Users\Cyril\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [6 <./imports/PCA.png>]
-<imports/classNervSphere.png, id=217, 593.21625pt x 555.07375pt>
-File: imports/classNervSphere.png Graphic file (type png)
-<use imports/classNervSphere.png>
-Package pdftex.def Info: imports/classNervSphere.png  used on input line 101.
-(pdftex.def)             Requested size: 199.16928pt x 186.35951pt.
- [7 <./imports/MDS.png> <./imports/classNervSphere.png>]
-<imports/s-isomap.png, id=229, 161.60374pt x 166.6225pt>
-File: imports/s-isomap.png Graphic file (type png)
-<use imports/s-isomap.png>
-Package pdftex.def Info: imports/s-isomap.png  used on input line 138.
-(pdftex.def)             Requested size: 199.16928pt x 205.36649pt.
- [8 <./imports/s-isomap.png>]
-<imports/tsne.png, id=248, 642.4pt x 481.8pt>
-File: imports/tsne.png Graphic file (type png)
-<use imports/tsne.png>
-Package pdftex.def Info: imports/tsne.png  used on input line 169.
-(pdftex.def)             Requested size: 199.16928pt x 149.37851pt.
 
-Overfull \hbox (23.47734pt too wide) in paragraph at lines 181--186
+LaTeX Warning: Citation `HeulotThese' on page 3 undefined on input line 14.
+
+
+LaTeX Warning: Citation `HeulotThese' on page 3 undefined on input line 23.
+
+
+LaTeX Warning: Citation `karimi2018Supervised' on page 3 undefined on input line 27.
+
+
+LaTeX Warning: Citation `HeulotThese' on page 3 undefined on input line 27.
+
+
+LaTeX Warning: Citation `hwang1991GradientNeuralNetwork' on page 3 undefined on input line 33.
+
+
+LaTeX Warning: Citation `dickhaus2014ForceBrute' on page 3 undefined on input line 33.
+
+
+LaTeX Warning: Citation `HeulotThese' on page 3 undefined on input line 42.
+
+
+LaTeX Warning: Citation `HeulotThese' on page 3 undefined on input line 44.
+
+[3]
+
+LaTeX Warning: File `imports/PCA.png' not found on input line 51.
+
+
+content/1.part.tex:51: Package pdftex.def Error: File `imports/PCA.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 ...dth=6cm, keepaspectratio]{imports/PCA.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Citation `abdi2007-MDS' on page 4 undefined on input line 63.
+
+
+LaTeX Warning: Citation `HeulotThese' on page 4 undefined on input line 65.
+
+
+LaTeX Warning: File `imports/MDS.png' not found on input line 71.
+
+
+content/1.part.tex:71: Package pdftex.def Error: File `imports/MDS.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 ...dth=6cm, keepaspectratio]{imports/MDS.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[4]
+
+LaTeX Warning: Citation `colange_steering_2020' on page 5 undefined on input line 84.
+
+
+LaTeX Warning: File `imports/classNervSphere.png' not found on input line 101.
+
+
+content/1.part.tex:101: Package pdftex.def Error: File `imports/classNervSphere.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 ...aspectratio]{imports/classNervSphere.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Citation `hinton2002-SNE' on page 5 undefined on input line 115.
+
+
+LaTeX Warning: Citation `van2008TSNE' on page 5 undefined on input line 116.
+
+
+LaTeX Warning: Citation `linderman2019Spectral1' on page 5 undefined on input line 118.
+
+
+LaTeX Warning: Citation `chui2006Spectral2' on page 5 undefined on input line 118.
+
+
+LaTeX Warning: Citation `von2007SpectralClustering' on page 5 undefined on input line 118.
+
+[5]
+
+LaTeX Warning: Citation `van2008TSNE' on page 6 undefined on input line 125.
+
+
+LaTeX Warning: File `imports/tsne.png' not found on input line 131.
+
+
+content/1.part.tex:131: Package pdftex.def Error: File `imports/tsne.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 ...h=7cm, keepaspectratio]{imports/tsne.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Citation `sammon1969nonlinear' on page 6 undefined on input line 144.
+
+
+LaTeX Warning: Citation `demartines1997curvilinearCCA' on page 6 undefined on input line 144.
+
+
+LaTeX Warning: Citation `weinberger2006MVU1' on page 6 undefined on input line 144.
+
+
+LaTeX Warning: Citation `song2007MVU2' on page 6 undefined on input line 144.
+
+
+LaTeX Warning: Citation `saul2000introduction' on page 6 undefined on input line 144.
+
+
+LaTeX Warning: Citation `belkin2002semi' on page 6 undefined on input line 145.
+
+
+LaTeX Warning: Citation `van2008TSNE' on page 6 undefined on input line 145.
+
+
+Overfull \hbox (13.51653pt too wide) in paragraph at lines 143--148
 \T1/cmr/m/n/10.95 Nous pou-vons égale-ment retrou-ver le Sam-mon mapping[[]], le curvi-lin-ear com-po-nents analysis(CCA)[[]],
  []
 
-[9 <./imports/tsne.png (PNG copy)>]) [10] (content/2.part.tex [11]
+[6]
+
+LaTeX Warning: Citation `nonato2018multidimensional' on page 7 undefined on input line 154.
+
+
+LaTeX Warning: Citation `garcia2013stability' on page 7 undefined on input line 155.
+
+
+LaTeX Warning: Citation `garcia2013stability' on page 7 undefined on input line 156.
+
+) [7] (content/2.part.tex
+
+LaTeX Warning: Citation `kruskal1964multidimensional' on page 8 undefined on input line 23.
+
+
+LaTeX Warning: Citation `HeulotThese' on page 8 undefined on input line 23.
+
+
+LaTeX Warning: Citation `HeulotAnEvaluation' on page 8 undefined on input line 25.
+
+
+LaTeX Warning: Citation `CheckViz' on page 8 undefined on input line 29.
+
+
+LaTeX Warning: Citation `schreck2010techniques' on page 8 undefined on input line 31.
+
+
+LaTeX Warning: Citation `CheckViz' on page 8 undefined on input line 34.
+
+
+LaTeX Warning: Citation `abbas2019clustme' on page 8 undefined on input line 39.
+
+
+LaTeX Warning: Citation `HeulotThese' on page 8 undefined on input line 39.
+
+
+LaTeX Warning: Citation `holten2006-EDGE1' on page 8 undefined on input line 42.
+
+
+LaTeX Warning: Citation `holten2011-EDGE2' on page 8 undefined on input line 42.
+
+
+LaTeX Warning: Citation `HeulotThese' on page 8 undefined on input line 42.
+
+[8]
+
+LaTeX Warning: Citation `bertini2011Class-Consistency' on page 9 undefined on input line 61.
+
+
+LaTeX Warning: Citation `AndradaTatu2010visual' on page 9 undefined on input line 81.
+
+
+LaTeX Warning: Citation `HeulotThese' on page 9 undefined on input line 96.
+
+
+LaTeX Warning: Citation `AndradaTatu2009combining' on page 9 undefined on input line 96.
+
+
+LaTeX Warning: Citation `abbas2019clustme' on page 9 undefined on input line 107.
+
+
+LaTeX Warning: Citation `agrawal1998automatic' on page 9 undefined on input line 126.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 110--127
 
  []
 
-[12]
+[9]
+
+LaTeX Warning: Citation `agrawal1998automatic' on page 10 undefined on input line 128.
+
+
+LaTeX Warning: Citation `abbas2019clustme' on page 10 undefined on input line 132.
+
+
+LaTeX Warning: Citation `towardsdatascience-DBSCAN' on page 10 undefined on input line 135.
+
 
 LaTeX Warning: Command \textellipsis invalid in math mode on input line 145.
 
@@ -1177,29 +1448,77 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--152
 
  []
 
-[13]
+[10]
+
+LaTeX Warning: Citation `towardsdatascience-DBSCAN2' on page 11 undefined on input line 153.
+
+
+LaTeX Warning: Citation `joia2011local-LAMP' on page 11 undefined on input line 162.
+
+
+LaTeX Warning: Citation `wilkinson2005graph-MST' on page 11 undefined on input line 174.
+
+
 Overfull \hbox (2.16pt too wide) in paragraph at lines 174--175
 []\T1/cmr/m/n/10.95 Une des façons de raison-ner en graphe et d'utiliser le con-cept de Min-i-mum Span-ning Tree(MST)
  []
 
-[14] [15]) [16] (content/conclusion.tex) (content/0.bibliography.tex [17] (main.bbl [18
 
-] [19] [20]))) (cover/cover_out.tex) [21] (main.aux)
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D2A8C52BF394F57E11B931F63CAA6497;2492.
+LaTeX Warning: Citation `togbe2020anomaly-IsolationForest' on page 11 undefined on input line 177.
+
+[11]
+
+LaTeX Warning: Citation `breunig2000lof' on page 12 undefined on input line 188.
+
+
+LaTeX Warning: Citation `wilkinson2005graph-MST' on page 12 undefined on input line 195.
+
+
+LaTeX Warning: Citation `wilkinson2005graph-MST' on page 12 undefined on input line 210.
+
+
+LaTeX Warning: Citation `fontes2011ProjectionScore' on page 12 undefined on input line 220.
+
+[12]
+
+LaTeX Warning: Citation `bertini2011quality-AutomatisationAlgo' on page 13 undefined on input line 227.
+
+
+LaTeX Warning: Citation `AndradaTatu2010visual' on page 13 undefined on input line 230.
+
+
+LaTeX Warning: Citation `HeulotAnEvaluation' on page 13 undefined on input line 230.
+
+) [13] (content/conclusion.tex) (content/0.bibliography.tex [14]
+No file main.bbl.
+)) (cover/cover_out.tex) (main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  86E2C2EF8138938DD00FDB1FE6F3F9DE;2352.
  ) 
 Here is how much of TeX's memory you used:
- 26495 strings out of 478681
- 518914 string characters out of 2846535
- 797767 words of memory out of 3000000
- 43922 multiletter control sequences out of 15000+600000
+ 26497 strings out of 478681
+ 519854 string characters out of 2846535
+ 795237 words of memory out of 3000000
+ 43984 multiletter control sequences out of 15000+600000
  421632 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,12n,79p,1062b,613s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (24 pages, 1464408 bytes).
+ 76i,11n,79p,1061b,692s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (17 pages, 387749 bytes).
 PDF statistics:
- 904 PDF objects out of 1000 (max. 8388607)
- 108 named destinations out of 1000 (max. 500000)
- 165 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 568 PDF objects out of 1000 (max. 8388607)
+ 40 named destinations out of 1000 (max. 500000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

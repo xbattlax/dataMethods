@@ -1,12 +1,12 @@
 \section{Les méthodes de projection}
 
-Lorsque l'on souhaite représenter en 2D ou en 3D de grands jeux de données multidimensionnels(au-delà de vingt dimensions\cite{dzemyda2016big}\cite{HeulotThese}), il faut passer par une réduction de dimension. 
+Lorsque l'on souhaite représenter en 2 ou 3 dimensions de grands jeux de données multidimensionnels(au-delà de vingt dimensions\cite{dzemyda2016big}\cite{HeulotThese}), il faut passer par une réduction de dimension. 
 Cette étape intervient dans le processus de projection et est indispensable dans ce cas précis où il y a un nombre important de dimensions(plus d'une vingtaine \cite{HeulotThese}). 
-Néanmoins, une réduction implique inexorablement une perte d’information et donc une perte de précision, ce qui peut biaiser le résultat de la projection ainsi que son interprétation. Il est donc important, malgré des pertes inévitables, d'essayer de conserver au maximum les structures et les données utiles.
+Néanmoins, une réduction implique inexorablement une perte d’information et donc une perte de précision, ce qui peut biaiser la projection ainsi que son interprétation. Il est donc important, malgré des pertes inévitables, d'essayer de conserver au maximum les structures et les données utiles.
 Le facteur numérique est donc un facteur clé, qui se doit d’être compris et maitrisé. 
 \smallskip
 
-Dans l'espace des données, il est possible d’avoir recours à différent types de mesures(différents critères) pour déterminer à quel point deux individus de la projection sont similaires. 
+Dans l'espace des données, il est possible d’avoir recours à différent types de mesures(différents critères) pour déterminer à quel point deux points de la projection sont similaires. 
 Cela dépend grandement de la sémantique sous-jacente à la notion de similarité, celle-ci étant liée au domaine scientifique d’où proviennent les données et à leur nature \cite{HeulotThese}.
 Comme mentionné plus haut, la projection se base sur un encodage des similarités par le biais de la variable de position: plus les objets se ressemblent, plus ils seront proches sur la projection, et inversement.
 Dans une projection, une dissimilarité métrique dans l’espace des données correspond à la définition mathématique d’une distance \cite{somorjai2011Dissimilarity} \cite{HeulotThese} \newline
@@ -20,7 +20,7 @@ Dans une projection, une dissimilarité métrique dans l’espace des données c
 \end{itemize}
 
 \smallskip
-La distance de Manhattan et la distance euclidienne peuvent subir la “domination” d’une dimension qui aurait des valeurs réparties sur un spectre plus large que les autres\cite{HeulotThese}. Pour corriger cela, on normalise ou on pondère les dimensions (il faut cependant faire attention à bien prendre en compte les poids dans l’interprétation de la similarité).
+La distance de Manhattan et la distance euclidienne peuvent subir la domination d’une dimension qui aurait des valeurs réparties sur un spectre plus large que les autres\cite{HeulotThese}. Pour corriger cela, on normalise ou on pondère les dimensions (il faut cependant faire attention à bien prendre en compte les poids dans l’interprétation de la similarité).
 
 \medskip
 Il est possible de séparer les méthodes de projections en plusieurs catégories.
@@ -29,7 +29,7 @@ Les algorithmes de projections peuvent également être séparés en deux catég
 Dans le cas des algorithmes de projection linéaire, l’espace de plus faible dimension(celui de la projection) est obtenu par la combinaison linéaire des dimensions de l’espace de départ.
 \smallskip
 \newline
-Dans le cas des algorithmes de projection non linéaires partent du principe qu'il existe une variété non linéaire de plus faibles dimensions que l’on peut projeter sans trop de déformations dans un espace 2D(ou 3D). Les données sont ainsi projetées en conservant les propriétés de leur variété. Pour cela, elles utilisent des mesures de stress métriques(selon les distances) ou Non-Métriques(selon le rang des distances). 
+Les algorithmes de projection non linéaires partent du principe qu'il existe une variété non linéaire de plus faibles dimensions que l’on peut projeter sans trop de déformations dans un espace 2D(ou 3D). Les données sont ainsi projetées en conservant les propriétés de leur variété. Pour cela, elles utilisent des mesures de stress métriques(selon les distances) ou Non-Métriques(selon le rang des distances). 
 Ensuite plusieurs méthodes d’optimisation sont utilisées telles que la descente de gradient, les réseaux de neurones\cite{hwang1991GradientNeuralNetwork} ou bien le placement par force(pour les jeux de données les moins gros)\cite{dickhaus2014ForceBrute}. 
 Cela permet soit de trouver un optimum global(qui préserve la structure globale) ou un optimum local(dans le cas où les méthodes préservent les voisinages locaux).
 \smallskip
@@ -40,7 +40,7 @@ Cela permet soit de trouver un optimum global(qui préserve la structure globale
 
 Ce type de projection linéaire vise à préserver de la façon la plus optimale la variance dans les données en transformant des variables corrélées en variables non corrélées(également appelées ’’composantes principales") qui expliquent la variabilité dans les données. L’ACP mesure l’inertie des données pour réduire au maximum le nombre de variables. 
 Géométriquement parlant, elle a recourt à une projection orthogonale des données dans un sous-espace principal obtenu par combinaison des dimensions dans le jeu de données. Le sous-espace est calculé de sorte que le nuage de points obtenu à partir de la projection maximise la variance des données \cite{HeulotThese}.\newline
-Cette méthode est beaucoup utilisée dans de nombreux domaines d’application. Elle est réversible et fournit une pondération des composantes principales (ce qui permet de déterminer les directions de dispersions des données les plus importantes).
+Cette méthode est beaucoup utilisée dans de nombreux domaines d’application. Elle fournit une pondération des composantes principales, ce qui permet de déterminer les directions de dispersions des données les plus importantes.
 La projection résultante est directement interprétable,car les vecteurs propres décrivent la contribution de chaque variable \cite{HeulotThese}.
 Néanmoins, elle ne permet pas de séparer des relations non linéaires et est plus susceptible d’introduire du faux voisinage entre les points.
 
@@ -58,9 +58,9 @@ Cette méthode est très performante en termes de temps de calcul et respecte fo
 \smallskip
 La méthode est implémentée dans la librairie \href{https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html}{scikit-learn}.
 
-\subsection{Linear Multidimensional Scaling (MDS)}
+\subsection{Multidimensional Scaling (MDS)}
 
-Le principe de fonctionnement de cette méthode linéaire est de projeter les données dans un sous-espace linéaire\cite{abdi2007-MDS}. L'objectif de cette approche est de conserver de la meilleure façon possible les paires de distances au carré provenant de l’espace des données. 
+Le principe de fonctionnement de cette méthode est de projeter les données dans un sous-espace linéaire\cite{abdi2007-MDS}. L'objectif de cette approche est de conserver de la meilleure façon possible les paires de distances au carré provenant de l’espace des données. 
 Pour y parvenir, l'algorithme cherche pour chaque métrique de l'espace des données, une combinaison linéaire optimale. Globalement cette technique a les mêmes défauts que l’ACP quand il s’agit de projeter des données linéairement séparables.
 Néanmoins, dû au fait que la cette technique prend une matrice de similarité en entrée, les axes de projection de cette technique ne sont pas directement interprétables\cite{HeulotThese}.
 
@@ -81,7 +81,7 @@ La méthode est implémentée dans la librairie \href{https://scikit-learn.org/s
 
 
 \subsection{ClassNerv}
- Cette méthode définie dans l'article \cite{colange_steering_2020} et présentée lors de la prestigieuse conférence NeurIPS de 2020.
+ Cette méthode a été présentée lors de la prestigieuse conférence NeurIPS de 2020 \cite{colange_steering_2020}.
 
  C'est une méthode de projection qui permet de réduire la dimension de l'espace de décision, et de réduire la dimension des données en conservant les classes et leur voisinage. 
  Elle présente les avantages des méthodes supervisées et non supervisés, c'est à dire la combinaison du traitement par classe et par distance au voisinage.
@@ -110,57 +110,19 @@ On peut remarquer que l'on obtient un meilleur résultat avec un $\varepsilon$ d
 
 Il est également important de noter que cette méthode est très coûteuse en temps de calcul. 
 
-
-
-\subsection{S-Isomap}
-
-Cette méthode est définie dans l'article \cite{s-isomap} qui est une surcouche de Isomap(Isomap signifie "cartographie isométrique").\newline
-Bien que moins performante que la méthode ClassNerv, elle n'en reste pas moins très utilisée.
-Isomap est une méthode de réduction de dimensionnalité non linéaire basée sur la théorie spectrale qui essaie de préserver les distances géodésiques dans la dimension inférieure. 
-
-
-Cela se déroule deux phases : Tout d'abord, Isomap commence par créer un réseau de voisinage, puis avec les labels des classes, on peut atténuer le bruit sur les données se basant sur ces quelques propriétés : 
-
-\begin{enumerate}
-    \item Les points de la même classe (label) sont plus proches les uns des autres et inversement.
-    \item La fonction $D(x_i, x_y)$ définie dans l'article permet d'identifier le bruit. 
-    \item Chaque fonction de dissimilarité est croissante monotone par rapport à la distance euclidienne. 
-    \item À l'instar de classNeRV on peut contrôler la similarité interclasse et intra classe avec le paramètre $\alpha$.
-\end{enumerate}
-
-En projetant le dataset Globe par le biais de cette méthode nous obtenons les résultats suivants : 
-
-
-\begin{center}
-    \begin{figure}[ht!]
-        \centering
-        
-        \includegraphics[width=7cm, keepaspectratio]{imports/s-isomap.png}
-        
-        \caption{Réduction du dataset Globe}
-    \end{figure}
-\end{center}
-
-Nous pouvons remarquer que les classes sont préservées mais que la distance au voisinage est moins bien conservée que sur ClassNeRV.
-
-Il est également utile de noter que cette méthode est beaucoup plus performante en termes de temps de calcul.
-
-Ce \href{https://towardsdatascience.com/isomap-embedding-an-awesome-approach-to-non-linear-dimensionality-reduction-fc7efbca47a0}{lien} donne une implémentation possible de S-Isomap.
-
-
 \subsection{t-SNE}
 
-Cette méthode non linéaire se base sur un algorithme de projection: le SNE \cite{hinton2002-SNE} celui-ci permet de bonnes visualisations, mais a une fonction de coût qui est difficile à optimiser. C’est notamment de ce souci dont le t-SNE s’affranchit en utilisant une fonction coût "symétrique"  et une t-distribution plutôt qu’une distribution Gaussienne. 
-Ces deux changements lui  permettent d’enlever les soucis d’optimisation du SNE. Cette méthode est donc plus simple et plus rapide à exécuter. De plus, les maps produites seraient même de meilleure qualité\cite{van2008TSNE}.
+Cette méthode non linéaire se base sur un algorithme de projection: le SNE \cite{hinton2002-SNE} celui-ci permet de bonnes visualisations, mais a une fonction de coût qui est difficile à optimiser. C’est notamment de ce problème dont le t-SNE s’affranchit en utilisant une fonction coût "symétrique"  et une t-distribution plutôt qu’une distribution Gaussienne. 
+Ces deux changements lui  permettent d’enlever les problèmes d’optimisation du SNE. Cette méthode est donc plus simple et plus rapide à exécuter. De plus, les maps produites seraient même de meilleure qualité\cite{van2008TSNE}.
 \smallskip
 Avec le t-SNE, il est possible de restituer fidèlement la structure d’un grand jeu de données au niveau local et au niveau global. Cette méthode permet en effet de repérer la présence de clusters à différentes échelles. Il est par ailleurs possible de retrouver les clusters “séparés”, et de faire une approximation du spectral clustering avec un certain paramétrage. \cite{linderman2019Spectral1} \cite{chui2006Spectral2} \cite{von2007SpectralClustering}.
 \smallskip
 
-La démarche de cette méthode est la suivante : elle commence par calculer la  probabilité $P$ que deux instances puissent être voisines. Ainsi, $P$ aura une haute probabilité pour des voisins proches et très faibles pour des voisins éloignés.\newline
+La démarche de cette méthode est la suivante : elle commence par calculer la  probabilité $P$ que deux instances puissent être voisines. Ainsi, la valeur de $P$ sera haute pour des voisins proches et très faible pour des voisins éloignés.\newline
 La variance de la distribution Gaussienne est différente à chaque fois, ce qui permet de capturer la densité pour différents voisinages multidimensionnels.
-Le calcul va s’effectuer de façon itérative jusqu’à ce que la "perplexité" (au préalable définie par l’utilisateur) soit atteinte.
+Le calcul va s’effectuer de façon itérative jusqu’à ce que la perplexité (au préalable définie par l’utilisateur) soit atteinte.
 \newline Une fois, toutes les probabilités calculées le but est de trouver une distribution de probabilité $Q$ qui représente fidèlement le jeu dans un espace de plus faible dimension. Cette fois-ci, au lieu d’utiliser une distribution Gaussienne, c’est une distribution du t de Student qui est utilisée, avec un degré de liberté de 1. \newline Contrairement à $P$, $Q$ n’est pas paramétré avec une variable de densité de voisinage, par conséquent des voisinages avec des densités très différentes dans l’espace original peuvent être "transformés" en  voisinages de tailles équivalents dans la représentation à plus faible dimension.
-La recherche de $Q$ qui représente fidèlement $P$ se fait en optimisant la fonction coût suivant la divergence de Kull-Leibler des deux distributions. Puis, c'est également effectué de façon itérative, en faisant une descente de gradient pour un nombre d’itérations déterminée par l’utilisateur \cite{van2008TSNE}.
+La recherche de $Q$ qui représente fidèlement $P$ se fait en optimisant la fonction coût suivant la divergence de Kull-Leibler des deux distributions. Cette étape est effectuée de façon itérative, en faisant une descente de gradient pour un nombre d’itérations déterminé par l’utilisateur \cite{van2008TSNE}.
 
 \begin{center}
     \begin{figure}[ht!]
@@ -191,7 +153,7 @@ Le choix du type d’algorithme de projection à utiliser dépend de la nature d
 
 Par exemple, nous avons vu pour L’ACP et Isomap, qu'elles ne sont pas stables face aux variations des données. La raison est que l'ajout ou la suppression de quelques instances peut modifier de manière significative les vecteurs et les valeurs propres, affectant ainsi considérablement la cartographie. Même de petites perturbations dans les données peuvent avoir un impact conséquent sur la cartographie finale en raison de l'inversion des vecteurs propres. Ce qui entraîne des configurations très différentes avant et après la perturbation \cite{nonato2018multidimensional}.
 Le t-SNE quant à lui est basé sur des procédures d'optimisation dont la solution optimale dépend des conditions initiales. En général, des initialisations différentes conduisent à des solutions différentes. La stabilité n'est pas garantie même en fixant la condition initiale, de sorte qu'une modification du nombre d'éléments peut conduire à des agencements sensiblement différents \cite{garcia2013stability}.
-Quant aud MDS, c'est une technique qui repose sur des points de repère ou de contrôle et qui a tendance à être stable tant que les points de contrôle et de repère restent fixes. Comme la position de chaque instance ne dépend que des points de contrôle (points de repère), si ces points ne changent pas, le mappage ne change pas non plus \cite{garcia2013stability}.
+Quant au MDS, c'est une technique qui repose sur des points de repère ou de contrôle et qui a tendance à être stable tant que les points de contrôle et de repère restent fixes. Comme la position de chaque instance ne dépend que des points de contrôle (points de repère), si ces points ne changent pas, le mappage ne change pas non plus \cite{garcia2013stability}.
 
 
 Nous pouvons donc affirmer qu'aucune méthode n’est parfaite : peu importe la réduction de dimension appliquée une perte de données est inévitable ce qui cause forcément l’apparition d’artefacts. Ce qui soulève la question suivante : Comment s’assurer de la qualité d’une projection ? 
