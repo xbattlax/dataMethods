@@ -1,7 +1,7 @@
 \sectionnn{Conclusion}
-Dans cet état de l’art, nous avons parlé cette fameuse "curse of dimensionality" appliquée au domaine de la visualisation des grands jeux de données,et plus précisément dans le cas d'une visualisation par projection. 
-Les problèmes de ce genre de projection ne sont dus au fait même de projeter les donnés, mais plutôt à l'incapacité de les projeter "fidèlement”. C’est-à-dire, la difficulté à respecter le rapport des distances des points entre le jeu de donnée originel(à $n$-dimensions) et la projection finale (qui a réduit ce dernier en 2 ou 3 dimensions pour rendre cela compréhensible par l’Homme).
-En effet, plus le nombre de dimensions augmente plus il devient compliqué de respecter les distances après réduction.
+Comme ça a été mentionné dans l’état de l’art la visualisation des grands jeux de donnée souffre de cette malédiction de la dimensionalité. Le problème des projections dans ce cas précis n’est pas celui de projeter les données, mais celui de les projeter fidèlement. 
+C’est-à-dire, la difficulté pour la méthode à respecter le rapport des distances des points entre le jeu de donné original (à n-dimensions) et la projection finale (qui réduit ce dernier à deux ou 3 dimensions). 
+Plus le nombre de dimensions augmente, plus il devient compliqué de respecter les distances après réduction. 
 \newline
 Le choix d’une méthode de projection par rapport à une autre dépend d'autant plus de la sémantique et de la structure des données. Ce choix dépendra aussi de ce que l’on souhaite observer : voulons-nous mettre en valeur les classes ? Voulons-nous détecter des valeurs aberrantes? 
 En fonction de cela, le choix de la méthode et de son paramétrage peut grandement différer.
@@ -12,7 +12,7 @@ Encore une fois, en fonction de ce que nous voulons observer certains critères 
 
 
 \medskip
-C'est dans ce but, que dans la partie "pratique" de cette UE, nous souhaitons mettre en place une évaluation des différentes méthodes de projections citées.
+C'est dans ce but, que dans la partie réalisation de cette UE, nous souhaitons mettre en place une évaluation des différentes méthodes de projections citées.
 Pour faire cela, nous envisageons de procéder de la façon suivante: \newline
 Au vu de nos nombreuses lectures et  des résultats sur notre jeu de données tests (Globe), nous avons déduit que la méthode ClassNeRV est la plus performante et donne les résultats les plus satisfaisants. 
 Par conséquent, nous souhaitons effectuer un étalonnage des différentes autres méthodes de projection, en l'utilisant en tant que référentiel. \newline
@@ -23,4 +23,6 @@ De plus dans l'objectif d'être le plus précis possible, nous envisageons égal
 Nous pensons aussi qu'il serait judicieux de mettre en place un système de "scoring", qui permettrait de rendre plus intuitive l'appréhension des résultats relatifs à la qualité de la visualisation. 
 \newline 
 Le but de cette démarche est de proposer un outil capable de comparer sa méthode de projection à d'autres via un tableau de scoring pour se rendre compte de la pertinence et de la fidélité des diverses méthode de projection.
+
+\medskip
 

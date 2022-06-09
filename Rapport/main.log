@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  9 JUN 2022 14:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  9 JUN 2022 14:39
 entering extended mode
 **c:/Users/Cyril/Desktop/dataMethods/Rapport/main.tex
 (c:/Users/Cyril/Desktop/dataMethods/Rapport/main.tex
@@ -1453,7 +1453,7 @@ LaTeX Warning: Citation `AndradaTatu2010visual' on page 11 undefined on input li
 
 LaTeX Warning: Citation `HeulotAnEvaluation' on page 11 undefined on input line 171.
 
-) [11] (content/conclusion.tex) (content/0.bibliography.tex [12]
+) [11] (content/conclusion.tex) (content/realisation.tex) (content/0.bibliography.tex [12] [13]
 No file main.bbl.
 )) (cover/cover_out.tex) (main.aux)
 
@@ -1472,17 +1472,17 @@ Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             After:  E523FEF8FF5CB89BAA82CC22877DB9A2;2339.
  ) 
 Here is how much of TeX's memory you used:
- 26494 strings out of 478681
- 519830 string characters out of 2846535
+ 26500 strings out of 478681
+ 519995 string characters out of 2846535
  794237 words of memory out of 3000000
- 43984 multiletter control sequences out of 15000+600000
+ 43986 multiletter control sequences out of 15000+600000
  421632 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  76i,12n,79p,1061b,692s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (15 pages, 380074 bytes).
+Output written on main.pdf (16 pages, 381954 bytes).
 PDF statistics:
- 560 PDF objects out of 1000 (max. 8388607)
- 37 named destinations out of 1000 (max. 500000)
+ 566 PDF objects out of 1000 (max. 8388607)
+ 38 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

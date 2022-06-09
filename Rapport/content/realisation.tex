@@ -1,0 +1,16 @@
+Comme ça a été mentionné dans l’état de l’art la visualisation des grands jeux de donnée souffre de cette malédiction de la dimensionalité. 
+Le problème des projections dans ce cas précis n’est pas celui de projeter les données, mais celui de les projeter fidèlement. 
+C’est-à-dire, la difficulté pour la méthode à respecter le rapport des distances des points entre le jeu de donné original (à n-dimensions) et la projection finale (qui réduit ce dernier à deux ou 3 dimensions). 
+Plus le nombre de dimensions augmente, plus il devient compliqué de respecter les distances après réduction. // Puis suite du paragraphe.
+
+\medskip
+
+Méthodologie : 
+Nous avons donc mis en place un programme avec un système de score qui classe l’efficacité des différentes méthodes de réduction/projection pour un même jeu de donné. 
+C’est-à-dire que le jeu de donnée va passer une fois dans chaque algorithme, puis le résultat sera mesuré.
+Pour mesurer ces résultats nous avons utilisé différents critères issus de la librairie R « clusterCrit » et scikit-learn.
+ClusterCrit est une librairie R qui fournit une liste de critéres permettant d'attester de la qualité interne des clusters et une liste de critères qui permet 
+de mesurer la similarité entre deux partitions. Ces critères prennent seulement en compte la répartition des points dans les différents cluster et ne permettent pas de 
+mesurer la qualité de la distribution.
+
+
