@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  10 JUN 2022 14:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  10 JUN 2022 14:17
 entering extended mode
 **c:/Users/Cyril/Desktop/dataMethods/Rapport/main.tex
 (c:/Users/Cyril/Desktop/dataMethods/Rapport/main.tex
@@ -1086,51 +1086,26 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 6.
  (C:\Users\Cyril\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd) [1
 
 {C:/Users/Cyril/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-
-LaTeX Warning: File `cover/meta/idmc.png' not found on input line 12.
-
-
-cover/cover_in.tex:12: Package pdftex.def Error: File `cover/meta/idmc.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 ...5cm, keepaspectratio]{cover/meta/idmc.png}
-                                                  };
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 12.
-(C:\Users\Cyril\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-<cover/meta/UL.jpg, id=14, 1806.75pt x 579.66562pt>
+<cover/meta/idmc.png, id=14, 438.63875pt x 115.43124pt>
+File: cover/meta/idmc.png Graphic file (type png)
+<use cover/meta/idmc.png>
+Package pdftex.def Info: cover/meta/idmc.png  used on input line 12.
+(pdftex.def)             Requested size: 132.44934pt x 34.8548pt.
+<cover/meta/UL.jpg, id=15, 1806.75pt x 579.66562pt>
 File: cover/meta/UL.jpg Graphic file (type jpg)
 <use cover/meta/UL.jpg>
 Package pdftex.def Info: cover/meta/UL.jpg  used on input line 13.
 (pdftex.def)             Requested size: 108.62086pt x 34.8548pt.
-
-
-LaTeX Warning: File `cover/meta/loria.png' not found on input line 15.
-
-
-cover/cover_in.tex:15: Package pdftex.def Error: File `cover/meta/loria.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.15 ...cm, keepaspectratio]{cover/meta/loria.png}
-                                                  };
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-(content/abstract.tex)pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<cover/meta/loria.png, id=16, 235.88126pt x 215.80624pt>
+File: cover/meta/loria.png Graphic file (type png)
+<use cover/meta/loria.png>
+Package pdftex.def Info: cover/meta/loria.png  used on input line 15.
+(pdftex.def)             Requested size: 38.0945pt x 34.8548pt.
+ (content/abstract.tex)pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.48 \newpage
-              [1 <./cover/meta/UL.jpg>]
+              [1 <./cover/meta/idmc.png> <./cover/meta/UL.jpg> <./cover/meta/loria.png>]
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
@@ -1247,7 +1222,7 @@ LaTeX Warning: Citation `HeulotThese' on page 3 undefined on input line 42.
 LaTeX Warning: Citation `HeulotThese' on page 3 undefined on input line 44.
 
 [3]
-<imports/PCA.png, id=52, 462.528pt x 346.896pt>
+<imports/PCA.png, id=55, 462.528pt x 346.896pt>
 File: imports/PCA.png Graphic file (type png)
 <use imports/PCA.png>
 Package pdftex.def Info: imports/PCA.png  used on input line 51.
@@ -1259,16 +1234,20 @@ LaTeX Warning: Citation `abdi2007-MDS' on page 4 undefined on input line 63.
 
 LaTeX Warning: Citation `HeulotThese' on page 4 undefined on input line 65.
 
-<imports/MDS.png, id=55, 462.528pt x 346.896pt>
+<imports/MDS.png, id=58, 462.528pt x 346.896pt>
 File: imports/MDS.png Graphic file (type png)
 <use imports/MDS.png>
 Package pdftex.def Info: imports/MDS.png  used on input line 71.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 80.
+(C:\Users\Cyril\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
 
 LaTeX Warning: Citation `colange_steering_2020' on page 4 undefined on input line 84.
 
 [4 <./imports/PCA.png>]
-<imports/classNervSphere.png, id=69, 593.21625pt x 555.07375pt>
+<imports/classNervSphere.png, id=73, 593.21625pt x 555.07375pt>
 File: imports/classNervSphere.png Graphic file (type png)
 <use imports/classNervSphere.png>
 Package pdftex.def Info: imports/classNervSphere.png  used on input line 101.
@@ -1292,7 +1271,7 @@ LaTeX Warning: Citation `von2007SpectralClustering' on page 6 undefined on input
 
 LaTeX Warning: Citation `van2008TSNE' on page 6 undefined on input line 125.
 
-<imports/tsne.png, id=81, 642.4pt x 481.8pt>
+<imports/tsne.png, id=85, 642.4pt x 481.8pt>
 File: imports/tsne.png Graphic file (type png)
 <use imports/tsne.png>
 Package pdftex.def Info: imports/tsne.png  used on input line 131.
@@ -2582,17 +2561,17 @@ Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             After:  E9EBF509C7DFAE20409C35B01024A801;2940.
  ) 
 Here is how much of TeX's memory you used:
- 26420 strings out of 478681
- 517348 string characters out of 2846535
+ 26359 strings out of 478681
+ 515807 string characters out of 2846535
  794237 words of memory out of 3000000
- 43899 multiletter control sequences out of 15000+600000
+ 43851 multiletter control sequences out of 15000+600000
  424705 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,16n,79p,1061b,692s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (16 pages, 1317585 bytes).
+ 76i,16n,79p,1061b,611s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (16 pages, 1327619 bytes).
 PDF statistics:
- 583 PDF objects out of 1000 (max. 8388607)
+ 586 PDF objects out of 1000 (max. 8388607)
  43 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
