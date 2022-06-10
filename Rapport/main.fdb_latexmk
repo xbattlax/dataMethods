@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 0 "main.aux" "main.bbl" "main" 0
+["bibtex main"] 1654881421 "main.aux" "main.bbl" "main" 1654881420
   "C:/Users/Cyril/AppData/Local/Programs/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
   "imports/bibliography.bib" 1639783738 18670 a5244db1ad730695632985dfdd95cca1 ""
-  "main.aux" 0 -1 0 "pdflatex"
+  "main.aux" 1654879845 7054 a727a5b18d4fe5db2cc1c7b592821867 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1654863467 "c:/Users/Cyril/Desktop/dataMethods/Rapport/main.tex" "main.pdf" "main" 1654863467
+["pdflatex"] 1654881431 "c:/Users/Cyril/Desktop/dataMethods/Rapport/main.tex" "main.pdf" "main" 1654881430
   "C:/Users/Cyril/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbi1095.pk" 1638985626 38336 f65e36f1c786fd3e5aa501859b0e8945 ""
   "C:/Users/Cyril/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1638981303 28976 6c01ae06c1611a325c0351a6425d50db ""
   "C:/Users/Cyril/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1638981294 31952 2fafdd1cec8bd4e4f23f7b3d68c2e969 ""
@@ -34,6 +34,7 @@
   "C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx1440.tfm" 993061960 3196 0b37fa3083e15c57cfa8c4ff52f2807a ""
   "C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx1728.tfm" 993061962 3204 d35cb76836b6cb4ed404dd64a550530d ""
   "C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx2488.tfm" 993061966 3192 b0a07ba84fb3fb36d088c4f796e254b9 ""
+  "C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm0500.tfm" 993062114 3160 7643a152c0e9200a0a8161b2bb3a452d ""
   "C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1000.tfm" 993062122 3148 7e594c8240c71e432203f65ab5f95a51 ""
   "C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1095.tfm" 993062124 3172 eb6efaa83c6c52473a1c403f376eab0f ""
   "C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1200.tfm" 993062126 3152 4850ff0163852b7fab34bd55e1197f28 ""
@@ -250,8 +251,8 @@
   "content/__all__.tex" 1654777358 230 0db51ae39a7a34e37f21f7c71a2ac1da ""
   "content/abstract.tex" 1654765514 586 e51ee16a0aa9eb582687d622723d7615 ""
   "content/conclusion.tex" 1654777268 3416 d5997d0b6b6b672175fd681dcf8c2994 ""
-  "content/realisation.tex" 1654863367 2879 afd3468ff18028db8f0b21c86315e1d7 ""
-  "cover/cover_in.tex" 1654863450 1510 8ee79cbe3f62ad07150e3f899b0640af ""
+  "content/realisation.tex" 1654881420 5327 7545b49519a3e16b00bdca66c2ce4a13 ""
+  "cover/cover_in.tex" 1654877731 1518 748d0e20c8bbca24f5e4372f9fb7051d ""
   "cover/cover_out.tex" 1654765514 0 d41d8cd98f00b204e9800998ecf8427e ""
   "cover/covermain.tex" 1654765514 248 4a1eba61397e64b2845ff1b3ba266467 ""
   "cover/meta/UL.jpg" 1639783738 114510 e85540d7f7eaf3535cfcfa1cc7adc609 ""
@@ -260,8 +261,13 @@
   "imports/MDS.png" 1639783738 75092 c01b968aadef9969ef42505b85b1aa2f ""
   "imports/PCA.png" 1639783738 90457 bcb41bc048c14572a2543d7afc4b0958 ""
   "imports/classNervSphere.png" 1639783738 926430 2b5df1fa482c5fe2d2c86013722fb020 ""
+  "imports/one_plus_outliers.png" 1654863976 12091 d4ccbd59ef9093a76570e04124072657 ""
+  "imports/three_distincts.png" 1654863902 17016 5865753226add41e020456c098e0cfb7 ""
+  "imports/three_distincts_plus_outliers.png" 1654877214 17736 7a3c99b261d60c2997e190717ab56375 ""
+  "imports/three_overlaped.png" 1654877185 26473 69968517f583d382d84923a5d5345a47 ""
   "imports/tsne.png" 1639783738 52131 afe4fad9e54b265b1a751cdcc9c6c7de ""
-  "main.aux" 1654863467 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "imports/two_overlaped_one_alone.png" 1654877096 23087 55f51d2cfddc4606073c37646e045241 ""
+  "main.aux" 0 -1 0 "pdflatex"
   "main.bbl" 0 -1 0 "bibtex main"
   "main.out" 0 -1 0 "pdflatex"
   "main.tex" 1654765514 880 8b2c5fe1796f8d257f86b8ebd77e8159 ""

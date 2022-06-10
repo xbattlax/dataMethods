@@ -39,8 +39,74 @@ Nous avons fait varier les paramètres suivants pour obtenir la répartition sou
 \end{itemize}
 
 
+\begin{center}
+    \begin{figure}[ht!]
+        \centering
+        
+        \includegraphics[width=6cm, keepaspectratio]{imports/three_distincts.png}
+        
+        \caption{Trois clusters distincts}
+    \end{figure}
+\end{center}
+
+\begin{center}
+    \begin{figure}[ht!]
+        \centering
+        
+        \includegraphics[width=6cm, keepaspectratio]{imports/three_overlaped.png}
+        
+        \caption{Trois clusters se chevauchant}
+    \end{figure}
+\end{center}
+
+\begin{center}
+    \begin{figure}[ht!]
+        \centering
+        
+        \includegraphics[width=6cm, keepaspectratio]{imports/three_distincts_plus_outliers.png}
+        
+        \caption{Trois cluster distincs avec des outliers}
+    \end{figure}
+\end{center}
+
+\begin{center}
+    \begin{figure}[ht!]
+        \centering
+        
+        \includegraphics[width=6cm, keepaspectratio]{imports/one_plus_outliers.png}
+        
+        \caption{Un cluster avec plusieurs outliers}
+    \end{figure}
+\end{center}
+
+
+\begin{center}
+    \begin{figure}[ht!]
+        \centering
+        
+        \includegraphics[width=6cm, keepaspectratio]{imports/two_overlaped_one_alone.png}
+        
+        \caption{Deux clusters se chevauchant et un cluster seul}
+    \end{figure}
+\end{center}
+
+
+
+
 \subsection{Méthodes}
+La librairie \textit{rpy2} est utilisée pour pouvoir charger et utiliser des librairies R sous sous Python. Comme précisé plus haut
+nous appliquons cela à la librairie \textit{clusterCrit} . Tous les critéres d'intérêts sont listé dans la variable globale \textit{crit}, une liste.
+
+
+
+La fonction \textit{calculate} va utiliser chaque méthode de réduction sur le jeu de donnéen, le resultat de cette réduction sera stockée dans
+la variable\textit{p2} à laquelle on appliquera la fonction \textit{IntVector}. Comme éléments de comparaison, on applique Kmean sur le jeu de donnée originel. 
+Une fois ces deux opération effectuées, il ya deux variables \textit{r_ds} qui représente le résultat de la méthode de réduction, et \textit{r_dsOriginal} qui représente
+le jeu de donnée original après kmean.
+Pour comparer, ces deux jeux de données nous les passons en paramètre de la fonction \textit{metricsCalcul}.
+Celle-ci va itérer à travers tous les critèrs de la liste \textit{crit} et appliquer l'évaluation de chaque critères.
 
 \subsection{Résultats}
+Les résultats seront stockés sous la forme d'un tableau de la forme suivante...
 
 \section{Experimentation}

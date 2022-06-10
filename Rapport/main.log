@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  10 JUN 2022 14:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  10 JUN 2022 19:17
 entering extended mode
 **c:/Users/Cyril/Desktop/dataMethods/Rapport/main.tex
 (c:/Users/Cyril/Desktop/dataMethods/Rapport/main.tex
@@ -973,7 +973,8 @@ Package hyperref Info: Option `breaklinks' set `true' on input line 33.
 File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count310
 \l__pdf_internal_box=\box90
-) (main.aux)
+)
+No file main.aux.
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
@@ -996,7 +997,7 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 22.
 LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 22.
- (C:\Users\Cyril\AppData\Local\Programs\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.fd
+(C:\Users\Cyril\AppData\Local\Programs\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
 LaTeX Font Info:    ... okay on input line 22.
@@ -1104,7 +1105,7 @@ Package pdftex.def Info: cover/meta/loria.png  used on input line 15.
  (content/abstract.tex)pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.48 \newpage
+l.50 \newpage
               [1 <./cover/meta/idmc.png> <./cover/meta/UL.jpg> <./cover/meta/loria.png>]
 \tf@toc=\write6
 \openout6 = `main.toc'.
@@ -1112,7 +1113,7 @@ l.48 \newpage
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.59 \newpage
+l.61 \newpage
               [2
 
 ]) (content/__all__.tex (content/0.introduction.tex
@@ -2542,7 +2543,498 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) (content/0.bibliography.tex [13]
+<imports/three_distincts.png, id=133, 430.0065pt x 327.02174pt>
+File: imports/three_distincts.png Graphic file (type png)
+<use imports/three_distincts.png>
+Package pdftex.def Info: imports/three_distincts.png  used on input line 46.
+(pdftex.def)             Requested size: 170.71652pt x 129.82834pt.
+<imports/three_overlaped.png, id=134, 420.3705pt x 307.1475pt>
+File: imports/three_overlaped.png Graphic file (type png)
+<use imports/three_overlaped.png>
+Package pdftex.def Info: imports/three_overlaped.png  used on input line 56.
+(pdftex.def)             Requested size: 170.71652pt x 124.73618pt.
+<imports/three_distincts_plus_outliers.png, id=135, 436.63126pt x 320.99925pt>
+File: imports/three_distincts_plus_outliers.png Graphic file (type png)
+<use imports/three_distincts_plus_outliers.png>
+Package pdftex.def Info: imports/three_distincts_plus_outliers.png  used on input line 66.
+(pdftex.def)             Requested size: 170.71652pt x 125.50267pt.
+<imports/one_plus_outliers.png, id=136, 433.62pt x 311.36325pt>
+File: imports/one_plus_outliers.png Graphic file (type png)
+<use imports/one_plus_outliers.png>
+Package pdftex.def Info: imports/one_plus_outliers.png  used on input line 76.
+(pdftex.def)             Requested size: 170.71652pt x 122.58566pt.
+<imports/two_overlaped_one_alone.png, id=137, 423.38174pt x 313.77225pt>
+File: imports/two_overlaped_one_alone.png Graphic file (type png)
+<use imports/two_overlaped_one_alone.png>
+Package pdftex.def Info: imports/two_overlaped_one_alone.png  used on input line 87.
+(pdftex.def)             Requested size: 170.71652pt x 126.51689pt.
+content/realisation.tex:104: Missing $ inserted.
+<inserted text> 
+                $
+l.104 ...uées, il ya deux variables \textit{r_ds}
+                                                   qui représente le résul...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+content/realisation.tex:104: Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.104 ...uées, il ya deux variables \textit{r_ds}
+                                                   qui représente le résul...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 104.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 104.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 104.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 104.
+
+content/realisation.tex:104: Missing $ inserted.
+<inserted text> 
+                $
+l.104 ...e de réduction, et \textit{r_dsOriginal}
+                                                   qui représente
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+content/realisation.tex:104: Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.104 ...e de réduction, et \textit{r_dsOriginal}
+                                                   qui représente
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:104: Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.104 ...e de réduction, et \textit{r_dsOriginal}
+                                                   qui représente
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:104: Extra }, or forgotten $.
+\text@ ...e {\textdef@ \displaystyle \f@size {#1}}
+                                                  {\textdef@ \textstyle \f@s...
+l.104 ...e de réduction, et \textit{r_dsOriginal}
+                                                   qui représente
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:104: Missing $ inserted.
+<inserted text> 
+                $
+l.104 ...e de réduction, et \textit{r_dsOriginal}
+                                                   qui représente
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+content/realisation.tex:104: Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.104 ...e de réduction, et \textit{r_dsOriginal}
+                                                   qui représente
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:104: Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.104 ...e de réduction, et \textit{r_dsOriginal}
+                                                   qui représente
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:104: Extra }, or forgotten $.
+\text@ ...xtstyle \f@size {\firstchoice@false #1}}
+                                                  {\textdef@ \textstyle \sf@...
+l.104 ...e de réduction, et \textit{r_dsOriginal}
+                                                   qui représente
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:104: Missing $ inserted.
+<inserted text> 
+                $
+l.104 ...e de réduction, et \textit{r_dsOriginal}
+                                                   qui représente
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+content/realisation.tex:104: Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.104 ...e de réduction, et \textit{r_dsOriginal}
+                                                   qui représente
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:104: Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.104 ...e de réduction, et \textit{r_dsOriginal}
+                                                   qui représente
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:104: Extra }, or forgotten $.
+\text@ ...tstyle \sf@size {\firstchoice@false #1}}
+                                                  {\textdef@ \textstyle \ssf...
+l.104 ...e de réduction, et \textit{r_dsOriginal}
+                                                   qui représente
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:104: Missing $ inserted.
+<inserted text> 
+                $
+l.104 ...e de réduction, et \textit{r_dsOriginal}
+                                                   qui représente
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+content/realisation.tex:104: Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.104 ...e de réduction, et \textit{r_dsOriginal}
+                                                   qui représente
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:104: Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.104 ...e de réduction, et \textit{r_dsOriginal}
+                                                   qui représente
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:104: Extra }, or forgotten $.
+\text@ ...style \ssf@size {\firstchoice@false #1}}
+                                                  \check@mathfonts }
+l.104 ...e de réduction, et \textit{r_dsOriginal}
+                                                   qui représente
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:104: Extra }, or forgotten $.
+\text@ ...firstchoice@false #1}}\check@mathfonts }
+                                                  
+l.104 ...e de réduction, et \textit{r_dsOriginal}
+                                                   qui représente
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:108: Missing $ inserted.
+<inserted text> 
+                $
+l.108 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no � in font cmr5!
+Missing character: There is no � in font cmr5!
+Missing character: There is no � in font cmr5!
+Missing character: There is no � in font cmr5!
+Missing character: There is no � in font cmr5!
+Missing character: There is no � in font cmr5!
+Missing character: There is no � in font cmr5!
+Missing character: There is no � in font cmr5!
+Missing character: There is no � in font cmr5!
+Missing character: There is no � in font cmr5!
+content/realisation.tex:109: Missing } inserted.
+<inserted text> 
+                }
+l.109 \subsection{Résultats}
+                             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:109: Missing } inserted.
+<inserted text> 
+                }
+l.109 \subsection{Résultats}
+                             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:109: Missing $ inserted.
+<inserted text> 
+                $
+l.109 \subsection{Résultats}
+                             
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+content/realisation.tex:109: Missing } inserted.
+<inserted text> 
+                }
+l.109 \subsection{Résultats}
+                             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:109: Missing } inserted.
+<inserted text> 
+                }
+l.109 \subsection{Résultats}
+                             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:109: Missing } inserted.
+<inserted text> 
+                }
+l.109 \subsection{Résultats}
+                             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:109: Missing $ inserted.
+<inserted text> 
+                $
+l.109 \subsection{Résultats}
+                             
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+content/realisation.tex:109: Missing } inserted.
+<inserted text> 
+                }
+l.109 \subsection{Résultats}
+                             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:109: Missing } inserted.
+<inserted text> 
+                }
+l.109 \subsection{Résultats}
+                             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:109: Missing } inserted.
+<inserted text> 
+                }
+l.109 \subsection{Résultats}
+                             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:109: Missing $ inserted.
+<inserted text> 
+                $
+l.109 \subsection{Résultats}
+                             
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+content/realisation.tex:109: Missing } inserted.
+<inserted text> 
+                }
+l.109 \subsection{Résultats}
+                             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:109: Missing } inserted.
+<inserted text> 
+                }
+l.109 \subsection{Résultats}
+                             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:109: Missing } inserted.
+<inserted text> 
+                }
+l.109 \subsection{Résultats}
+                             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:109: Missing $ inserted.
+<inserted text> 
+                $
+l.109 \subsection{Résultats}
+                             
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+content/realisation.tex:109: Missing } inserted.
+<inserted text> 
+                }
+l.109 \subsection{Résultats}
+                             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:109: Missing { inserted.
+<to be read again> 
+                   $
+l.109 \subsection{Résultats}
+                             
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+content/realisation.tex:109: Missing } inserted.
+<inserted text> 
+                }
+l.109 \subsection{Résultats}
+                             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:109: Missing { inserted.
+<to be read again> 
+                   $
+l.109 \subsection{Résultats}
+                             
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+content/realisation.tex:109: Missing } inserted.
+<inserted text> 
+                }
+l.109 \subsection{Résultats}
+                             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:109: Missing { inserted.
+<to be read again> 
+                   $
+l.109 \subsection{Résultats}
+                             
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+content/realisation.tex:109: Missing } inserted.
+<inserted text> 
+                }
+l.109 \subsection{Résultats}
+                             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:109: Missing } inserted.
+<inserted text> 
+                }
+l.109 \subsection{Résultats}
+                             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+[13 <./imports/three_distincts.png>] [14 <./imports/three_overlaped.png> <./imports/three_distincts_plus_outliers.png> <./imports/one_plus_outliers.png> <./imports/two_overlaped_one_alone.png>]) (content/0.bibliography.tex [15]
 No file main.bbl.
 )) (cover/cover_out.tex) (main.aux)
 
@@ -2558,20 +3050,24 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  E9EBF509C7DFAE20409C35B01024A801;2940.
- ) 
+(rerunfilecheck)             After:  B09E52073D006D38E523CB961A275690;2830.
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 104 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 26359 strings out of 478681
- 515807 string characters out of 2846535
- 794237 words of memory out of 3000000
- 43851 multiletter control sequences out of 15000+600000
- 424705 words of font info for 82 fonts, out of 8000000 for 9000
+ 26400 strings out of 478681
+ 517044 string characters out of 2846535
+ 794246 words of memory out of 3000000
+ 43882 multiletter control sequences out of 15000+600000
+ 425471 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,16n,79p,1061b,611s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 76i,17n,79p,1061b,611s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (16 pages, 1327619 bytes).
+Output written on main.pdf (18 pages, 1411125 bytes).
 PDF statistics:
- 586 PDF objects out of 1000 (max. 8388607)
- 43 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 615 PDF objects out of 1000 (max. 8388607)
+ 49 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
