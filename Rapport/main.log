@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  9 JUN 2022 14:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  10 JUN 2022 14:09
 entering extended mode
 **c:/Users/Cyril/Desktop/dataMethods/Rapport/main.tex
 (c:/Users/Cyril/Desktop/dataMethods/Rapport/main.tex
@@ -1247,20 +1247,11 @@ LaTeX Warning: Citation `HeulotThese' on page 3 undefined on input line 42.
 LaTeX Warning: Citation `HeulotThese' on page 3 undefined on input line 44.
 
 [3]
-
-LaTeX Warning: File `imports/PCA.png' not found on input line 51.
-
-
-content/1.part.tex:51: Package pdftex.def Error: File `imports/PCA.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.51 ...dth=6cm, keepaspectratio]{imports/PCA.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<imports/PCA.png, id=52, 462.528pt x 346.896pt>
+File: imports/PCA.png Graphic file (type png)
+<use imports/PCA.png>
+Package pdftex.def Info: imports/PCA.png  used on input line 51.
+(pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
 
 
 LaTeX Warning: Citation `abdi2007-MDS' on page 4 undefined on input line 63.
@@ -1268,74 +1259,44 @@ LaTeX Warning: Citation `abdi2007-MDS' on page 4 undefined on input line 63.
 
 LaTeX Warning: Citation `HeulotThese' on page 4 undefined on input line 65.
 
+<imports/MDS.png, id=55, 462.528pt x 346.896pt>
+File: imports/MDS.png Graphic file (type png)
+<use imports/MDS.png>
+Package pdftex.def Info: imports/MDS.png  used on input line 71.
+(pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
 
-LaTeX Warning: File `imports/MDS.png' not found on input line 71.
+LaTeX Warning: Citation `colange_steering_2020' on page 4 undefined on input line 84.
 
+[4 <./imports/PCA.png>]
+<imports/classNervSphere.png, id=69, 593.21625pt x 555.07375pt>
+File: imports/classNervSphere.png Graphic file (type png)
+<use imports/classNervSphere.png>
+Package pdftex.def Info: imports/classNervSphere.png  used on input line 101.
+(pdftex.def)             Requested size: 199.16928pt x 186.35951pt.
+ [5 <./imports/MDS.png> <./imports/classNervSphere.png>]
 
-content/1.part.tex:71: Package pdftex.def Error: File `imports/MDS.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.71 ...dth=6cm, keepaspectratio]{imports/MDS.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[4]
-
-LaTeX Warning: Citation `colange_steering_2020' on page 5 undefined on input line 84.
-
-
-LaTeX Warning: File `imports/classNervSphere.png' not found on input line 101.
+LaTeX Warning: Citation `hinton2002-SNE' on page 6 undefined on input line 115.
 
 
-content/1.part.tex:101: Package pdftex.def Error: File `imports/classNervSphere.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.101 ...aspectratio]{imports/classNervSphere.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Citation `van2008TSNE' on page 6 undefined on input line 116.
 
 
-LaTeX Warning: Citation `hinton2002-SNE' on page 5 undefined on input line 115.
+LaTeX Warning: Citation `linderman2019Spectral1' on page 6 undefined on input line 118.
 
 
-LaTeX Warning: Citation `van2008TSNE' on page 5 undefined on input line 116.
+LaTeX Warning: Citation `chui2006Spectral2' on page 6 undefined on input line 118.
 
 
-LaTeX Warning: Citation `linderman2019Spectral1' on page 5 undefined on input line 118.
+LaTeX Warning: Citation `von2007SpectralClustering' on page 6 undefined on input line 118.
 
-
-LaTeX Warning: Citation `chui2006Spectral2' on page 5 undefined on input line 118.
-
-
-LaTeX Warning: Citation `von2007SpectralClustering' on page 5 undefined on input line 118.
-
-[5]
 
 LaTeX Warning: Citation `van2008TSNE' on page 6 undefined on input line 125.
 
-
-LaTeX Warning: File `imports/tsne.png' not found on input line 131.
-
-
-content/1.part.tex:131: Package pdftex.def Error: File `imports/tsne.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.131 ...h=7cm, keepaspectratio]{imports/tsne.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<imports/tsne.png, id=81, 642.4pt x 481.8pt>
+File: imports/tsne.png Graphic file (type png)
+<use imports/tsne.png>
+Package pdftex.def Info: imports/tsne.png  used on input line 131.
+(pdftex.def)             Requested size: 199.16928pt x 149.37851pt.
 
 LaTeX Warning: Citation `sammon1969nonlinear' on page 6 undefined on input line 144.
 
@@ -1362,7 +1323,7 @@ Overfull \hbox (13.51653pt too wide) in paragraph at lines 143--148
 \T1/cmr/m/n/10.95 Nous pou-vons �gale-ment retrou-ver le Sam-mon mapping[[]], le curvi-lin-ear com-po-nents analysis(CCA)[[]],
  []
 
-[6]
+[6 <./imports/tsne.png (PNG copy)>]
 
 LaTeX Warning: Citation `nonato2018multidimensional' on page 7 undefined on input line 154.
 
@@ -1453,7 +1414,1156 @@ LaTeX Warning: Citation `AndradaTatu2010visual' on page 11 undefined on input li
 
 LaTeX Warning: Citation `HeulotAnEvaluation' on page 11 undefined on input line 171.
 
-) [11] (content/conclusion.tex) (content/realisation.tex) (content/0.bibliography.tex [12] [13]
+) [11] (content/conclusion.tex) (content/realisation.tex [12]
+content/realisation.tex:29: Missing $ inserted.
+<inserted text> 
+                $
+l.29 ...s utilisé la méthode \textit{make_blobs}
+                                                   de la librairie \textit{s...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+content/realisation.tex:29: Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.29 ...s utilisé la méthode \textit{make_blobs}
+                                                   de la librairie \textit{s...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: Command \` invalid in math mode on input line 29.
+
+content/realisation.tex:30: Missing $ inserted.
+<inserted text> 
+                $
+l.30 \begin{itemize}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+content/realisation.tex:30: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.30 \begin{itemize}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmr10!
+
+Overfull \hbox (0.87323pt too wide) in paragraph at lines 29--30
+\T1/cmr/m/n/10.95 Pour les cr�er nous avons util-is� la m�th-ode \T1/cmr/m/it/10.95 make$[]\OML/cmm/m/it/10.95 lobsdelalibrairie[]:Lesparamtresfixessont \OT1/cmr/m/n/10.95 :$ 
+ []
+
+
+content/realisation.tex:31: LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31     \item \textit
+                      {n_samples} qui représente le nombre de points total ...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 31
+[][]
+ []
+
+content/realisation.tex:31: Missing $ inserted.
+<inserted text> 
+                $
+l.31     \item \textit{n_samples}
+                                  qui représente le nombre de points total ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+content/realisation.tex:31: Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.31     \item \textit{n_samples}
+                                  qui représente le nombre de points total ...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 31.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 31.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 31.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 31.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 31.
+
+
+LaTeX Warning: Command \` invalid in math mode on input line 31.
+
+
+content/realisation.tex:32: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32     \item
+               \textit{n_features} qui représente le nombre de variables po...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+content/realisation.tex:32: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32     \item \textit
+                      {n_features} qui représente le nombre de variables po...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+content/realisation.tex:32: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32     \item \textit
+                      {n_features} qui représente le nombre de variables po...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+content/realisation.tex:32: LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32     \item \textit
+                      {n_features} qui représente le nombre de variables po...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 32
+[][]
+ []
+
+content/realisation.tex:32: Missing $ inserted.
+<inserted text> 
+                $
+l.32     \item \textit{n_features}
+                                   qui représente le nombre de variables po...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+content/realisation.tex:32: Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.32     \item \textit{n_features}
+                                   qui représente le nombre de variables po...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:32: Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.32     \item \textit{n_features}
+                                   qui représente le nombre de variables po...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:32: Extra }, or forgotten $.
+\text@ ...e {\textdef@ \displaystyle \f@size {#1}}
+                                                  {\textdef@ \textstyle \f@s...
+l.32     \item \textit{n_features}
+                                   qui représente le nombre de variables po...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:32: Missing $ inserted.
+<inserted text> 
+                $
+l.32     \item \textit{n_features}
+                                   qui représente le nombre de variables po...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+content/realisation.tex:32: Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.32     \item \textit{n_features}
+                                   qui représente le nombre de variables po...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:32: Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.32     \item \textit{n_features}
+                                   qui représente le nombre de variables po...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:32: Extra }, or forgotten $.
+\text@ ...xtstyle \f@size {\firstchoice@false #1}}
+                                                  {\textdef@ \textstyle \sf@...
+l.32     \item \textit{n_features}
+                                   qui représente le nombre de variables po...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:32: Missing $ inserted.
+<inserted text> 
+                $
+l.32     \item \textit{n_features}
+                                   qui représente le nombre de variables po...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+content/realisation.tex:32: Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.32     \item \textit{n_features}
+                                   qui représente le nombre de variables po...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:32: Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.32     \item \textit{n_features}
+                                   qui représente le nombre de variables po...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:32: Extra }, or forgotten $.
+\text@ ...tstyle \sf@size {\firstchoice@false #1}}
+                                                  {\textdef@ \textstyle \ssf...
+l.32     \item \textit{n_features}
+                                   qui représente le nombre de variables po...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:32: Missing $ inserted.
+<inserted text> 
+                $
+l.32     \item \textit{n_features}
+                                   qui représente le nombre de variables po...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+content/realisation.tex:32: Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.32     \item \textit{n_features}
+                                   qui représente le nombre de variables po...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:32: Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.32     \item \textit{n_features}
+                                   qui représente le nombre de variables po...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:32: Extra }, or forgotten $.
+\text@ ...style \ssf@size {\firstchoice@false #1}}
+                                                  \check@mathfonts }
+l.32     \item \textit{n_features}
+                                   qui représente le nombre de variables po...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:32: Extra }, or forgotten $.
+\text@ ...firstchoice@false #1}}\check@mathfonts }
+                                                  
+l.32     \item \textit{n_features}
+                                   qui représente le nombre de variables po...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:33: Missing $ inserted.
+<inserted text> 
+                $
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmr5!
+Missing character: There is no � in font cmr5!
+Missing character: There is no � in font cmr5!
+Missing character: There is no � in font cmr5!
+content/realisation.tex:33: Missing } inserted.
+<inserted text> 
+                }
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:33: Missing } inserted.
+<inserted text> 
+                }
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:33: Missing } inserted.
+<inserted text> 
+                }
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:33: Missing $ inserted.
+<inserted text> 
+                $
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:33: Missing } inserted.
+<inserted text> 
+                }
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:33: Missing } inserted.
+<inserted text> 
+                }
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:33: Missing } inserted.
+<inserted text> 
+                }
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:33: Missing $ inserted.
+<inserted text> 
+                $
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:33: Missing } inserted.
+<inserted text> 
+                }
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:33: Missing } inserted.
+<inserted text> 
+                }
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:33: Missing } inserted.
+<inserted text> 
+                }
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:33: Missing $ inserted.
+<inserted text> 
+                $
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:33: Missing } inserted.
+<inserted text> 
+                }
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:33: Missing } inserted.
+<inserted text> 
+                }
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:33: Missing } inserted.
+<inserted text> 
+                }
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:33: Missing { inserted.
+<to be read again> 
+                   \endgroup 
+l.33 \end{itemize}
+                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+content/realisation.tex:33: Missing } inserted.
+<inserted text> 
+                }
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:33: Missing { inserted.
+<to be read again> 
+                   \endgroup 
+l.33 \end{itemize}
+                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+content/realisation.tex:33: Missing } inserted.
+<inserted text> 
+                }
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:33: Missing { inserted.
+<to be read again> 
+                   \endgroup 
+l.33 \end{itemize}
+                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+content/realisation.tex:33: Missing } inserted.
+<inserted text> 
+                }
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:33: Missing } inserted.
+<inserted text> 
+                }
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:33: Missing $ inserted.
+<inserted text> 
+                $
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+content/realisation.tex:33: Missing } inserted.
+<inserted text> 
+                }
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:33: Missing } inserted.
+<inserted text> 
+                }
+l.33 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:33: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.33 \end{itemize}
+                  
+Things are pretty mixed up, but I think the worst is over.
+
+
+Overfull \hbox (100.46648pt too wide) in paragraph at lines 31--35
+[]\T1/cmr/m/it/10.95 n$[]\OML/cmm/m/it/10.95 amplesquireprsentelenombredepointstotalquiseragalementrpartientrelesdiffrentsclusters:Nousl[]avonsfixvingt \OMS/cmsy/m/n/10.95  
+ []
+
+content/realisation.tex:37: Missing $ inserted.
+<inserted text> 
+                $
+l.37     \item \textit{cluster_std}
+                                    qui détermine l'écart type des clusters
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+content/realisation.tex:37: Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.37     \item \textit{cluster_std}
+                                    qui détermine l'écart type des clusters
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 37.
+
+
+content/realisation.tex:38: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38     \item
+               \textit{random_state} qui détermine un nombre aléatoire pou...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+content/realisation.tex:38: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38     \item \textit
+                      {random_state} qui détermine un nombre aléatoire pou...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+content/realisation.tex:38: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38     \item \textit
+                      {random_state} qui détermine un nombre aléatoire pou...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+content/realisation.tex:38: Missing $ inserted.
+<inserted text> 
+                $
+l.38     \item \textit{random_state}
+                                     qui détermine un nombre aléatoire pou...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+content/realisation.tex:38: Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.38     \item \textit{random_state}
+                                     qui détermine un nombre aléatoire pou...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:38: Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.38     \item \textit{random_state}
+                                     qui détermine un nombre aléatoire pou...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:38: Extra }, or forgotten $.
+\text@ ...e {\textdef@ \displaystyle \f@size {#1}}
+                                                  {\textdef@ \textstyle \f@s...
+l.38     \item \textit{random_state}
+                                     qui détermine un nombre aléatoire pou...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:38: Missing $ inserted.
+<inserted text> 
+                $
+l.38     \item \textit{random_state}
+                                     qui détermine un nombre aléatoire pou...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+content/realisation.tex:38: Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.38     \item \textit{random_state}
+                                     qui détermine un nombre aléatoire pou...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:38: Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.38     \item \textit{random_state}
+                                     qui détermine un nombre aléatoire pou...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:38: Extra }, or forgotten $.
+\text@ ...xtstyle \f@size {\firstchoice@false #1}}
+                                                  {\textdef@ \textstyle \sf@...
+l.38     \item \textit{random_state}
+                                     qui détermine un nombre aléatoire pou...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:38: Missing $ inserted.
+<inserted text> 
+                $
+l.38     \item \textit{random_state}
+                                     qui détermine un nombre aléatoire pou...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+content/realisation.tex:38: Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.38     \item \textit{random_state}
+                                     qui détermine un nombre aléatoire pou...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:38: Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.38     \item \textit{random_state}
+                                     qui détermine un nombre aléatoire pou...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:38: Extra }, or forgotten $.
+\text@ ...tstyle \sf@size {\firstchoice@false #1}}
+                                                  {\textdef@ \textstyle \ssf...
+l.38     \item \textit{random_state}
+                                     qui détermine un nombre aléatoire pou...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:38: Missing $ inserted.
+<inserted text> 
+                $
+l.38     \item \textit{random_state}
+                                     qui détermine un nombre aléatoire pou...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+content/realisation.tex:38: Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.38     \item \textit{random_state}
+                                     qui détermine un nombre aléatoire pou...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:38: Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.38     \item \textit{random_state}
+                                     qui détermine un nombre aléatoire pou...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:38: Extra }, or forgotten $.
+\text@ ...style \ssf@size {\firstchoice@false #1}}
+                                                  \check@mathfonts }
+l.38     \item \textit{random_state}
+                                     qui détermine un nombre aléatoire pou...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:38: Extra }, or forgotten $.
+\text@ ...firstchoice@false #1}}\check@mathfonts }
+                                                  
+l.38     \item \textit{random_state}
+                                     qui détermine un nombre aléatoire pou...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+content/realisation.tex:39: Missing $ inserted.
+<inserted text> 
+                $
+l.39 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmr5!
+Missing character: There is no � in font cmr5!
+Missing character: There is no � in font cmr5!
+Missing character: There is no � in font cmr5!
+content/realisation.tex:39: Missing } inserted.
+<inserted text> 
+                }
+l.39 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:39: Missing } inserted.
+<inserted text> 
+                }
+l.39 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:39: Missing } inserted.
+<inserted text> 
+                }
+l.39 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:39: Missing $ inserted.
+<inserted text> 
+                $
+l.39 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:39: Missing } inserted.
+<inserted text> 
+                }
+l.39 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:39: Missing } inserted.
+<inserted text> 
+                }
+l.39 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:39: Missing } inserted.
+<inserted text> 
+                }
+l.39 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:39: Missing $ inserted.
+<inserted text> 
+                $
+l.39 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:39: Missing } inserted.
+<inserted text> 
+                }
+l.39 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:39: Missing } inserted.
+<inserted text> 
+                }
+l.39 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:39: Missing } inserted.
+<inserted text> 
+                }
+l.39 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:39: Missing $ inserted.
+<inserted text> 
+                $
+l.39 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:39: Missing } inserted.
+<inserted text> 
+                }
+l.39 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:39: Missing } inserted.
+<inserted text> 
+                }
+l.39 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:39: Missing } inserted.
+<inserted text> 
+                }
+l.39 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:39: Missing { inserted.
+<to be read again> 
+                   \endgroup 
+l.39 \end{itemize}
+                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+content/realisation.tex:39: Missing } inserted.
+<inserted text> 
+                }
+l.39 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:39: Missing { inserted.
+<to be read again> 
+                   \endgroup 
+l.39 \end{itemize}
+                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+content/realisation.tex:39: Missing } inserted.
+<inserted text> 
+                }
+l.39 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:39: Missing { inserted.
+<to be read again> 
+                   \endgroup 
+l.39 \end{itemize}
+                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+content/realisation.tex:39: Missing } inserted.
+<inserted text> 
+                }
+l.39 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:39: Missing } inserted.
+<inserted text> 
+                }
+l.39 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+content/realisation.tex:39: Missing $ inserted.
+<inserted text> 
+                $
+l.39 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+content/realisation.tex:39: Missing } inserted.
+<inserted text> 
+                }
+l.39 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+) (content/0.bibliography.tex [13]
 No file main.bbl.
 )) (cover/cover_out.tex) (main.aux)
 
@@ -1469,20 +2579,20 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  E523FEF8FF5CB89BAA82CC22877DB9A2;2339.
+(rerunfilecheck)             After:  E9EBF509C7DFAE20409C35B01024A801;2940.
  ) 
 Here is how much of TeX's memory you used:
- 26500 strings out of 478681
- 519995 string characters out of 2846535
+ 26420 strings out of 478681
+ 517348 string characters out of 2846535
  794237 words of memory out of 3000000
- 43986 multiletter control sequences out of 15000+600000
- 421632 words of font info for 74 fonts, out of 8000000 for 9000
+ 43899 multiletter control sequences out of 15000+600000
+ 424705 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,12n,79p,1061b,692s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 76i,16n,79p,1061b,692s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (16 pages, 381954 bytes).
+Output written on main.pdf (16 pages, 1317585 bytes).
 PDF statistics:
- 566 PDF objects out of 1000 (max. 8388607)
- 38 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 583 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 

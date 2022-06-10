@@ -14,3 +14,30 @@ de mesurer la similarité entre deux partitions. Ces critères prennent seulemen
 mesurer la qualité de la distribution.
 
 
+
+\section{Implémentation}
+
+\subsection{Jeux de données}
+Pour comparer les différentes méthodes nous avons créer plusieurs jeux de donnés qui présentent les caractéristiques suivantes :
+\begin{itemize}
+    \item deux clusters superposés avec un seul
+    \item  trois clusters bien distincts
+    \item trois clusters superposés
+    \item un cluster entouré de quelques outliers
+    \item trois cluster entourés d’outliers
+\end{itemize}
+Pour les créer nous avons utilisé la méthode \textit{make_blobs} de la librairie \textit{sklearn}. Les paramètres fixes sont :
+\begin{itemize}
+    \item \textit{n_samples} qui représente le nombre de points total qui sera également réparti entre les différents clusters. Nous l'avons fixé à vingt-mille.
+    \item \textit{n_features} qui représente le nombre de variables pour chaque échantillon. Nous l'avons fixé à vingt-et-un.
+\end{itemize}
+Nous avons fait varier les paramètres suivants pour obtenir la répartition souhaitée : 
+\begin{itemize}
+    \item \textit{centers} qui détermine le nombre de centres à génerer
+    \item \textit{cluster_std} qui détermine l'écart type des clusters
+    \item \textit{random_state} qui détermine un nombre aléatoire pour la crétion du jeu de données.
+\end{itemize}
+\subsection{Méthodes}
+\subsection{Résultats}
+
+\section{Experimentation}
