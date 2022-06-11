@@ -1,32 +1,34 @@
 \sectionnn{Introduction}
 
-La représentation visuelle des grands jeux de données est un enjeu de plus en plus important dans de nombreux domaines scientifiques. En effet, une immense partie des analyses de données se fait dans des domaines de recherches dont les acteurs ne sont pas des “data analyst”. Cela rend l’analyse compliquée et peut engendrer certains biais lors de l’interprétation des données \cite{HeulotAnEvaluation}. C’est pour cela, que le domaine de la visualisation des données se doit d’être accessible à ce genre de profil.\newline
-La visualisation permet aux utilisateurs d’avoir un aperçu global des données et de choisir en conséquence quel type de traitement et quel paramétrage utiliser dans leurs analyses. Elle a donc pour rôle d’être une interface interactive pour représenter et naviguer à travers les données extraites, et ce dans le but de les rendre compréhensibles et donc exploitables\cite{card1999readings}. C’est exactement ce vers quoi tend ce domaine : \textit{“Visual analytics combines automated analysis techniques with interactive visualizations for an effective understanding, reasoning and decision making on the basis of very large and complex data sets”} \cite{keim2008visual}. 
+La représentation visuelle des grands jeux de données est un enjeu de plus en plus important dans de nombreux domaines scientifiques. En effet, une immense partie des analyses de données se fait dans des domaines de recherches dont les acteurs ne sont pas des experts en analyse de données. Cela rend donc l’analyse compliquée et peut engendrer certains biais lors de leur interprétation \cite{HeulotAnEvaluation}. C’est pour cela, que le domaine de la visualisation des données se doit d’être accessible à ce genre de profil.\newline
+La visualisation permet aux utilisateurs d’avoir un aperçu global des données et de choisir en conséquence quel type de traitement et quel paramétrage utiliser dans leurs analyses. Elle a donc pour rôle d’être une interface interactive pour représenter et naviguer à travers les données extraites, et ce dans le but de les rendre compréhensibles et par conséquent exploitables\cite{card1999readings}. C’est exactement ce vers quoi tend ce domaine : \textit{“ L'analyse visuelle des données combine techniques automatiques d'analyse et visualisation interactive dans le but de pouvoir comprendre, réfléchir et prendre des décisions de la bonne façon en se basant sur des jeux de données grands et complexes.”} \cite{keim2008visual}. 
 Différentes techniques de visualisation existent \cite{HeulotThese}, mais c’est sur la projection que nous allons nous concentrer. 
 \smallskip
 
-    Dans une projection, toutes les données sont projetées selon une projection linéaire ou non des axes dans un plan en 2D. Cela permet de représenter les données sous la forme d’un nuage de points (on parle de "scattered representation") en essayant de respecter au mieux la structure des données \cite{HeulotThese}. \newline 
-    Le principe de base d'une lecture projection est le suivant : les points qui sont proches les uns des autres sont censés être “similaires” tandis que ceux qui sont éloignés sont censés être "différents''. \newline 
+    Dans une projection, toutes les données sont projetées selon une projection linéaire ou non des axes dans un plan en 2D. Cela permet de représenter les données sous la forme d’un nuage de points on parle de \textit{représentation dispersée} ou \textit{scattered representation} en essayant de respecter au mieux la structure des données \cite{HeulotThese}. \newline 
+    Le principe de base d'une lecture projection est le suivant : les points qui sont proches les uns des autres sont censés être relativement similaires tandis que ceux qui sont éloignés sont censés être différents. \newline 
     Les projections permettent également d’inférer des propriétés sur les données et de les vérifier. Par exemple, il est possible de vérifier si les clusters sont séparables linéairement (notamment à l’aide d’une projection linéaire) \cite{HeulotThese} .
 \smallskip
 
-Dans le cas de la visualisation, acquérir les données et les traiter sont deux étapes qui sont de plus en plus simples. Le défi est de représenter fidèlement les jeux de données. En effet, dans une projection les jeux de données peuvent atteindre jusqu’à des dizaines de milliers de dimensions et doivent être réduit en 2 ou 3 dimensions pour être visualisable et compréhensible par l’homme. Or ce processus de dimension a un coût : des pertes d’informations.
-Cependant, ce processus a un coût, étant donné qu'il est lié à une perte d'information causée par l'étirement ou la compression de la plupart des distances entre paires, 
-car la dimension de l'espace couvert par les données d'origine est généralement supérieure à la dimension de l'espace de projection.  ce qui cause l’apparition d’artefacts dans la projection. Ces artefacts compromettent ainsi grandement la fiabilité et la bonne interprétation de ces graphiques\cite{scarlet}. 
+Dans le cas de la visualisation, acquérir les données et les traiter sont deux étapes qui sont de plus en plus simples. Le défi est de représenter fidèlement les jeux de données. En effet, dans une projection les jeux de données peuvent atteindre jusqu’à des dizaines de milliers de dimensions et doivent être réduit en deux ou trois dimensions pour être visualisable et compréhensible par l’homme. 
+Or ce processus de réduction de dimension a un coût une : perte d’informations.
+Celle-ci est causée par l'étirement ou la compression de la plupart des distances entre paires, car la dimension de l'espace couvert par les données d'origine est généralement supérieure à la dimension de l'espace de projection. Cela cause l’apparition d’artefacts dans la projection. 
+Ces artefacts compromettent ainsi grandement la fiabilité et la bonne interprétation de ces graphiques\cite{scarlet}. 
+
 Dans une projection, les axes ne jouent pas forcément un rôle : c’est principalement la distance entre les points qui donne un sens et une interprétabilité à la projection\cite{koffka1997PsychoGesttalt}. 
 Néanmoins, représenter fidèlement une distance euclidienne après réduction et projection est tout bonnement impossible. 
 
-Par conséquent, la mesure et la visualisation de ces distorsions appelées "artefacts" sont cruciales pour l'analyse. Elles se doivent d'être analysées afin de détecter quelles distances entre paires ont été préservées, 
-et donc d'évaluer si les caractéristiques observées dans l'espace de projection sont des images fidèles de certaines caractéristiques de l'espace originel, ou simplement des artefacts de la projection.
+Par conséquent, la mesure et la visualisation de ces distorsions appelées \textit{artefacts} sont cruciales pour l'analyse. Elles se doivent d'être analysées afin de détecter quelles distances entre paires ont été préservées, 
+et donc d'évaluer si les caractéristiques observées dans l'espace de projection sont des images fidèles des caractéristiques de l'espace originel, ou simplement des artefacts de la projection.
 \medskip
 
-Les artéfacts sont définis comme des points "mal placés”(en comparaison aux points d’origine). Ils sont dus au processus de réduction qui peine à respecter fidèlement les distances. Il existe deux types d’artefacts : les artefacts géométriques et les artefacts topologiques \cite{HeulotAnEvaluation}.
+Les artéfacts sont définis comme des points mal placés(en comparaison aux points d’origine). Ils sont dus au processus de réduction qui peine à respecter fidèlement les distances. Il existe deux types d’artefacts : les artefacts géométriques et les artefacts topologiques \cite{HeulotAnEvaluation}.
 \begin{itemize}
     \item Les artefacts géométriques sont causés par de légères distorsions des distances, dans ce cas précis les distances sont fausses, mais le voisinage des points est conservé,  l’interprétation n’est donc pas (ou très peu) perturbée.
     \item Les artefacts topologiques sont causés par des distorsions trop importantes des distances. Par conséquent, cela engendre forcément des problèmes d’interprétation.
 \end{itemize}
 
-Parmi ces types d'artefacts, nous pouvons distinguer 4 sous-types d'artefacts :\cite{aupetit2007visualizing} :
+Parmi ces types d'artefacts, nous pouvons distinguer 4 sous-types :\cite{aupetit2007visualizing} :
 
 \begin{itemize}
     \item Les compressions : Les distances par paire de projections sont inférieures aux distances par paire d'origine correspondante, mais la topologie du voisinage d'origine est préservée.
@@ -38,16 +40,18 @@ Parmi ces types d'artefacts, nous pouvons distinguer 4 sous-types d'artefacts :\
 Il y aurait deux causes principales à l'origine de ces artefacts \cite{aupetit2007visualizing} : 
 \begin{itemize}
     \item Les causes structurelles(ou intrinsèques) : Les structures géométriques et topologiques des collecteurs d'origine et celles de l'espace de projection ne sont pas compatibles, de sorte que la projection ne peut se faire sans modifier les distances par paires entre les données.
-    \item Causes techniques(ou extrinsèques)  : Si la technique de projection est non linéaire, elle peut créer des artefacts qui n'existent pas à l'optimum global et donc modifier la forme initiale.
+    \item Causes techniques(ou extrinsèques) : Si la technique de projection est non linéaire, elle peut créer des artefacts qui n'existent pas à l'optimum global et donc modifier la forme initiale.
 \end{itemize}
 
 Les artefacts ayant des causes techniques peuvent être annulés alors que ceux ayant des causes structurelles ne le peuvent pas. Cependant, dans la pratique, il n'est guère possible de distinguer les deux causes d'artefacts dans le cas des projections non-linéaires.
 
 
 \smallskip
-Pour tenter de pallier les difficultés induites par les artefacts, des techniques ont été mises en place pour assister l’utilisateur dans la visualisation. Parmi ces techniques, nous pouvons noter l’utilisation d’échelles colorimétriques\cite{CheckViz}, qui permettent de mesurer les différents artefacts, mais ne permettent pas de mettre en valeur les clusters cachés ni de donner une idée claire ou de préciser de la qualité de la projection. Dans ce cas, il est compliqué d’exploiter une projection de n dimensions de façon fiable sans prendre en compte les artefacts qu’elle présente\cite{aupetit2007visualizing}.    
-Dans l’article “Visualizing Dimensionality Reduction Artifacts : An evaluation”(Heulot) une technique colorimétrique est utilisée pour voir s’il est possible de surmonter les difficultés dues aux artefacts dans d’interprétation d’échelles multidimensionnelles. Ils ont donc mis en place une méthode s'appelant “ProxiViz”. Grâce à celle-ci, sur un jeu de test , les informations locales d’un item sont beaucoup mieux représentées. Cette méthode permettrait de détecter plus facilement les outlier et les clusters. Elle pourrait donc, en partie, aider les non "spécialistes des data" à mieux distinguer certaines informations. Même si encore une fois cela est limité par la qualité de l’écran, le contraste et la vision de l'humain qui peut peiner à distinguer les nuances entre les couleurs\cite{HeulotAnEvaluation} \cite{tran2021approaching} \cite{deering1998human_vision}.
-L’idée a notamment été reprise par Heulot\cite{HeulotThese}, il se base sur le concept de la “visualisation interactive des proximités'' afin de mettre en évidence les artefacts. Cela permet de visualiser sur la projection les proximités d’origines des différents points en fonction d’une référence choisie par l’utilisateur.
+Pour tenter de pallier les difficultés induites par les artefacts, des techniques ont été mises en place pour assister l’utilisateur dans la visualisation. Parmi ces techniques, nous pouvons noter l’utilisation d’échelles colorimétriques\cite{CheckViz}, qui permettent de mesurer les différents artefacts, mais ne permettent pas de mettre en valeur les clusters cachés ni de donner une idée claire ou de préciser de la qualité de la projection. 
+Dans ce cas, il est compliqué d’exploiter une projection de n dimensions de façon fiable sans prendre en compte les artefacts qu’elle présente\cite{aupetit2007visualizing}.Dans l’article “Visualizing Dimensionality Reduction Artifacts : An evaluation”(Heulot) 
+une technique colorimétrique est utilisée pour voir s’il est possible de surmonter les difficultés dues aux artefacts dans d’interprétation d’échelles multidimensionnelles. Ils ont donc mis en place une méthode s'appelant “ProxiViz”. Grâce à celle-ci, sur un jeu de test , les informations locales d’un item sont beaucoup mieux représentées. Cette méthode permettrait de détecter plus facilement les outlier et les clusters. 
+Elle pourrait donc, en partie, aider les non spécialistes en analyse de données à mieux distinguer certaines informations. Même si encore une fois cela est limité par la qualité de l’écran, le contraste et la vision de l'humain qui peut peiner à distinguer les nuances entre les couleurs\cite{HeulotAnEvaluation} \cite{tran2021approaching} \cite{deering1998human_vision}.
+L’idée a notamment été reprise par Heulot\cite{HeulotThese}, il se base sur le concept de visualisation interactive des proximités afin de mettre en évidence les artefacts. Cela permet de visualiser sur la projection les proximités d’origines des différents points en fonction d’une référence choisie par l’utilisateur.
 
 
 \medskip

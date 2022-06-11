@@ -19,4 +19,5 @@
 \contentsline {section}{\numberline {3}Implémentation}{13}{section.0.3}%
 \contentsline {subsection}{\numberline {3.1}Jeux de données}{13}{subsection.0.3.1}%
 \contentsline {subsection}{\numberline {3.2}Méthodes}{15}{subsection.0.3.2}%
+\contentsline {subsection}{\numberline {3.3}Résultats}{15}{subsection.0.3.3}%
 \contentsline {section}{\numberline {4}Experimentation}{15}{section.0.4}%

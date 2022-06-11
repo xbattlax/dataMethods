@@ -24,18 +24,18 @@ Pour comparer les différentes méthodes nous avons créer plusieurs jeux de don
     \item  trois clusters bien distincts
     \item trois clusters superposés
     \item un cluster entouré de quelques outliers
-    \item trois cluster entourés d’outliers
+    \item trois cluster entourés d’outliers     
 \end{itemize}
-Pour les créer nous avons utilisé la méthode \textit{make_blobs} de la librairie \textit{sklearn}. Les paramètres fixes sont :
+Pour les créer nous avons utilisé la méthode \textit{makeblobs} de la librairie \textit{sklearn}. Les paramètres fixes sont :
 \begin{itemize}
-    \item \textit{n_samples} qui représente le nombre de points total qui sera également réparti entre les différents clusters. Nous l'avons fixé à vingt-mille.
-    \item \textit{n_features} qui représente le nombre de variables pour chaque échantillon. Nous l'avons fixé à vingt-et-un.
+    \item \textit{n samples} qui représente le nombre de points total qui sera également réparti entre les différents clusters. Nous l'avons fixé à vingt-mille.
+    \item \textit{n features} qui représente le nombre de variables pour chaque échantillon. Nous l'avons fixé à vingt-et-un.
 \end{itemize}
 Nous avons fait varier les paramètres suivants pour obtenir la répartition souhaitée : 
 \begin{itemize}
     \item \textit{centers} qui détermine le nombre de centres à génerer
-    \item \textit{cluster_std} qui détermine l'écart type des clusters
-    \item \textit{random_state} qui détermine un nombre aléatoire pour la crétion du jeu de données.
+    \item \textit{cluster std} qui détermine l'écart type des clusters
+    \item \textit{random state} qui détermine un nombre aléatoire pour la crétion du jeu de données.
 \end{itemize}
 
 
@@ -99,10 +99,13 @@ nous appliquons cela à la librairie \textit{clusterCrit} . Tous les critéres d
 
 
 
-La fonction \textit{calculate} va utiliser chaque méthode de réduction sur le jeu de donnéen, le resultat de cette réduction sera stockée dans
-la variable\textit{p2} à laquelle on appliquera la fonction \textit{IntVector}. Comme éléments de comparaison, on applique Kmean sur le jeu de donnée originel. 
-Une fois ces deux opération effectuées, il ya deux variables \textit{r_ds} qui représente le résultat de la méthode de réduction, et \textit{r_dsOriginal} qui représente
-le jeu de donnée original après kmean.
+La fonction \textit{calculate} va utiliser chaque méthode de réduction sur le jeu de donnée, le resultat de cette réduction sera stockée dans
+la variable \textit{p2} à laquelle on appliquera la fonction \textit{IntVector}. Comme éléments de comparaison, on applique Kmean sur le jeu de donnée originel. ce qui permet
+Kmean permet de partitionner un jeu de données en k groupes/cluster. Dans notre situation nous nous sommes fixé à k=3.
+
+Une fois ces deux opérations effectuées, il y a deux variables \textit{rds} (qui représente le résultat de la méthode de réduction), et \textit{rdsOriginal} (qui représente le jeu de
+donnée original après kmean.)
+
 Pour comparer, ces deux jeux de données nous les passons en paramètre de la fonction \textit{metricsCalcul}.
 Celle-ci va itérer à travers tous les critèrs de la liste \textit{crit} et appliquer l'évaluation de chaque critères.
 
