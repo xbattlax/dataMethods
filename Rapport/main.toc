@@ -19,6 +19,6 @@
 \contentsline {section}{\numberline {3}Implémentation}{14}{section.0.3}%
 \contentsline {subsection}{\numberline {3.1}Méthodologie}{14}{subsection.0.3.1}%
 \contentsline {subsection}{\numberline {3.2}Jeux de données utilisés}{15}{subsection.0.3.2}%
-\contentsline {subsection}{\numberline {3.3}Méthodes}{17}{subsection.0.3.3}%
+\contentsline {subsection}{\numberline {3.3}Fonctionnement du programme}{17}{subsection.0.3.3}%
 \contentsline {subsection}{\numberline {3.4}Résultats}{17}{subsection.0.3.4}%
 \contentsline {section}{\numberline {4}Experimentation}{17}{section.0.4}%
