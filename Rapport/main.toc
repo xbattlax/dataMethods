@@ -5,19 +5,19 @@
 \contentsline {subsection}{\numberline {1.3}ClassNerv}{5}{subsection.0.1.3}%
 \contentsline {subsection}{\numberline {1.4}t-SNE}{6}{subsection.0.1.4}%
 \contentsline {subsection}{\numberline {1.5}Autres méthodes de projection non linéaires}{7}{subsection.0.1.5}%
-\contentsline {subsection}{\numberline {1.6}Conclusion partie}{7}{subsection.0.1.6}%
+\contentsline {subsection}{\numberline {1.6}Conclusion de la partie}{7}{subsection.0.1.6}%
 \contentsline {section}{\numberline {2}Les critères d'évaluation des projections}{8}{section.0.2}%
 \contentsline {subsection}{\numberline {2.1}Visualisation du stress}{8}{subsection.0.2.1}%
 \contentsline {subsection}{\numberline {2.2}Les critères de mesure}{8}{subsection.0.2.2}%
 \contentsline {subsubsection}{Clustering}{9}{section*.3}%
-\contentsline {subsubsection}{Outlying}{9}{section*.4}%
-\contentsline {subsubsection}{Critères de formes}{10}{section*.5}%
-\contentsline {subsubsection}{Critère de densité}{10}{section*.6}%
+\contentsline {subsubsection}{Outlying}{10}{section*.4}%
+\contentsline {subsubsection}{Critères de formes}{11}{section*.5}%
+\contentsline {subsubsection}{Critère de densité}{11}{section*.6}%
 \contentsline {subsubsection}{Score de Projection \textit {(seulement pour l'ACP)}}{11}{section*.7}%
 \contentsline {subsection}{\numberline {2.3}Conclusion de la partie}{11}{subsection.0.2.3}%
-\contentsline {section}{Conclusion}{12}{section*.8}%
-\contentsline {section}{\numberline {3}Implémentation}{13}{section.0.3}%
-\contentsline {subsection}{\numberline {3.1}Jeux de données}{13}{subsection.0.3.1}%
-\contentsline {subsection}{\numberline {3.2}Méthodes}{15}{subsection.0.3.2}%
-\contentsline {subsection}{\numberline {3.3}Résultats}{15}{subsection.0.3.3}%
-\contentsline {section}{\numberline {4}Experimentation}{15}{section.0.4}%
+\contentsline {section}{Conclusion}{13}{section*.8}%
+\contentsline {section}{\numberline {3}Implémentation}{14}{section.0.3}%
+\contentsline {subsection}{\numberline {3.1}Jeux de données}{14}{subsection.0.3.1}%
+\contentsline {subsection}{\numberline {3.2}Méthodes}{16}{subsection.0.3.2}%
+\contentsline {subsection}{\numberline {3.3}Résultats}{16}{subsection.0.3.3}%
+\contentsline {section}{\numberline {4}Experimentation}{16}{section.0.4}%

@@ -21,7 +21,7 @@ plusieurs façons de le quantifier :
 
 Les mesures peuvent être locales, c'est-à-dire qu'elles sont visualisées en chaque point et aident à expliquer
 la projection. C’est possible en utilisant un diagramme de Shepard \cite{kruskal1964multidimensional} \cite{HeulotThese}.
-D'autres méthodes utilisent un jitter disc autour de chaque point. Cela permet de visualiser le
+D'autres méthodes utilisent un \textit{jitter disc} autour de chaque point. Cela permet de visualiser le
 stress, mais ne donne pas des informations sur les origines de celui-ci \cite{HeulotAnEvaluation}.
 
 Il est également possible de le visualiser en utilisant un encodage colorimétrique, qui en
@@ -35,7 +35,7 @@ Une méthode pour mettre en avant les artefacts topologiques(faux voisinages et 
 Cela permet d’utiliser la projection malgré les erreurs de positionnement des différents points: cependant la mesure de qualité ne garantit pas qu’on puisse exploiter la projection(surtout pour les tâches de clustering visuel) .
 \newline
 Il y a également, des méthodes interactives avec différentes vues
-possibles( stress) globaux, faux voisinages, déchirures …) selon les différents niveaux de
+possibles(stress) globaux, faux voisinages, déchirures …) selon les différents niveaux de
 granularité (point seul ou groupes de points) \cite{abbas2019clustme} \cite{HeulotThese}. De plus, en fonction du type d’artefacts,
 différentes mesures d’erreurs sont proposées : coloration interpolée ou edge bundling(arc
 compact) pour, par exemple relier les points et faire le parallèle pour montrer les déchirures
@@ -51,7 +51,7 @@ Ces critères peuvent être relatifs à la structure des données projetées ave
 Nous allons les détailler au cours de ce chapitre.
 
 \subsubsection{Clustering}
-Le clustering sert à partitionner les données en groupe homogènes. En d’autres termes, cela consiste à évaluer si le jeu de données contient des “groupes”(ou clusters) ainsi que leur qualité (c'est-à-dire s’ ils sont séparés et facilement identifiables).
+Le clustering sert à partitionner les données en groupe homogènes. En d’autres termes, cela consiste à évaluer si le jeu de données contient des groupes(ou clusters) ainsi que leur qualité (c'est-à-dire s’ ils sont séparés et facilement identifiables).
 Pour cela, il existe plusieurs critères.
 
 \begin{itemize}
@@ -73,12 +73,23 @@ Par conséquent, si la \textit{class consistency} est bonne, les classes seront 
 visuellement séparées dans la projection graphique, les clusters seront donc plus
 facilement discriminables et la projection potentiellement de meilleure qualité.
 
+La class consistency est le plus souvent calculée de la façon suivante : 
+[METTRE FORMULE]
+Où Ck est la classe de p, centr(ck) est le centroid de cette même classe. m le nombre de classe disponible, et d(p, centr(ck) la fonction \textit{distance to centroid} )
 \item
 \textbf{Class density : }
 \smallskip
  Pour justifier de la qualité du clustering d’une projection, nous pouvons également
 mesurer la densité de classe (ou \textit{class density}).
-Le principe est de retenir les graphes avec le moins de chevauchement \cite{AndradaTatu2010visual}.
+Ce critère évalue la projection en fonction de ses propriété de séparation. Le but est
+d'identifier les zones où il y a le moins de chevauchement entre les classes.
+
+
+Pour calculer ce chevauchement entre classes, la méthode passe par l'utilisation d'une représentation continue du jeu de donnée : où les points
+appartenants au même cluster forment une image différente. Cela revient à faire en sorte que pour chaque classe il y ai une image distincte avec
+des densités continues et régulières calculée à partir du voisinage local de chaque point (ou pixel).
+
+Le principe est donc de retenir les resultats avec le moins de chevauchement \cite{AndradaTatu2010visual}.
 Ainsi, lors d’une projection, les points appartenant à un cluster forment une image, c'est -à
 -dire que chaque classe forme une image.
 L’algorithme se fait en fonction de la densité basée sur le voisinage : pour chaque pixel, la
@@ -112,8 +123,10 @@ Un \textit{outlier} est une donnée aberrante. Pour déterminer si un point est 
 
 \textbf{Critères utilisant les graphes :}
 \begin{itemize}
-    \item Une des façons de raisonner en graphe et d'utiliser le concept de \textit{Minimum Spanning Tree}(MST) \cite{wilkinson2005graph-MST} , c'est-à-dire l'arbre le moins long que l'on peut créer à partir du nuage de points de la projection. 
-    En prenant comme référentiel le MST, les outliers sont soit des points qui sont localisés aux extrémités de l’arbre ou en intérieur dans des régions relativement vides. Ainsi, on peut les définir comme des nœuds de degrés 1, et dont la somme des poids des arêtes adjacentes est supérieure à ‘w’ selon la formule suivante  \[ \omega = q_{75} + 1.5 (q_{75} - q_{25} ) \].
+    \item Une des façons de raisonner en graphe et d'utiliser le concept de \textit{Minimum Spanning Tree}(MST) \cite{wilkinson2005graph-MST} , c'est-à-dire l'arbre le moins long que l'on peut créer à partir du nuage de points. 
+    En prenant comme référentiel le MST, les outliers sont soit des points qui sont localisés aux extrémités de l’arbre ou en intérieur dans des régions relativement vides. 
+    Ainsi, on peut les définir comme des nœuds de degrés 1, et dont la somme des poids des arêtes adjacentes est supérieure à ‘w’ selon la formule suivante  \[ \omega = q_{75} + 1.5 (q_{75} - q_{25} ) \].
+    Avec q75 représentant le 75ème percentile de la longueur des arêtes du MST et la partie entre parenthèse représentant l'interval interquartile de la longueur des arêtes.
     Puis, nous pouvons calculer le taux d’outliers dans la projection (outlying) en divisant la longueur totale de tous les outliers par la longueur totale de l’arbre selon la formule suivante : \[c_{outlying} = length(T_{outliers} )/length(T) \] .
     \item Il y a également la méthode de l’\textit{isolation Forest}. Dans celle-ci, l’algorithme choisit une caractéristique du jeu donnée et une valeur \textit{split} comprise entre le maximum et le minimum des valeurs. Cette étape est effectuée pour toutes les observations. Par la suite la moyenne des tous les arbres est faite pour construire la forêt.L'apprentissage de l’algorithme consiste à comparer les observations avec la \textit{splitting value} dans un nœud. Ce nœud comprendra également deux sous-noeuds dans lesquels on fera aussi la même comparaison. Ainsi le nombre de \textit{splitting} est égal à la longueur du chemin. Toutes les comparaisons auront un score allant de 0 à 1. 0 signifiant "normalité", et 1 signifiant qu’il y a un grand nombre d’outlier\cite{togbe2020anomaly-IsolationForest}. Elle est implémentée en python avec scikit Learn.
 \end{itemize} 

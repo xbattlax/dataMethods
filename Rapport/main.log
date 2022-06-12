@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  12 JUN 2022 11:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  12 JUN 2022 14:26
 entering extended mode
 **c:/Users/Cyril/Desktop/dataMethods/Rapport/main.tex
 (c:/Users/Cyril/Desktop/dataMethods/Rapport/main.tex
@@ -1153,59 +1153,59 @@ File: imports/tsne.png Graphic file (type png)
 Package pdftex.def Info: imports/tsne.png  used on input line 134.
 (pdftex.def)             Requested size: 199.16928pt x 149.37851pt.
 
-Overfull \hbox (23.47734pt too wide) in paragraph at lines 146--151
-\T1/cmr/m/n/10.95 Nous pou-vons égale-ment retrou-ver le Sam-mon mapping[[]], le curvi-lin-ear com-po-nents analysis(CCA)[[]],
+Overfull \hbox (23.64767pt too wide) in paragraph at lines 146--152
+\T1/cmr/m/n/10.95 Nous pou-vons égale-ment retrou-ver le Sam-mon mapping[[]], le \T1/cmr/m/it/10.95 curvi-lin-ear com-po-nents anal-y-sis\T1/cmr/m/n/10.95 (CCA)[[]],
  []
 
-[6 <./imports/tsne.png (PNG copy)>]) [7] (content/2.part.tex [8]
-Overfull \hbox (2.52739pt too wide) in paragraph at lines 115--116
+[6 <./imports/tsne.png (PNG copy)>]) [7] (content/2.part.tex [8] [9]
+Overfull \hbox (2.52739pt too wide) in paragraph at lines 126--128
 []\T1/cmr/m/n/10.95 Une des façons de raison-ner en graphe et d'utiliser le con-cept de \T1/cmr/m/it/10.95 Min-i-mum Span-ning Tree\T1/cmr/m/n/10.95 (MST)
  []
 
-[9] [10]) [11] (content/conclusion.tex) (content/realisation.tex [12]
-<imports/three_distincts.png, id=327, 430.0065pt x 327.02174pt>
+[10] [11]) [12] (content/conclusion.tex) (content/realisation.tex [13]
+<imports/three_distincts.png, id=331, 430.0065pt x 327.02174pt>
 File: imports/three_distincts.png Graphic file (type png)
 <use imports/three_distincts.png>
 Package pdftex.def Info: imports/three_distincts.png  used on input line 46.
 (pdftex.def)             Requested size: 170.71652pt x 129.82834pt.
-<imports/three_overlaped.png, id=328, 420.3705pt x 307.1475pt>
+<imports/three_overlaped.png, id=332, 420.3705pt x 307.1475pt>
 File: imports/three_overlaped.png Graphic file (type png)
 <use imports/three_overlaped.png>
 Package pdftex.def Info: imports/three_overlaped.png  used on input line 56.
 (pdftex.def)             Requested size: 170.71652pt x 124.73618pt.
-<imports/three_distincts_plus_outliers.png, id=329, 436.63126pt x 320.99925pt>
+<imports/three_distincts_plus_outliers.png, id=333, 436.63126pt x 320.99925pt>
 File: imports/three_distincts_plus_outliers.png Graphic file (type png)
 <use imports/three_distincts_plus_outliers.png>
 Package pdftex.def Info: imports/three_distincts_plus_outliers.png  used on input line 66.
 (pdftex.def)             Requested size: 170.71652pt x 125.50267pt.
-<imports/one_plus_outliers.png, id=330, 433.62pt x 311.36325pt>
+<imports/one_plus_outliers.png, id=334, 433.62pt x 311.36325pt>
 File: imports/one_plus_outliers.png Graphic file (type png)
 <use imports/one_plus_outliers.png>
 Package pdftex.def Info: imports/one_plus_outliers.png  used on input line 76.
 (pdftex.def)             Requested size: 170.71652pt x 122.58566pt.
-<imports/two_overlaped_one_alone.png, id=331, 423.38174pt x 313.77225pt>
+<imports/two_overlaped_one_alone.png, id=335, 423.38174pt x 313.77225pt>
 File: imports/two_overlaped_one_alone.png Graphic file (type png)
 <use imports/two_overlaped_one_alone.png>
 Package pdftex.def Info: imports/two_overlaped_one_alone.png  used on input line 87.
 (pdftex.def)             Requested size: 170.71652pt x 126.51689pt.
- [13 <./imports/three_distincts.png>] [14 <./imports/three_overlaped.png> <./imports/three_distincts_plus_outliers.png> <./imports/one_plus_outliers.png> <./imports/two_overlaped_one_alone.png>]) (content/0.bibliography.tex [15] (main.bbl [16
+ [14 <./imports/three_distincts.png>] [15 <./imports/three_overlaped.png> <./imports/three_distincts_plus_outliers.png> <./imports/one_plus_outliers.png> <./imports/two_overlaped_one_alone.png>]) (content/0.bibliography.tex [16] (main.bbl [17
 
-] [17]))) (cover/cover_out.tex) [18] (main.aux)
+] [18]))) (cover/cover_out.tex) [19] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E9EBF509C7DFAE20409C35B01024A801;2940.
+(rerunfilecheck)             Checksum: D2A478C6E23EA9F49863422298AEAE56;2976.
  ) 
 Here is how much of TeX's memory you used:
- 26510 strings out of 478681
- 519641 string characters out of 2846535
+ 26511 strings out of 478681
+ 519648 string characters out of 2846535
  797299 words of memory out of 3000000
  43941 multiletter control sequences out of 15000+600000
  421632 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  76i,12n,79p,1040b,613s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (21 pages, 1469087 bytes).
+Output written on main.pdf (22 pages, 1471172 bytes).
 PDF statistics:
- 881 PDF objects out of 1000 (max. 8388607)
- 97 named destinations out of 1000 (max. 500000)
+ 886 PDF objects out of 1000 (max. 8388607)
+ 98 named destinations out of 1000 (max. 500000)
  217 words of extra memory for PDF output out of 10000 (max. 10000000)
 
