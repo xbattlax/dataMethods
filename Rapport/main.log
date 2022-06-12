@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  12 JUN 2022 16:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  12 JUN 2022 17:19
 entering extended mode
 **c:/Users/Cyril/Desktop/dataMethods/Rapport/main.tex
 (c:/Users/Cyril/Desktop/dataMethods/Rapport/main.tex
@@ -1087,17 +1087,17 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 6.
  (C:\Users\Cyril\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd) [1
 
 {C:/Users/Cyril/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-<cover/meta/idmc.png, id=86, 438.63875pt x 115.43124pt>
+<cover/meta/idmc.png, id=90, 438.63875pt x 115.43124pt>
 File: cover/meta/idmc.png Graphic file (type png)
 <use cover/meta/idmc.png>
 Package pdftex.def Info: cover/meta/idmc.png  used on input line 12.
 (pdftex.def)             Requested size: 132.44934pt x 34.8548pt.
-<cover/meta/UL.jpg, id=87, 1806.75pt x 579.66562pt>
+<cover/meta/UL.jpg, id=91, 1806.75pt x 579.66562pt>
 File: cover/meta/UL.jpg Graphic file (type jpg)
 <use cover/meta/UL.jpg>
 Package pdftex.def Info: cover/meta/UL.jpg  used on input line 13.
 (pdftex.def)             Requested size: 108.62086pt x 34.8548pt.
-<cover/meta/loria.png, id=88, 235.88126pt x 215.80624pt>
+<cover/meta/loria.png, id=92, 235.88126pt x 215.80624pt>
 File: cover/meta/loria.png Graphic file (type png)
 <use cover/meta/loria.png>
 Package pdftex.def Info: cover/meta/loria.png  used on input line 15.
@@ -1116,7 +1116,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 l.61 \newpage
               [2
 
-]) (content/__all__.tex (content/0.introduction.tex [1]) [2] (content/1.part.tex
+]) (content/__all__.tex (content/0.introduction.tex [1]) [2] [3] (content/1.part.tex
 Overfull \hbox (44.27475pt too wide) in paragraph at lines 3--8
 []\T1/cmr/m/n/10.95 Lorsque l'on souhaite représen-ter en deux ou di-men-sions de grands jeux de don-nées multidimensionnels(au-
  []
@@ -1126,13 +1126,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--13
 
  []
 
-[3]
-<imports/PCA.png, id=188, 462.528pt x 346.896pt>
+[4]
+<imports/PCA.png, id=198, 462.528pt x 346.896pt>
 File: imports/PCA.png Graphic file (type png)
 <use imports/PCA.png>
 Package pdftex.def Info: imports/PCA.png  used on input line 52.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<imports/MDS.png, id=193, 462.528pt x 346.896pt>
+<imports/MDS.png, id=203, 462.528pt x 346.896pt>
 File: imports/MDS.png Graphic file (type png)
 <use imports/MDS.png>
 Package pdftex.def Info: imports/MDS.png  used on input line 72.
@@ -1140,14 +1140,14 @@ Package pdftex.def Info: imports/MDS.png  used on input line 72.
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 81.
  (C:\Users\Cyril\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [4 <./imports/PCA.png>]
-<imports/classNervSphere.png, id=208, 593.21625pt x 555.07375pt>
+) [5 <./imports/PCA.png>]
+<imports/classNervSphere.png, id=217, 593.21625pt x 555.07375pt>
 File: imports/classNervSphere.png Graphic file (type png)
 <use imports/classNervSphere.png>
 Package pdftex.def Info: imports/classNervSphere.png  used on input line 103.
 (pdftex.def)             Requested size: 199.16928pt x 186.35951pt.
- [5 <./imports/MDS.png> <./imports/classNervSphere.png>]
-<imports/tsne.png, id=226, 642.4pt x 481.8pt>
+ [6 <./imports/MDS.png> <./imports/classNervSphere.png>]
+<imports/tsne.png, id=235, 642.4pt x 481.8pt>
 File: imports/tsne.png Graphic file (type png)
 <use imports/tsne.png>
 Package pdftex.def Info: imports/tsne.png  used on input line 134.
@@ -1157,55 +1157,55 @@ Overfull \hbox (23.64767pt too wide) in paragraph at lines 146--152
 \T1/cmr/m/n/10.95 Nous pou-vons égale-ment retrou-ver le Sam-mon mapping[[]], le \T1/cmr/m/it/10.95 curvi-lin-ear com-po-nents anal-y-sis\T1/cmr/m/n/10.95 (CCA)[[]],
  []
 
-[6 <./imports/tsne.png (PNG copy)>]) [7] (content/2.part.tex [8] [9]
+[7 <./imports/tsne.png (PNG copy)>]) [8] (content/2.part.tex [9] [10]
 Overfull \hbox (2.52739pt too wide) in paragraph at lines 126--128
 []\T1/cmr/m/n/10.95 Une des façons de raison-ner en graphe et d'utiliser le con-cept de \T1/cmr/m/it/10.95 Min-i-mum Span-ning Tree\T1/cmr/m/n/10.95 (MST)
  []
 
-[10] [11]) [12] (content/realisation.tex
-<imports/three_distincts.png, id=326, 430.0065pt x 327.02174pt>
+[11] [12]) [13] (content/realisation.tex [14]
+<imports/three_distincts.png, id=339, 430.0065pt x 327.02174pt>
 File: imports/three_distincts.png Graphic file (type png)
 <use imports/three_distincts.png>
-Package pdftex.def Info: imports/three_distincts.png  used on input line 46.
+Package pdftex.def Info: imports/three_distincts.png  used on input line 66.
 (pdftex.def)             Requested size: 170.71652pt x 129.82834pt.
-<imports/three_overlaped.png, id=327, 420.3705pt x 307.1475pt>
+<imports/three_overlaped.png, id=340, 420.3705pt x 307.1475pt>
 File: imports/three_overlaped.png Graphic file (type png)
 <use imports/three_overlaped.png>
-Package pdftex.def Info: imports/three_overlaped.png  used on input line 56.
+Package pdftex.def Info: imports/three_overlaped.png  used on input line 76.
 (pdftex.def)             Requested size: 170.71652pt x 124.73618pt.
-<imports/three_distincts_plus_outliers.png, id=328, 436.63126pt x 320.99925pt>
+<imports/three_distincts_plus_outliers.png, id=341, 436.63126pt x 320.99925pt>
 File: imports/three_distincts_plus_outliers.png Graphic file (type png)
 <use imports/three_distincts_plus_outliers.png>
-Package pdftex.def Info: imports/three_distincts_plus_outliers.png  used on input line 66.
+Package pdftex.def Info: imports/three_distincts_plus_outliers.png  used on input line 86.
 (pdftex.def)             Requested size: 170.71652pt x 125.50267pt.
-<imports/one_plus_outliers.png, id=329, 433.62pt x 311.36325pt>
+<imports/one_plus_outliers.png, id=342, 433.62pt x 311.36325pt>
 File: imports/one_plus_outliers.png Graphic file (type png)
 <use imports/one_plus_outliers.png>
-Package pdftex.def Info: imports/one_plus_outliers.png  used on input line 76.
+Package pdftex.def Info: imports/one_plus_outliers.png  used on input line 96.
 (pdftex.def)             Requested size: 170.71652pt x 122.58566pt.
-<imports/two_overlaped_one_alone.png, id=330, 423.38174pt x 313.77225pt>
+<imports/two_overlaped_one_alone.png, id=343, 423.38174pt x 313.77225pt>
 File: imports/two_overlaped_one_alone.png Graphic file (type png)
 <use imports/two_overlaped_one_alone.png>
-Package pdftex.def Info: imports/two_overlaped_one_alone.png  used on input line 87.
+Package pdftex.def Info: imports/two_overlaped_one_alone.png  used on input line 107.
 (pdftex.def)             Requested size: 170.71652pt x 126.51689pt.
- [13] [14 <./imports/three_distincts.png> <./imports/three_overlaped.png> <./imports/three_distincts_plus_outliers.png> <./imports/one_plus_outliers.png>]) [15 <./imports/two_overlaped_one_alone.png>] (content/conclusion.tex) [16] (content/0.bibliography.tex (main.bbl [17
+ [15 <./imports/three_distincts.png>] [16 <./imports/three_overlaped.png> <./imports/three_distincts_plus_outliers.png> <./imports/one_plus_outliers.png> <./imports/two_overlaped_one_alone.png>]) [17] (content/conclusion.tex) (content/0.bibliography.tex (main.bbl [18
 
-] [18]))) (cover/cover_out.tex) [19] (main.aux)
+] [19]))) (cover/cover_out.tex) [20] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BA8860962ADC211029D204CA3303AD5B;2976.
+(rerunfilecheck)             Checksum: 8501B23C9210A96993BC01D737E14638;3228.
  ) 
 Here is how much of TeX's memory you used:
- 26511 strings out of 478681
- 519648 string characters out of 2846535
- 797243 words of memory out of 3000000
- 43941 multiletter control sequences out of 15000+600000
+ 26514 strings out of 478681
+ 519689 string characters out of 2846535
+ 797244 words of memory out of 3000000
+ 43942 multiletter control sequences out of 15000+600000
  421632 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  76i,12n,79p,1040b,613s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Cyril\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Cyril/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (22 pages, 1469802 bytes).
+Output written on main.pdf (23 pages, 1471000 bytes).
 PDF statistics:
- 880 PDF objects out of 1000 (max. 8388607)
- 98 named destinations out of 1000 (max. 500000)
- 217 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 888 PDF objects out of 1000 (max. 8388607)
+ 100 named destinations out of 1000 (max. 500000)
+ 225 words of extra memory for PDF output out of 10000 (max. 10000000)
 

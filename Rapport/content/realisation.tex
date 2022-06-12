@@ -1,30 +1,50 @@
-Comme ça a été mentionné dans l’état de l’art la visualisation des grands jeux de donnée souffre de cette malédiction de la dimensionalité. 
-Le problème des projections dans ce cas précis n’est pas celui de projeter les données, mais celui de les projeter fidèlement. 
+\sectionnn{Introduction réalisation}
+Comme ça a été mentionné dans l’état de l’art la visualisation des grands jeux de donnée souffre de cette malédiction de la dimensionalité. Le problème des projections dans ce cas précis n’est pas celui de projeter les données, mais celui de les projeter fidèlement. 
 C’est-à-dire, la difficulté pour la méthode à respecter le rapport des distances des points entre le jeu de donné original (à n-dimensions) et la projection finale (qui réduit ce dernier à deux ou 3 dimensions). 
-Plus le nombre de dimensions augmente, plus il devient compliqué de respecter les distances après réduction. // Puis suite du paragraphe.
+Plus le nombre de dimensions augmente, plus il devient compliqué de respecter les distances après réduction. 
+\newline
+Le choix d’une méthode de projection par rapport à une autre dépend d'autant plus de la sémantique et de la structure des données. Ce choix dépendra aussi de ce que l’on souhaite observer : voulons-nous mettre en valeur les classes ? Voulons-nous détecter des valeurs aberrantes? 
+En fonction de cela, le choix de la méthode et de son paramétrage peut grandement différer.
+\smallskip
+Une fois le jeu de données projeté, il faut s’assurer de la qualité de cette projection.
+Pour cela nous disposons de nombreux critères qui peuvent donner un indice sur le clustering, outlying et la densité de la projection. Certains critères sont même propres à certaines méthodes(comme le projection score pour l'ACP).
+Encore une fois, en fonction de ce que nous voulons observer certains critères seront plus utiles que d'autres. De plus, ces critères ne font pas tout : d’une certaine façon, une projection se doit d’être à la fois la plus compréhensible par l’Homme et la plus fidèle possible au jeu de données qu’elle représente.
+
+
+\medskip
+C'est dans ce but, que dans la partie réalisation de cette UE, nous souhaitons mettre en place une évaluation des différentes méthodes de projections citées.
+Pour faire cela, nous envisageons de procéder de la façon suivante: \newline
+Au vu de nos nombreuses lectures et  des résultats sur notre jeu de données tests (Globe), nous avons déduit que la méthode ClassNeRV est la plus performante et donne les résultats les plus satisfaisants. 
+Par conséquent, nous souhaitons effectuer un étalonnage des différentes autres méthodes de projection, en l'utilisant en tant que référentiel. \newline
+Notre idée est donc la suivante : lorsqu'un jeu de donnée sera projeté avec une autre méthode de projection, 
+le résultat obtenu sera comparé à la projection de ce même jeu de donnée obtenue via ClassNerV.
+Puis, en fonction des divergences entre ces deux jeux de données projetés, certains biais seront mesurés et affichés.
+De plus dans l'objectif d'être le plus précis possible, nous envisageons également de mesurer les différents critères de la projection(clustering, outlying, forme...) et de croiser les résultats obtenus à ceux de la comparaison des deux projections.
+Nous pensons aussi qu'il serait judicieux de mettre en place un système de "scoring", qui permettrait de rendre plus intuitive l'appréhension des résultats relatifs à la qualité de la visualisation. 
+\newline 
+Le but de cette démarche est de proposer un outil capable de comparer sa méthode de projection à d'autres via un tableau de scoring pour se rendre compte de la pertinence et de la fidélité des diverses méthode de projection.
 
 \medskip
 
-Méthodologie : 
+
+\section{Implémentation}
+
+\subsection{Méthodologie} : 
 Nous avons donc mis en place un programme avec un système de score qui classe l’efficacité des différentes méthodes de réduction/projection pour un même jeu de donné. 
-C’est-à-dire que le jeu de donnée va passer une fois dans chaque algorithme, puis le résultat sera mesuré.
+C’est-à-dire que le jeu de donnée va être projeté une fois par chaque algorithme, puis le résultat sera évalué.
 Pour mesurer ces résultats nous avons utilisé différents critères issus de la librairie R « clusterCrit » et scikit-learn.
 ClusterCrit est une librairie R qui fournit une liste de critéres permettant d'attester de la qualité interne des clusters et une liste de critères qui permet 
 de mesurer la similarité entre deux partitions. Ces critères prennent seulement en compte la répartition des points dans les différents cluster et ne permettent pas de 
 mesurer la qualité de la distribution.
 
-
-
-\section{Implémentation}
-
-\subsection{Jeux de données}
+\subsection{Jeux de données utilisés}
 Pour comparer les différentes méthodes nous avons créer plusieurs jeux de donnés qui présentent les caractéristiques suivantes :
 \begin{itemize}
-    \item deux clusters superposés avec un seul
-    \item  trois clusters bien distincts
-    \item trois clusters superposés
-    \item un cluster entouré de quelques outliers
-    \item trois cluster entourés d’outliers     
+    \item deux clusters superposés avec un seul(Figure 5)
+    \item  trois clusters bien distincts(Figure 6)
+    \item trois clusters superposés(Figure 7)
+    \item un cluster entouré de quelques outliers(Figure 8)
+    \item trois cluster entourés d’outliers(Figure 9)    
 \end{itemize}
 Pour les créer nous avons utilisé la méthode \textit{makeblobs} de la librairie \textit{sklearn}. Les paramètres fixes sont :
 \begin{itemize}
@@ -93,20 +113,17 @@ Nous avons fait varier les paramètres suivants pour obtenir la répartition sou
 
 
 
-\subsection{Méthodes}
+\subsection{Fonctionnement du programme}
 La librairie \textit{rpy2} est utilisée pour pouvoir charger et utiliser des librairies R sous sous Python. Comme précisé plus haut
-nous appliquons cela à la librairie \textit{clusterCrit} . Tous les critéres d'intérêts sont listé dans la variable globale \textit{crit}, une liste.
-
-
+nous appliquons cela à la librairie \textit{clusterCrit} . Tous les critéres d'intérêts sont listé dans la variable globale \textit{crit}.
 
 La fonction \textit{calculate} va utiliser chaque méthode de réduction sur le jeu de donnée, le resultat de cette réduction sera stockée dans
-la variable \textit{p2} à laquelle on appliquera la fonction \textit{IntVector}. Comme éléments de comparaison, on applique Kmean sur le jeu de donnée originel. ce qui permet
-Kmean permet de partitionner un jeu de données en k groupes/cluster. Dans notre situation nous nous sommes fixé à k=3.
+la variable \textit{p2} à laquelle on appliquera la fonction \textit{IntVector} qui permet de convertir un tableau python en vecteur utilisable sous R. 
+Comme éléments de comparaison, on applique Kmean sur le jeu de donnée originel. ce qui permet de partitionner le jeu de données en k groupes/cluster. 
+Dans notre cas k = 3.
 
 Une fois ces deux opérations effectuées, il y a deux variables \textit{rds} (qui représente le résultat de la méthode de réduction), et \textit{rdsOriginal} (qui représente le jeu de
-donnée original après kmean.)
-
-Pour comparer, ces deux jeux de données nous les passons en paramètre de la fonction \textit{metricsCalcul}.
+donnée original après kmean.) Pour comparer, ces deux jeux de données nous les passons en paramètre de la fonction \textit{metricsCalcul}.
 Celle-ci va itérer à travers tous les critèrs de la liste \textit{crit} et appliquer l'évaluation de chaque critères.
 
 \subsection{Résultats}
