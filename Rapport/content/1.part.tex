@@ -1,6 +1,6 @@
 \section{Les méthodes de projection}
 
-Lorsque l'on souhaite représenter en deux ou trois dimensions de grands jeux de données multidimensionnels(au-delà de vingt dimensions\cite{dzemyda2016big}\cite{HeulotThese}), il faut passer par une réduction de dimension. 
+Lorsque l'on souhaite représenter en deux ou  dimensions de grands jeux de données multidimensionnels(au-delà de vingt dimensions\cite{dzemyda2016big}\cite{HeulotThese}), il faut passer par une réduction de dimension. 
 Cette étape intervient dans le processus de projection et est indispensable dans ce cas précis où il y a un nombre important de dimensions(plus d'une vingtaine \cite{HeulotThese}). 
 Néanmoins, une réduction implique inexorablement une perte d’information et donc une perte de précision, ce qui peut biaiser la projection ainsi que son interprétation. Il est donc important, malgré des pertes inévitables, d'essayer de conserver au maximum les structures et les données utiles.
 Le facteur numérique est donc un facteur clé, qui se doit d’être compris et maitrisé. 
@@ -38,7 +38,7 @@ Cela permet soit de trouver un optimum global(qui préserve la structure globale
 
 \subsection{Analyse en Composantes Principales(ACP)}
 
-Ce type de projection linéaire vise à préserver de la façon la plus optimale la variance dans les données en transformant des variables corrélées en variables non corrélées(également appelées ’’composantes principales") qui expliquent la variabilité dans les données. L’ACP mesure l’inertie des données pour réduire au maximum le nombre de variables. 
+Ce type de projection linéaire vise à préserver de la façon la plus optimale la variance dans les données en transformant des variables corrélées en variables non corrélées(également appelées \textit{composantes principales}) qui expliquent la variabilité dans les données. L’ACP mesure l’inertie des données pour réduire au maximum le nombre de variables. 
 Géométriquement parlant, elle a recourt à une projection orthogonale des données dans un sous-espace principal obtenu par combinaison des dimensions dans le jeu de données. Le sous-espace est calculé de sorte que le nuage de points obtenu à partir de la projection maximise la variance des données \cite{HeulotThese}.\newline
 Cette méthode est beaucoup utilisée dans de nombreux domaines d’application. Elle fournit une pondération des composantes principales, ce qui permet de déterminer les directions de dispersions des données les plus importantes.
 La projection résultante est directement interprétable,car les vecteurs propres décrivent la contribution de chaque variable \cite{HeulotThese}.
