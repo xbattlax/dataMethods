@@ -40,13 +40,13 @@ N.~Heulot, ``Etude des projections de donn{\'e}es comme support interactif de
   l'analyse visuelle de la structure de donn{\'e}es de grande dimension,''
   Ph.D. dissertation, Universit{\'e} Paris-Sud, 2014.
 
+\bibitem{koffka1997PsychoGesttalt}
+K.~Koffka, ``Principle of gestalt psychology, translated by w. li,'' 1997.
+
 \bibitem{scarlet}
 S.~Johansson and J.~Johansson, ``Interactive dimensionality reduction through
   user-defined combinations of quality metrics,'' \emph{IEEE transactions on
   visualization and computer graphics}, vol.~15, no.~6, pp. 993--1000, 2009.
-
-\bibitem{koffka1997PsychoGesttalt}
-K.~Koffka, ``Principle of gestalt psychology, translated by w. li,'' 1997.
 
 \bibitem{aupetit2007visualizing}
 M.~Aupetit, ``Visualizing distortions and recovering topology in continuous
