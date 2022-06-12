@@ -1211,10 +1211,6 @@ INPUT content\2.part.tex
 INPUT .\content\2.part.tex
 INPUT content\2.part.tex
 INPUT C:\Users\Cyril\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbi1095.tfm
-INPUT .\content\conclusion.tex
-INPUT content\conclusion.tex
-INPUT .\content\conclusion.tex
-INPUT content\conclusion.tex
 INPUT .\content\realisation.tex
 INPUT content\realisation.tex
 INPUT .\content\realisation.tex
@@ -1254,6 +1250,10 @@ INPUT .\imports\two_overlaped_one_alone.png
 INPUT .\imports\two_overlaped_one_alone.png
 INPUT .\imports\two_overlaped_one_alone.png
 INPUT .\imports\two_overlaped_one_alone.png
+INPUT .\content\conclusion.tex
+INPUT content\conclusion.tex
+INPUT .\content\conclusion.tex
+INPUT content\conclusion.tex
 INPUT .\content\0.bibliography.tex
 INPUT content\0.bibliography.tex
 INPUT .\content\0.bibliography.tex
