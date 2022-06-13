@@ -32,6 +32,7 @@ Dans le cas des algorithmes de projection linéaire, l’espace de plus faible d
 Les algorithmes de projection non linéaires partent du principe qu'il existe une variété non linéaire de plus faibles dimensions que l’on peut projeter sans trop de déformations dans un espace 2D(ou 3D). Les données sont ainsi projetées en conservant les propriétés de leur variété. Pour cela, elles utilisent des mesures de stress métriques(selon les distances) ou Non-Métriques(selon le rang des distances). 
 Ensuite plusieurs méthodes d’optimisation sont utilisées telles que la descente de gradient, les réseaux de neurones\cite{hwang1991GradientNeuralNetwork} ou bien le placement par force(pour les jeux de données les moins gros)\cite{dickhaus2014ForceBrute}. 
 Cela permet soit de trouver un optimum global(qui préserve la structure globale) ou un optimum local(dans le cas où les méthodes préservent les voisinages locaux).
+Pour illustrer la présentation de ces méthodes nous utiliserons le jeu de données GLOBE... 
 \smallskip
 
 
@@ -109,7 +110,7 @@ La méthode est implémentée dans la librairie \href{https://scikit-learn.org/s
 On peut remarquer que l'on obtient un meilleur résultat avec un $\varepsilon$ de 0.25 et un $\tau^*$ de 0.75, c'est-à-dire une supervision moyenne et en privilégiant les faux voisins plutôt que les voisins manqués.
 Il est également important de noter que cette méthode est très coûteuse en temps de calcul. 
 
-Le code Python nécessaire pour l'implémentation de cette méthode est accessible : \href{https://zenodo.org/record/4094851#.YaxeoS_pO-w}{ici}.
+Le code Python nécessaire pour l'implémentation de cette méthode est accessible ici : \href{https://zenodo.org/record/4094851#.YaxeoS_pO-w}{link}.
 
 
 \subsection{t-SNE}
@@ -155,7 +156,7 @@ C’est en partie pour ces raisons et le manque d'implémentation disponibles qu
 Comme nous avons pu le voir, il existe de nombreux algorithmes de projections qui se basent tous sur différentes hypothèses mathématiques, différents critères et différents paramétrages. Ainsi, avec un même jeu de données, il est possible d'obtenir plusieurs projections différentes en fonction des algorithmes choisis(le nuage de points ne sera pas le même) . 
 Le choix du type d’algorithme de projection à utiliser dépend de la nature des données que l’on veut étudier, du type de résultat que l’on souhaite observer et de nombreuses caractéristiques propres aux données qui peuvent être très complexes à appréhender sans de bonnes connaissances en projection de données.
 
-Par exemple, nous avons vu pour L’ACP et Isomap, qu'elles ne sont pas stables face aux variations des données. La raison est que l'ajout ou la suppression de quelques instances peut modifier de manière significative les vecteurs et les valeurs propres, affectant ainsi considérablement la cartographie. Même de petites perturbations dans les données peuvent avoir un impact conséquent sur la cartographie finale en raison de l'inversion des vecteurs propres. Ce qui entraîne des configurations très différentes avant et après la perturbation \cite{nonato2018multidimensional}.
+Par exemple, nous avons vu pour L’ACP, qu'elle n'est pas stable face aux variations des données. La raison est que l'ajout ou la suppression de quelques instances peut modifier de manière significative les vecteurs et les valeurs propres, affectant ainsi considérablement la cartographie. Même de petites perturbations dans les données peuvent avoir un impact conséquent sur la cartographie finale en raison de l'inversion des vecteurs propres. Ce qui entraîne des configurations très différentes avant et après la perturbation \cite{nonato2018multidimensional}.
 Le t-SNE quant à lui est basé sur des procédures d'optimisation dont la solution optimale dépend des conditions initiales. En général, des initialisations différentes conduisent à des solutions différentes. La stabilité n'est pas garantie même en fixant la condition initiale, de sorte qu'une modification du nombre d'éléments peut conduire à des agencements sensiblement différents \cite{garcia2013stability}.
 Quant au MDS, c'est une technique qui repose sur des points de repère ou de contrôle et qui a tendance à être stable tant que les points de contrôle et de repère restent fixes. Comme la position de chaque instance ne dépend que des points de contrôle (points de repère), si ces points ne changent pas, le mappage ne change pas non plus \cite{garcia2013stability}.
 

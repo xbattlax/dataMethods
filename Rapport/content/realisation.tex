@@ -29,8 +29,8 @@ Le but de cette démarche est de proposer un outil capable de comparer sa métho
 
 \section{Implémentation}
 
-\subsection{Méthodologie} : 
-Nous avons donc mis en place un programme avec un système de score qui classe l’efficacité des différentes méthodes de réduction/projection pour un même jeu de donné. 
+\subsection{Méthodologie} 
+Nous avons donc mis en place un programme avec un système de score qui classe l’efficacité des différentes méthodes de réduction/projection pour un même jeu de données. 
 C’est-à-dire que le jeu de donnée va être projeté une fois par chaque algorithme, puis le résultat sera évalué.
 Pour mesurer ces résultats nous avons utilisé différents critères issus de la librairie R « clusterCrit » et scikit-learn.
 ClusterCrit est une librairie R qui fournit une liste de critéres permettant d'attester de la qualité interne des clusters et une liste de critères qui permet 
@@ -41,7 +41,7 @@ mesurer la qualité de la distribution.
 Pour comparer les différentes méthodes nous avons créer plusieurs jeux de donnés qui présentent les caractéristiques suivantes :
 \begin{itemize}
     \item deux clusters superposés avec un seul(Figure 5)
-    \item  trois clusters bien distincts(Figure 6)
+    \item trois clusters bien distincts(Figure 6)
     \item trois clusters superposés(Figure 7)
     \item un cluster entouré de quelques outliers(Figure 8)
     \item trois cluster entourés d’outliers(Figure 9)    
@@ -114,12 +114,12 @@ Nous avons fait varier les paramètres suivants pour obtenir la répartition sou
 
 
 \subsection{Fonctionnement du programme}
-La librairie \textit{rpy2} est utilisée pour pouvoir charger et utiliser des librairies R sous sous Python. Comme précisé plus haut
-nous appliquons cela à la librairie \textit{clusterCrit} . Tous les critéres d'intérêts sont listé dans la variable globale \textit{crit}.
+La librairie \textit{rpy2} est utilisée pour pouvoir charger et utiliser des librairies R sous Python. Comme précisé plus haut
+nous appliquons cela à la librairie \textit{clusterCrit}. Et appelerons tous les critéres d'intérêts qui sont listé dans la variable globale \textit{crit}.
 
 La fonction \textit{calculate} va utiliser chaque méthode de réduction sur le jeu de donnée, le resultat de cette réduction sera stockée dans
 la variable \textit{p2} à laquelle on appliquera la fonction \textit{IntVector} qui permet de convertir un tableau python en vecteur utilisable sous R. 
-Comme éléments de comparaison, on applique Kmean sur le jeu de donnée originel. ce qui permet de partitionner le jeu de données en k groupes/cluster. 
+Comme éléments de comparaison, on applique Kmean sur le jeu de donnée originel. ce qui permet de partitionner le jeu de données en k groupes. 
 Dans notre cas k = 3.
 
 Une fois ces deux opérations effectuées, il y a deux variables \textit{rds} (qui représente le résultat de la méthode de réduction), et \textit{rdsOriginal} (qui représente le jeu de

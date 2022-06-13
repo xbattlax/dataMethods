@@ -47,7 +47,7 @@ vues statiques qui peuvent l’aider à filtrer.
 \subsection{Les critères de mesure}
 
 Pour évaluer la qualité d’une projection, plusieurs approches se basant sur différents ritères existant.
-Ces critères peuvent être relatifs à la structure des données projetées avec le taux d’oublier de la projection (outlying), le taux de cluster et à leurs qualités(visual clustering, class consistency, cluster separator, class density), et à la forme de la projection (clumpy, skinny).
+Ces critères peuvent être relatifs à la structure des données projetées avec le taux d’oublier de la projection (\textit{outlying}), le taux de cluster et à leurs qualités(\textit{visual clustering}, \textit{class consistency}, \textit{cluster separator}, \textit{class density}), et à la forme de la projection (\textit{clumpy}, \textit{skinny}).
 Nous allons les détailler au cours de ce chapitre.
 
 \subsubsection{Clustering}
@@ -85,7 +85,7 @@ Ce critère évalue la projection en fonction de ses propriété de séparation.
 d'identifier les zones où il y a le moins de chevauchement entre les classes.
 
 
-Pour calculer ce chevauchement entre classes, la méthode passe par l'utilisation d'une représentation continue du jeu de donnée : où les points
+Pour calculer ce chevauchement entre classes, la méthode passe par l'utilisation d'une représentation continue du jeu de donnée dans laquelle les points
 appartenants au même cluster forment une image différente. Cela revient à faire en sorte que pour chaque classe il y ai une image distincte avec
 des densités continues et régulières calculée à partir du voisinage local de chaque point (ou pixel).
 
@@ -106,9 +106,9 @@ chevauchement le plus faible sera retenue.
 \smallskip
 Il y a aussi la mesure de l`\textit{histogram density} \cite{HeulotThese} \cite{AndradaTatu2009combining} qui est une mesure de l’entropie de la projection
 (i.e l'information moyenne de différentes portions de la projection découpée en grille). La
-projection est séparée en plusieurs barres (à l'image des histogrammes). Dans chacun de
-ces bins on comptabilise le nombre de points et leur étiquette de classe. L’entropie de
-chaque bin se calcule de cette façon. \[ H(p) = - \sum_{c} * \frac{P_c}{\sum_{c}*P_c} * \log_2 * \frac{P_c}{\sum_c * P_c} \]
+projection est séparée en plusieurs barres (à l'image des histogrammes). Dans chacune de
+ces barres on comptabilise le nombre de points et leur étiquette de classe. L’entropie de
+chaque barre se calcule de cette façon. \[ H(p) = - \sum_{c} * \frac{P_c}{\sum_{c}*P_c} * \log_2 * \frac{P_c}{\sum_c * P_c} \]
 Ainsi, si tous les points d’une barre sont de la même classe, alors l’entropie est égale à zéro. Par conséquent le clustering sera de bonne qualité.
 
 \end{itemize}
@@ -128,10 +128,12 @@ Un \textit{outlier} est une donnée aberrante. Pour déterminer si un point est 
     Ainsi, on peut les définir comme des nœuds de degrés 1, et dont la somme des poids des arêtes adjacentes est supérieure à ‘w’ selon la formule suivante  \[ \omega = q_{75} + 1.5 (q_{75} - q_{25} ) \].
     Avec q75 représentant le 75ème percentile de la longueur des arêtes du MST et la partie entre parenthèse représentant l'interval interquartile de la longueur des arêtes.
     Puis, nous pouvons calculer le taux d’outliers dans la projection (outlying) en divisant la longueur totale de tous les outliers par la longueur totale de l’arbre selon la formule suivante : \[c_{outlying} = length(T_{outliers} )/length(T) \] .
-    \item Il y a également la méthode de l’\textit{isolation Forest}. Dans celle-ci, l’algorithme choisit une caractéristique du jeu donnée et une valeur \textit{split} comprise entre le maximum et le minimum des valeurs. Cette étape est effectuée pour toutes les observations. Par la suite la moyenne des tous les arbres est faite pour construire la forêt.L'apprentissage de l’algorithme consiste à comparer les observations avec la \textit{splitting value} dans un nœud. Ce nœud comprendra également deux sous-noeuds dans lesquels on fera aussi la même comparaison. Ainsi le nombre de \textit{splitting} est égal à la longueur du chemin. Toutes les comparaisons auront un score allant de 0 à 1. 0 signifiant "normalité", et 1 signifiant qu’il y a un grand nombre d’outlier\cite{togbe2020anomaly-IsolationForest}. Elle est implémentée en python avec scikit Learn.
+    \item Il y a également la méthode de l’\textit{isolation Forest}. Dans celle-ci, l’algorithme choisit une caractéristique du jeu donnée et une valeur \textit{split} comprise entre le maximum et le minimum des valeurs. Cette étape est effectuée pour toutes les observations. 
+    Par la suite la moyenne des tous les arbres est faite pour construire la forêt.L'apprentissage de l’algorithme consiste à comparer les observations avec la \textit{splitting value} dans un nœud. Ce nœud comprendra également deux sous-noeuds dans lesquels on fera aussi la même comparaison. 
+    Ainsi le nombre de \textit{splitting} est égal à la longueur du chemin. Toutes les comparaisons auront un score allant de 0 à 1. 0 signifiant "normalité", et 1 signifiant qu’il y a un grand nombre d’outlier\cite{togbe2020anomaly-IsolationForest}. Elle est implémentée en python avec scikit Learn.
 \end{itemize} 
 
-Puis, nous pouvons calculer le taux d’outliers dans la projection (outlying) en divisant la
+Puis, nous pouvons calculer le taux d’outliers dans la projection (\textit{outlying}) en divisant la
 longueur totale de tous les outliers par la longueur totale de l’arbre selon la formule suivante.
 \[c_{outlying} = length(T_{outliers} )/length(T) \].
 
@@ -140,7 +142,7 @@ longueur totale de tous les outliers par la longueur totale de l’arbre selon l
 \textbf{Le Local Outlier Factor(LOF):}
 \smallskip
 Pour ce critère, on considère un outlier selon son voisinage local\cite{breunig2000lof}.
-Le LRD(Local Reachability Density) de chaque point est comparé avec le LRD de ses voisins. Puis on calcule le ratio de la moyenne des LRD des voisins du point sur le LRD du point lui-même. Si le Local Outlier Factor est supérieur à 1 alors le point est un outlier.
+Le LRD(\textit{Local Reachability Density}) de chaque point est comparé avec le LRD de ses voisins. Puis on calcule le ratio de la moyenne des LRD des voisins du point sur le LRD du point lui-même. Si le Local Outlier Factor est supérieur à 1 alors le point est un outlier.
 Cette mesure est très utile pour détecter des outliers dans les clusters extrêmement denses. Néanmoins cette valeur étant un ratio et non un seuil, elle est parfois compliquée à interpréter en fonction de la problématique de recherche.
 
 
@@ -155,12 +157,12 @@ Dans le cas où le chemin le plus court d’un Minimum Spanning Tree est quasime
 long que la somme des arêtes de l’arbre d’origine, la courbe peut être qualifiée de \textit{stringy} \[C_{stringy} = diameter(T)/length(T) \]
 
 \subsubsection{Critère de densité}
-Dans une configuration éparpillée (scattered) il y a également le critère de densité qui
+Dans une configuration éparpillée (\textit{scattered}) il y a également le critère de densité qui
 importe. C’est la distribution des arêtes du Minimum Spanning Tree qui va donner des
 informations sur la densité relative de points.
 Le calcul de cette densité se base sur la mesure des quantiles de la longueur des arêtes : 
 \[c_{skew} = (q_{90}-q_{50})/(q_{90}-q_{10})\]
-Ainsi, si la dimension d’un Minimum Spanning Tree est extrêmement asymétrique, les
+Ainsi, si la dimension d’un \textit{Minimum Spanning Tree} est extrêmement asymétrique, les
 clusters y seront mal représentés. Dans ce cas, elle est qualifiée de \textit{clumpy}. \cite{wilkinson2005graph-MST}
 
 
@@ -180,10 +182,11 @@ Par conséquent, la projection est plus susceptible de proposer des structures f
 Ces mesures de qualité sont donc utiles pour les personnes non spécialistes, ce qui leur permet d’appréhender au mieux la visualisation obtenue après projection.
 Elles peuvent également être utilisées de façon automatique dans des algorithmes qui permettent de trier et de déterminer si la projection qui va être affichée est fidèle au jeu de données\cite{bertini2011quality-AutomatisationAlgo}. 
 \newline
-Comme nous l’avons brièvement abordé dans l'introduction, les facteurs numériques à eux seuls ne suffisent pas à l’interprétation d’une projection : il faut rajouter le facteur humain à l’équation.
-Malgré l’utilité de toutes ces mesures, le jugement humain reste toujours le plus important\cite{AndradaTatu2010visual}. De plus, c'est également l’être humain qui a pour rôle d’interpréter la projection.  C’est pour cela qu’il existe des évaluations à faire passer aux humains, qui servent à mesurer l’impact des techniques de projection, la qualité des graphiques et leur compréhension par l’utilisateur. Par exemple ,nous pouvons tester directement les utilisateurs avec plusieurs types de tâches telles que le “data outlier validation”, le “clustering validation”, le “cluster énumération”, et le “class outliers validation” \cite{HeulotAnEvaluation}. 
+Comme nous l’avons brièvement abordé dans l'état de l'art, les facteurs numériques à eux seuls ne suffisent pas à l’interprétation d’une projection : il faut rajouter le facteur humain à l’équation.
+Malgré l’utilité de toutes ces mesures, le jugement humain reste toujours le plus important\cite{AndradaTatu2010visual}. De plus, c'est également l’être humain qui a pour rôle d’interpréter la projection. C’est pour cela qu’il existe des évaluations à faire passer aux humains, qui servent à mesurer l’impact des techniques de projection, la qualité des graphiques et leur compréhension par l’utilisateur. 
+Par exemple ,nous pouvons tester directement les utilisateurs avec plusieurs types de tâches telles que le “data outlier validation”, le “clustering validation”, le “cluster énumération”, et le “class outliers validation” \cite{HeulotAnEvaluation}. 
 Ces tests consistent en la détection des structures et des données aberrantes dans les projections.
-Ainsi si une projection a une bonne qualité (suivant les critères numériques) et permet aux utilisateurs de discriminer rapidement et correctement les structures,elle tend alors vers ce que l’on peut considérer comme étant une bonne projection.
+Ainsi si une projection a une bonne qualité (suivant les critères numériques) et permet aux utilisateurs de discriminer rapidement et correctement les structures, elle tend alors vers ce que l’on peut considérer comme étant une bonne projection.
  
 
 

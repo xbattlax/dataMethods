@@ -5,19 +5,19 @@ La visualisation permet aux utilisateurs d’avoir un aperçu global des donnée
 Différentes techniques de visualisation existent \cite{HeulotThese}, mais c’est sur la projection que nous allons nous concentrer. 
 \smallskip
 
-    Dans une projection, toutes les données sont projetées selon une projection linéaire ou non des axes dans un plan en deux dimensions. Cela permet de représenter les données sous la forme d’un nuage de points on parle de \textit{représentation dispersée} ou \textit{scattered representation} en essayant de respecter au mieux la structure des données \cite{HeulotThese}. \newline 
+    Dans une projection, toutes les données sont projetées selon une projection linéaire ou non des axes dans un plan en deux dimensions. Cela permet de représenter les données sous la forme d’un nuage de points on parle de représentation dispersée (ou \textit{scattered representation)} en essayant de respecter au mieux la structure des données \cite{HeulotThese}. \newline 
     Dans une projection, les axes ne jouent pas forcément un rôle : c’est principalement la distance entre les points qui donne un sens et une interprétabilité à la projection\cite{koffka1997PsychoGesttalt}. 
     Le principe de base d'une lecture projection est le suivant : les points qui sont proches les uns des autres sont censés être relativement similaires tandis que ceux qui sont éloignés sont censés être différents. \newline 
     Les projections permettent également d’inférer des propriétés sur les données et de les vérifier. Par exemple, il est possible de vérifier si les clusters sont séparables linéairement (notamment à l’aide d’une projection linéaire) \cite{HeulotThese} .
 \smallskip
 
-Acquérir les données et les traiter sont deux étapes qui sont de plus en plus simples. Le défi est de représenter fidèlement les jeux de données. En effet, dans une projection les jeux de données peuvent atteindre jusqu’à des dizaines de milliers de dimensions et doivent être réduit en deux ou trois dimensions pour être visualisables et compréhensibles par l’homme. 
+Acquérir les données et les traiter sont deux étapes qui sont de plus en plus simples. Le défi est de représenter fidèlement les jeux de données. En effet, dans une projection les jeux de données peuvent atteindre jusqu’à des dizaines de milliers de dimensions et doivent être réduits en deux ou trois dimensions pour être visualisables et compréhensibles par l’homme. 
 Néanmoins, représenter fidèlement une distance euclidienne après réduction et projection est tout bonnement impossible car ce processus de réduction de dimension a un coût une : perte d’informations.
 Celle-ci est causée par l'étirement ou la compression de la plupart des distances entre paires, car la dimension de l'espace couvert par les données d'origine est généralement supérieure à la dimension de l'espace de projection. Cela cause l’apparition d’artefacts dans la projection. 
 Ces artefacts compromettent ainsi grandement la fiabilité et la bonne interprétation de ces graphiques\cite{scarlet}. 
 
 
-Par conséquent, la mesure et la visualisation de ces distorsions appelées \textit{artefacts} sont cruciales pour l'analyse. Elles se doivent d'être analysées afin de détecter quelles distances entre paires ont été préservées, 
+Par conséquent, la mesure et la visualisation de ces distorsions appelées artefacts sont cruciales pour l'analyse. Elles se doivent d'être analysées afin de détecter quelles distances entre paires ont été préservées, 
 et donc d'évaluer si les caractéristiques observées dans l'espace de projection sont des images fidèles des caractéristiques de l'espace originel, ou simplement des artefacts de la projection.
 \medskip
 
@@ -54,14 +54,14 @@ L’idée a notamment été reprise par Heulot\cite{HeulotThese}, il se base sur
 
 \medskip
 Comme vous avez pu le comprendre, la qualité d'une projection est primordiale pour une bonne interprétation des données. La qualité de la projection dépendre du jeu de données et de la méthode utilisée pour le réduire et le projeter.
-Par conséquent, il est parfaitement logique de se demander comment évaluer la qualité d'une projection et comment choisir la méthode de projection en fonction d'un jeu de données en particulier.
+Par conséquent, il est parfaitement logique de se demander comment évaluer la qualité d'une projection et comment choisir la méthode de projection en fonction d'un jeu de donnéess.
 Pour tenter de répondre à cette question nous avons mis en place une programme permettant d'évaluer les différentes méthodes de projection pour un même jeu de données.
 Dans ce rapport nous parlerons dans un premier temps des différentes méthodes de projections que nous allons étudier. Puis nous expliciterons les critères que nous allons utiliser pour attester de leur qualité.
-Enfin nous parlerons en détails du programme permettant d'évaluer ces diffénts types de projections que nous avons mis en place.
+Enfin nous parlerons en détails du programme que nous avons codé permettant d'évaluer ces diffénts types de projections.
 
 
 
-
+        
 
 
 
