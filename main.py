@@ -1,37 +1,21 @@
 import json
-import math
 import traceback
 
-import pandas as pd
-from rpy2 import robjects
 from rpy2.rinterface_lib.embedded import RRuntimeError
-from rpy2.robjects import pandas2ri
 from scipy import io
 from sklearn.manifold import MDS
 from tsne import tsne
 from embedder import ClassNeRV
 from sklearn.decomposition import PCA
-import sklearn.metrics
 import dataset
-import rpy2
 import rpy2.robjects.packages as rpackages
 from rpy2.robjects.vectors import StrVector
-from rpy2.robjects.packages import importr
 from sklearn.cluster import KMeans
-import rpy2.robjects as ro
-from rpy2.robjects.packages import importr
-from rpy2.robjects import pandas2ri
 from rpy2.robjects.vectors import IntVector
-from rpy2.robjects import numpy2ri
 
 import pandas as pd
-import rpy2.robjects as ro
 from rpy2.robjects.packages import importr
 from rpy2.robjects import pandas2ri
-
-from rpy2.robjects.conversion import localconverter
-
-from rpy2.robjects.conversion import localconverter
 
 
 crit = ["Czekanowski_Dice", "Folkes_Mallows", "Hubert","Jaccard", "Kulczynski", "McNemar","Phi","Precision","Rand","Recall" ,"Rogers_Tanimoto", "Russel_Rao", "Sokal_Sneath1", "Sokal_Sneath2"]
@@ -53,14 +37,18 @@ pandas2ri.activate()
 
 def classNeRV():
     model = ClassNeRV(perplex=32, scale_out=None, tradeoff_intra=1, tradeoff_inter=0)
-    data, labels = dataset.dataset1()
+    data = dataSet()
+    km = KMeans(n_clusters=2)
+    km.fit(data)
+    labels = km.labels_
     pos = model.fit_transform(data, labels)
-    return pos
+    p2 = km.predict(pos)
+    return p2
 
 
-def mds():
+def mds(ds ):
     model = MDS(n_components=2)
-    data = dataset.dataset1()
+    data = ds()
     km = KMeans(n_clusters=3)
     km.fit(data)
     labels = km.labels_
@@ -68,22 +56,24 @@ def mds():
     return pos
 
 
-def tSNE():
-    data, labels = dataSet()
+def tSNE(ds):
+    data = ds()
     Y = tsne(data, 2, 50, 20.0)
+
+    km = KMeans(n_clusters=3)
+    km.fit(data)
     return Y
 
 
-def pca():
+def pca(ds):
     model = PCA(n_components=2)
-    data, labels = dataSet()
-    pos = model.fit_transform(data, labels)
+    data = ds()
     km = KMeans(n_clusters=3)
     km.fit(data)
-    p2 = km.predict(pos)
-    p2 = p2.flatten()
-    print(p2)
-    return p2
+    labels = km.labels_
+    pos = model.fit_transform(data, labels)
+
+    return pos
 
 
 def dataSet():
@@ -102,43 +92,58 @@ def metricsCalcul(originDataSet, dataSet):
     for m in crit:
         try:
             res = f(originDataSet, dataSet, m)
-            data_j[m] = res[0][0]
-        except AttributeError:
-            print("Methode non disponible dans ClusterCrit \n")
+            data_j[m] = round(res[0][0], 2)
         except RRuntimeError:
             print(traceback.format_exc())
             print("skip")
     return data_j
 
-def calculate(method, iteration):
+def calculate(method, ds):
+
     json_data={}
-    for i in range(iteration):
-        dsOriginal = dataset.dataset1()
-        p2 = method()
-        #km = KMeans(n_clusters=3)
-        #km.fit(p2)
-        #p2 = km.predict(p2)
-        #p2 = p2.flatten()
-        print(p2)
+    for d in ds:
+        dsOriginal = d()
+        p2 = method(d)
+
         km2 = KMeans(n_clusters=3).fit(dsOriginal)
         p1 = km2.predict(dsOriginal)
         p1 = p1.flatten()
-        r_ds = IntVector(p2)
+        p2 = p2.flatten()
+
         r_dsOriginal = IntVector(p1)
-        json_data[i] = metricsCalcul(r_dsOriginal, r_ds)
+        r_ds = IntVector(p2)
+        json_data[d.__name__] = metricsCalcul(r_dsOriginal, r_ds)
     return json_data
 
 
 if __name__ == "__main__":
-    method = [mds, pca, tSNE, classNeRV]
+    method = {"mds":mds, "tSNE":tSNE, "pca":pca}
+    name = ["mds", "tSNE", "pca"]
+    ds = [dataset.dataset1, dataset.dataset2, dataset.dataset3]
     json_data= {}
-    for f in method:
-        name=f.__name__.__str__()
-        res= calculate(f, 1)
+    for k in method:
+        name=k
+        res= calculate(method[k], ds)
         print(res)
         json_data[name]=res
-    #calculate("mds", 10)
+
     json.dump(json_data, open("mds.json", "w"))
 
+    newDict = {}
 
-    # metricsCalcul(p1, p2)
+    pdObj = pd.read_json("mds.json")
+    for i in pdObj:
+        s = pdObj[i].to_dict()
+        for j in s:
+            row = i + ' ' +j
+            #print(row)
+            newDict[row] = s[j]
+
+    print(newDict)
+    pdDs = pd.DataFrame.from_dict(newDict, orient="index")
+    with open("res.csv", "w") as f:
+        f.write(pdDs.to_csv())
+
+
+
+
