@@ -36,3 +36,4 @@
 \contentsline {subsection}{\numberline {4.12}L'index Russel Rao}{18}{subsection.0.4.12}%
 \contentsline {subsection}{\numberline {4.13}Les index Sokal Sneath}{18}{subsection.0.4.13}%
 \contentsline {subsection}{\numberline {4.14}Interprétation des résultats}{19}{subsection.0.4.14}%
+\contentsline {section}{\numberline {5}Conclusion}{19}{section.0.5}%
