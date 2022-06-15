@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  15 JUN 2022 22:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  15 JUN 2022 23:39
 entering extended mode
 **c:/Users/Cyril/Desktop/dataMethods/Rapport/main.tex
 (c:/Users/Cyril/Desktop/dataMethods/Rapport/main.tex
@@ -1391,46 +1391,46 @@ l.61 \newpage
 
 ]) (content/__all__.tex (content/0.introduction.tex [1])
 [2] [3] (content/1.part.tex
-Overfull \hbox (44.27475pt too wide) in paragraph at lines 3--8
+Overfull \hbox (44.27475pt too wide) in paragraph at lines 3--7
 []\T1/cmr/m/n/10.95 Lorsque l'on souhaite représen-ter en deux ou di-men-sions 
 de grands jeux de don-nées multidimensionnels(au-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--13
+Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
 [4]
-<imports/PCA.png, id=213, 462.528pt x 346.896pt>
+<imports/PCA.png, id=215, 462.528pt x 346.896pt>
 File: imports/PCA.png Graphic file (type png)
 <use imports/PCA.png>
-Package pdftex.def Info: imports/PCA.png  used on input line 53.
+Package pdftex.def Info: imports/PCA.png  used on input line 54.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<imports/MDS.png, id=218, 462.528pt x 346.896pt>
+<imports/MDS.png, id=220, 462.528pt x 346.896pt>
 File: imports/MDS.png Graphic file (type png)
 <use imports/MDS.png>
-Package pdftex.def Info: imports/MDS.png  used on input line 73.
+Package pdftex.def Info: imports/MDS.png  used on input line 74.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 8
-2.
+3.
  (C:\Users\Cyril\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 [5 <./imports/PCA.png>]
-<imports/classNervSphere.png, id=230, 593.21625pt x 555.07375pt>
+<imports/classNervSphere.png, id=232, 593.21625pt x 555.07375pt>
 File: imports/classNervSphere.png Graphic file (type png)
 <use imports/classNervSphere.png>
-Package pdftex.def Info: imports/classNervSphere.png  used on input line 104.
+Package pdftex.def Info: imports/classNervSphere.png  used on input line 105.
 (pdftex.def)             Requested size: 199.16928pt x 186.35951pt.
  [6 <./imports/MDS.png>]
-<imports/tsne.png, id=250, 642.4pt x 481.8pt>
+<imports/tsne.png, id=251, 642.4pt x 481.8pt>
 File: imports/tsne.png Graphic file (type png)
 <use imports/tsne.png>
-Package pdftex.def Info: imports/tsne.png  used on input line 135.
+Package pdftex.def Info: imports/tsne.png  used on input line 136.
 (pdftex.def)             Requested size: 199.16928pt x 149.37851pt.
  [7 <./imports/classNervSphere.png> <./imports/tsne.png (PNG copy)>]
-Overfull \hbox (23.64767pt too wide) in paragraph at lines 147--153
+Overfull \hbox (23.64767pt too wide) in paragraph at lines 148--154
 \T1/cmr/m/n/10.95 Nous pou-vons égale-ment retrou-ver le Sam-mon mapping[[]], l
 e \T1/cmr/m/it/10.95 curvi-lin-ear com-po-nents anal-y-sis\T1/cmr/m/n/10.95 (CC
 A)[[]],
@@ -1499,7 +1499,7 @@ X/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Cyril/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Cyril/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Cyril/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (24 pages, 1460748 bytes).
+Output written on main.pdf (24 pages, 1461934 bytes).
 PDF statistics:
  931 PDF objects out of 1000 (max. 8388607)
  115 named destinations out of 1000 (max. 500000)

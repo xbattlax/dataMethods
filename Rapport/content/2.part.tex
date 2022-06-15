@@ -74,8 +74,8 @@ visuellement séparées dans la projection graphique, les clusters seront donc p
 facilement discriminables et la projection potentiellement de meilleure qualité.
 
 La class consistency est le plus souvent calculée de la façon suivante : 
-[METTRE FORMULE]
-Où Ck est la classe de p, centr(ck) est le centroid de cette même classe. m le nombre de classe disponible, et d(p, centr(ck) la fonction \textit{distance to centroid} )
+\[ 1- \frac {| \{ p \mid \exists j : d(p,centr(C_k))\leq d(p,centr(C_j)) \} |}{m}\]
+Où $C_k$ est la classe de $p$, $centr(C_k)$ est le centroid de cette même classe. $m$ le nombre de classe disponible, et $d(p, centr(C_k))$ la fonction \textit{distance to centroid} 
 \item
 \textbf{Class density : }
 \smallskip

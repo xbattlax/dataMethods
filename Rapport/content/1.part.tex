@@ -4,6 +4,7 @@ Lorsque l'on souhaite représenter en deux ou  dimensions de grands jeux de donn
 Cette étape intervient dans le processus de projection et est indispensable dans ce cas précis où il y a un nombre important de dimensions(plus d'une vingtaine \cite{HeulotThese}). 
 Néanmoins, une réduction implique inexorablement une perte d’information et donc une perte de précision, ce qui peut biaiser la projection ainsi que son interprétation. Il est donc important, malgré des pertes inévitables, d'essayer de conserver au maximum les structures et les données utiles.
 Le facteur numérique est donc un facteur clé, qui se doit d’être compris et maitrisé. 
+
 \smallskip
 
 Dans l'espace des données, il est possible d’avoir recours à différent types de mesures(différents critères) pour déterminer à quel point deux points de la projection sont similaires. 
@@ -11,7 +12,7 @@ Cela dépend grandement de la sémantique sous-jacente à la notion de similarit
 Comme mentionné plus haut, la projection se base sur un encodage des similarités par le biais de la variable de position: plus les objets se ressemblent, plus ils seront proches sur la projection, et inversement.
 Dans une projection, une dissimilarité métrique dans l’espace des données correspond à la définition mathématique d’une distance \cite{somorjai2011Dissimilarity} \cite{HeulotThese} \newline
  \[d : \mathbb{R}^{m} * \mathbb{R}^{m} \rightarrow \mathbb{R} \] \newline
-, qui pour \[\forall (u,v,w) \in \mathbb{R}{3*m}\] satisfasse les conditions suivantes \cite{HeulotThese} : 
+, qui pour \[\forall (u,v,w) \in \mathbb{R}^{3*m}\] satisfasse les conditions suivantes \cite{HeulotThese} : 
 \begin{itemize}
     \item La définition : $d(u,v) = 0 \Leftrightarrow u =v$
     \item La positivité : $d(u,v)  \geq 0$
@@ -52,7 +53,7 @@ Néanmoins, elle ne permet pas de séparer des relations non linéaires et est p
         
         \includegraphics[width=6cm, keepaspectratio]{imports/PCA.png}
         
-        \caption{Réduction du dataset Globe}
+        \caption{Réduction du dataset Globe par ACP}
     \end{figure}
 \end{center}
 
@@ -72,7 +73,7 @@ Néanmoins, dû au fait que la cette technique prend une matrice de similarité 
         
         \includegraphics[width=6cm, keepaspectratio]{imports/MDS.png}
         
-        \caption{Réduction du dataset Globe}
+        \caption{Réduction du dataset Globe par MDS}
     \end{figure}
 \end{center}
 
@@ -103,7 +104,7 @@ La méthode est implémentée dans la librairie \href{https://scikit-learn.org/s
         
         \includegraphics[width=7cm, keepaspectratio]{imports/classNervSphere.png}
         
-        \caption{Réduction du dataset Globe}
+        \caption{Réduction du dataset Globe par ClassNerV}
     \end{figure}
 \end{center}
 
@@ -134,7 +135,7 @@ La recherche de $Q$ qui représente fidèlement $P$ se fait en optimisant la fon
         
         \includegraphics[width=7cm, keepaspectratio]{imports/tsne.png}
         
-        \caption{Réduction du dataset Globe}
+        \caption{Réduction du dataset Globe par tSNE}
     \end{figure}
 \end{center}
 
