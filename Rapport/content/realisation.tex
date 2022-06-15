@@ -126,7 +126,38 @@ Une fois ces deux opérations effectuées, il y a deux variables \textit{rds} (q
 donnée original après kmean.) Pour comparer, ces deux jeux de données nous les passons en paramètre de la fonction \textit{metricsCalcul}.
 Celle-ci va itérer à travers tous les critèrs de la liste \textit{crit} et appliquer l'évaluation de chaque critères.
 
-\subsection{Résultats}
-Les résultats seront stockés sous la forme d'un tableau de la forme suivante...
+\subsection{Expérimentation}
+Les résultats seront stockés sous la forme d'un tableau comprenant les résultats de chaque méthode pour chaque jeux de données. 
+Voici un tableau contenant la valeur minimum et Maximum de chaque critères.
 
-\section{Experimentation}
+\section{Analyse des résultats}
+
+\subsection{L'index de Czekanowski Dice}
+On peut voir que pour les trois jeux de données c'est la PCA qui a les meilleurs résultats pour les trois jeux de données.
+Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant et un seul) avec lequel on retrouve de meilleur résultat.
+
+\subsection{L'index de Folkes Mallow}
+On peut voir que pour les trois jeux de données c'est la PCA qui a les meilleurs résultats pour les trois jeux de données.
+Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant et un seul) avec lequel on retrouve de meilleur résultat.
+
+\subsection{L'index de Hubert}
+
+\subsection{L'index de Jaccard}
+On peut voir que pour les trois jeux de données c'est la PCA qui a les meilleurs résultats pour les trois jeux de données.
+Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant et un seul) avec lequel on retrouve de meilleur résultat.
+
+\subsection{L'index de Kulczynski}
+On peut voir que pour les trois jeux de données c'est la PCA qui a les meilleurs résultats pour les trois jeux de données.
+Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant et un seul) avec lequel on retrouve de meilleur résultat.
+On peut noter que pour le troisième jeu de données (trois clusters se chevauchant) toutes les méthodes de réduction ont la même efficacité : 
+elles ont toutes les trois eu un score de 0.18.
+
+
+\subsection{L'index de McNemar}
+On peut voir que pour les trois jeux de données c'est le tSNE qui a les meilleurs résultats pour les trois jeux de données.
+Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant et un seul) avec lequel on retrouve de meilleur résultat.
+Néanmoins, son score(394.03) est très proche du second jeux de données(393.52).
+
+\subsection{L'index de Jaccard}
+On peut voir que pour les trois jeux de données c'est la PCA qui a les meilleurs résultats pour les trois jeux de données.
+Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant et un seul) avec lequel on retrouve de meilleur résultat.
