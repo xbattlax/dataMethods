@@ -161,3 +161,54 @@ Néanmoins, son score(394.03) est très proche du second jeux de données(393.52
 \subsection{L'index de Jaccard}
 On peut voir que pour les trois jeux de données c'est la PCA qui a les meilleurs résultats pour les trois jeux de données.
 Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant et un seul) avec lequel on retrouve de meilleur résultat.
+
+\subsection{L'index Précision}
+On peut voir que pour cet indice c'est le tSNE qui a les meilleurs résultats pour les trois jeux de données.
+Cependant la différence reste faible par rapport aux autre méthodes (seulement 0.01).
+
+\subsection{L'index Rand}
+Pour le premier et le second jeu de données le tSNE a un meilleur score que les deux autres techniques.
+Pour le troisième jeu de données, toutes les techniques semblent se valoir : elles ont tous le même score de 0.66.
+
+
+\subsection{L'index Recall}
+Pour cet indice c'est la PCA qui obtient de meilleurs scores pour les trois jeux de données.
+On peut noter que la différence de score entre les méthodes est beaucoup plus marquée pour le premier jeu de données.
+
+
+\subsection{L'index Rogers Tanimoto}
+Pour cet indice c'est principalement toutes les techniques ont sensiblement le même score. Néanmoins on peut noter une légère tendance 
+pour la tSNE a être plus efficace. Elle est de 0.5 pour les trois jeux de données.
+
+\subsection{L'index Russel Rao}
+Pour cet indice, nous pouvons voir que pour les trois jeux de données c'est la PCA qui a les meilleurs résultats pour les trois jeux de données.
+Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant et un seul) avec lequel on retrouve une différence plus marquées entre 
+les scores des méthodes : le score de la PCA est à 0.1 tandis que le score du mds est à 0.02 et celui du tSNE est à 0.0.
+
+\subsection{Les index Sokal Sneath}
+
+Pour le premier indice de Sokal Sneath nous pouvons voir que c'est la PCA qui a de meilleurs score pour tous les jeux de données, et que parmis ceux-ci
+c'est avec le premier que l'on trouve la plus grande différence de score entre méthode : le score de la PCA est à 0.1 tandis que le score du mds est à 0.03 et celui du tSNE est à 0.1.
+
+Pour le second indice de Sokal Sneath c'est le tSNE qui semble avoir le meilleur score pour les trois jeux de donnéeS.
+On peut noter que pour le troisième jeu de données, les scores du MDS, du tSNE sont les mêmes 0.8 et que celle de l'ACP s'en rapproche de très près étant donné que sa valeur est de 0.79.
+
+\subsection{Interprétation des résultats}
+Nous pouvons constater que dans une grande majorité des cas c'est l'ACP qui a les meilleurs résultats et que c'est systématiquement le premier jeu de données
+(deux clusters qui se chevauchent et un cluster seul) pour lequel cette méthode fonctionne le mieux.
+Néanmoins ces résultats ne permettent pas d'affirmer que l'ACP est la méthode de projection la plus efficace, et ce, pour plusieurs raisons.
+D'une part il serait judicieux d'ajouter à ce programme d'autre techniques de projection, ce qui permet d'avoir plus d'élements de comparaison.
+Tout d'abord, il aurait été intéressant de tester la méthode classNerv, qui au vu des résultats présentés dans la première partie de ce rapport
+semble être particulièrement performante et aurait pu montrer des résultats plus probants que ceux de l'ACP.
+
+De plus, il faudrait diversifier les différents jeux de données c'est à dire faire des tests sur d'autres jeux de données générés , par exemple
+un jeu de données avec trois clusters bien distincts et des outliers, ou bien un jeu de données avec un clusters et plusieurs outliers.
+Il faudrait également tester le programme avec des jeux de données qui proviennent de sources réelles (par exemple trouvables sur Kaggle ou Datahub.io) et tester différents types
+de jeux de donné (bivariés, multivariés, catégoriels...)
+
+
+
+\section{Conclusion}
+
+
+

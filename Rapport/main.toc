@@ -29,3 +29,10 @@
 \contentsline {subsection}{\numberline {4.5}L'index de Kulczynski}{17}{subsection.0.4.5}%
 \contentsline {subsection}{\numberline {4.6}L'index de McNemar}{18}{subsection.0.4.6}%
 \contentsline {subsection}{\numberline {4.7}L'index de Jaccard}{18}{subsection.0.4.7}%
+\contentsline {subsection}{\numberline {4.8}L'index Précision}{18}{subsection.0.4.8}%
+\contentsline {subsection}{\numberline {4.9}L'index Rand}{18}{subsection.0.4.9}%
+\contentsline {subsection}{\numberline {4.10}L'index Recall}{18}{subsection.0.4.10}%
+\contentsline {subsection}{\numberline {4.11}L'index Rogers Tanimoto}{18}{subsection.0.4.11}%
+\contentsline {subsection}{\numberline {4.12}L'index Russel Rao}{18}{subsection.0.4.12}%
+\contentsline {subsection}{\numberline {4.13}Les index Sokal Sneath}{18}{subsection.0.4.13}%
+\contentsline {subsection}{\numberline {4.14}Interprétation des résultats}{19}{subsection.0.4.14}%
