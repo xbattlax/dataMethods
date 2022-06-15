@@ -1,5 +1,5 @@
-\sectionnn{Introduction réalisation}
-Comme ça a été mentionné dans l’état de l’art la visualisation des grands jeux de donnée souffre de cette malédiction de la dimensionalité. Le problème des projections dans ce cas précis n’est pas celui de projeter les données, mais celui de les projeter fidèlement. 
+\sectionnn{Réalisation}
+Comme mentionné dans l’état de l’art la visualisation des grands jeux de donnée souffre de cette \textit{malédicion de la dimensionalité}. En effet, le problème des projections n’est pas celui de projeter les données, mais de les projeter fidèlement. 
 C’est-à-dire, la difficulté pour la méthode à respecter le rapport des distances des points entre le jeu de donné original (à n-dimensions) et la projection finale (qui réduit ce dernier à deux ou 3 dimensions). 
 Plus le nombre de dimensions augmente, plus il devient compliqué de respecter les distances après réduction. 
 \newline
@@ -14,15 +14,8 @@ Encore une fois, en fonction de ce que nous voulons observer certains critères 
 \medskip
 C'est dans ce but, que dans la partie réalisation de cette UE, nous souhaitons mettre en place une évaluation des différentes méthodes de projections citées.
 Pour faire cela, nous envisageons de procéder de la façon suivante: \newline
-Au vu de nos nombreuses lectures et  des résultats sur notre jeu de données tests (Globe), nous avons déduit que la méthode ClassNeRV est la plus performante et donne les résultats les plus satisfaisants. 
-Par conséquent, nous souhaitons effectuer un étalonnage des différentes autres méthodes de projection, en l'utilisant en tant que référentiel. \newline
-Notre idée est donc la suivante : lorsqu'un jeu de donnée sera projeté avec une autre méthode de projection, 
-le résultat obtenu sera comparé à la projection de ce même jeu de donnée obtenue via ClassNerV.
-Puis, en fonction des divergences entre ces deux jeux de données projetés, certains biais seront mesurés et affichés.
-De plus dans l'objectif d'être le plus précis possible, nous envisageons également de mesurer les différents critères de la projection(clustering, outlying, forme...) et de croiser les résultats obtenus à ceux de la comparaison des deux projections.
-Nous pensons aussi qu'il serait judicieux de mettre en place un système de "scoring", qui permettrait de rendre plus intuitive l'appréhension des résultats relatifs à la qualité de la visualisation. 
-\newline 
-Le but de cette démarche est de proposer un outil capable de comparer sa méthode de projection à d'autres via un tableau de scoring pour se rendre compte de la pertinence et de la fidélité des diverses méthode de projection.
+Lister plusieus critères qui permettent d'attester de la qualité d'une projection pour pouvoir établir un scoring pour chaque méthode de projections.
+Le but de cette démarche est de proposer un outil capable de comparer sa méthode de projection à d'autres via un tableau de scoring pour se rendre compte de la pertinence et de la fidélité des différentes méthodes de projection.
 
 \medskip
 
@@ -30,23 +23,23 @@ Le but de cette démarche est de proposer un outil capable de comparer sa métho
 \section{Implémentation}
 
 \subsection{Méthodologie} 
-Nous avons donc mis en place un programme avec un système de score qui classe l’efficacité des différentes méthodes de réduction/projection pour un même jeu de données. 
-C’est-à-dire que le jeu de donnée va être projeté une fois par chaque algorithme, puis le résultat sera évalué.
-Pour mesurer ces résultats nous avons utilisé différents critères issus de la librairie R « clusterCrit » et scikit-learn.
+Nous avons donc mis en place un programme avec un système de score qui classe l’efficacité des différentes méthodes de projection pour un même jeu de données. 
+C’est-à-dire que le jeu de donnée va être projeté une fois par chaque méthode, puis le résultat sera évalué.
+Pour mesurer ces résultats nous avons utilisé différents critères issus de la librairie R  \textit{clusterCrit} et \textit{scikit-learn}.
 ClusterCrit est une librairie R qui fournit une liste de critéres permettant d'attester de la qualité interne des clusters et une liste de critères qui permet 
 de mesurer la similarité entre deux partitions. Ces critères prennent seulement en compte la répartition des points dans les différents cluster et ne permettent pas de 
 mesurer la qualité de la distribution.
 
 \subsection{Jeux de données utilisés}
-Pour comparer les différentes méthodes nous avons créer plusieurs jeux de donnés qui présentent les caractéristiques suivantes :
+Pour comparer les différentes méthodes nous avons générés plusieurs jeux de donnés qui présentent les caractéristiques suivantes :
 \begin{itemize}
-    \item deux clusters superposés avec un seul(Figure 5)
-    \item trois clusters bien distincts(Figure 6)
-    \item trois clusters superposés(Figure 7)
-    \item un cluster entouré de quelques outliers(Figure 8)
-    \item trois cluster entourés d’outliers(Figure 9)    
+    \item Un jeu de données avec deux clusters superposés avec un seul(Figure 5)
+    \item Un jeu de données avec trois clusters bien distincts(Figure 6)
+    \item Un jeu de données avec trois clusters superposés(Figure 7)
 \end{itemize}
-Pour les créer nous avons utilisé la méthode \textit{makeblobs} de la librairie \textit{sklearn}. Les paramètres fixes sont :
+Pour les créer nous avons utilisé la méthode \textit{makeblobs} de la librairie \textit{sklearn}. 
+
+Les paramètres fixes sont :
 \begin{itemize}
     \item \textit{n samples} qui représente le nombre de points total qui sera également réparti entre les différents clusters. Nous l'avons fixé à vingt-mille.
     \item \textit{n features} qui représente le nombre de variables pour chaque échantillon. Nous l'avons fixé à vingt-et-un.
@@ -79,26 +72,6 @@ Nous avons fait varier les paramètres suivants pour obtenir la répartition sou
     \end{figure}
 \end{center}
 
-\begin{center}
-    \begin{figure}[ht!]
-        \centering
-        
-        \includegraphics[width=6cm, keepaspectratio]{imports/three_distincts_plus_outliers.png}
-        
-        \caption{Trois cluster distincs avec des outliers}
-    \end{figure}
-\end{center}
-
-\begin{center}
-    \begin{figure}[ht!]
-        \centering
-        
-        \includegraphics[width=6cm, keepaspectratio]{imports/one_plus_outliers.png}
-        
-        \caption{Un cluster avec plusieurs outliers}
-    \end{figure}
-\end{center}
-
 
 \begin{center}
     \begin{figure}[ht!]
@@ -115,7 +88,7 @@ Nous avons fait varier les paramètres suivants pour obtenir la répartition sou
 
 \subsection{Fonctionnement du programme}
 La librairie \textit{rpy2} est utilisée pour pouvoir charger et utiliser des librairies R sous Python. Comme précisé plus haut
-nous appliquons cela à la librairie \textit{clusterCrit}. Et appelerons tous les critéres d'intérêts qui sont listé dans la variable globale \textit{crit}.
+nous appliquons cela à la librairie \textit{clusterCrit}. Et appelons tous les critéres d'intérêts qui sont listés dans la variable globale \textit{crit}.
 
 La fonction \textit{calculate} va utiliser chaque méthode de réduction sur le jeu de donnée, le resultat de cette réduction sera stockée dans
 la variable \textit{p2} à laquelle on appliquera la fonction \textit{IntVector} qui permet de convertir un tableau python en vecteur utilisable sous R. 
@@ -132,60 +105,62 @@ Voici un tableau contenant la valeur minimum et Maximum de chaque critères.
 
 \section{Analyse des résultats}
 
-\subsection{L'index de Czekanowski Dice}
+\subsection{Analyse de chaques critères}
+
+\subsubsection{L'index de Czekanowski Dice}
 On peut voir que pour les trois jeux de données c'est la PCA qui a les meilleurs résultats pour les trois jeux de données.
 Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant et un seul) avec lequel on retrouve de meilleur résultat.
 
-\subsection{L'index de Folkes Mallow}
+\subsubsection{L'index de Folkes Mallow}
 On peut voir que pour les trois jeux de données c'est la PCA qui a les meilleurs résultats pour les trois jeux de données.
 Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant et un seul) avec lequel on retrouve de meilleur résultat.
 
-\subsection{L'index de Hubert}
+\subsubsection{L'index de Hubert}
 
-\subsection{L'index de Jaccard}
+\subsubsection{L'index de Jaccard}
 On peut voir que pour les trois jeux de données c'est la PCA qui a les meilleurs résultats pour les trois jeux de données.
 Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant et un seul) avec lequel on retrouve de meilleur résultat.
 
-\subsection{L'index de Kulczynski}
+\subsubsection{L'index de Kulczynski}
 On peut voir que pour les trois jeux de données c'est la PCA qui a les meilleurs résultats pour les trois jeux de données.
 Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant et un seul) avec lequel on retrouve de meilleur résultat.
 On peut noter que pour le troisième jeu de données (trois clusters se chevauchant) toutes les méthodes de réduction ont la même efficacité : 
 elles ont toutes les trois eu un score de 0.18.
 
 
-\subsection{L'index de McNemar}
+\subsubsection{L'index de McNemar}
 On peut voir que pour les trois jeux de données c'est le tSNE qui a les meilleurs résultats pour les trois jeux de données.
 Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant et un seul) avec lequel on retrouve de meilleur résultat.
 Néanmoins, son score(394.03) est très proche du second jeux de données(393.52).
 
-\subsection{L'index de Jaccard}
+\subsubsection{L'index de Jaccard}
 On peut voir que pour les trois jeux de données c'est la PCA qui a les meilleurs résultats pour les trois jeux de données.
 Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant et un seul) avec lequel on retrouve de meilleur résultat.
 
-\subsection{L'index Précision}
+\subsubsection{L'index Précision}
 On peut voir que pour cet indice c'est le tSNE qui a les meilleurs résultats pour les trois jeux de données.
 Cependant la différence reste faible par rapport aux autre méthodes (seulement 0.01).
 
-\subsection{L'index Rand}
+\subsubsection{L'index Rand}
 Pour le premier et le second jeu de données le tSNE a un meilleur score que les deux autres techniques.
 Pour le troisième jeu de données, toutes les techniques semblent se valoir : elles ont tous le même score de 0.66.
 
 
-\subsection{L'index Recall}
+\subsubsection{L'index Recall}
 Pour cet indice c'est la PCA qui obtient de meilleurs scores pour les trois jeux de données.
 On peut noter que la différence de score entre les méthodes est beaucoup plus marquée pour le premier jeu de données.
 
 
-\subsection{L'index Rogers Tanimoto}
+\subsubsection{L'index Rogers Tanimoto}
 Pour cet indice c'est principalement toutes les techniques ont sensiblement le même score. Néanmoins on peut noter une légère tendance 
 pour la tSNE a être plus efficace. Elle est de 0.5 pour les trois jeux de données.
 
-\subsection{L'index Russel Rao}
+\subsubsection{L'index Russel Rao}
 Pour cet indice, nous pouvons voir que pour les trois jeux de données c'est la PCA qui a les meilleurs résultats pour les trois jeux de données.
 Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant et un seul) avec lequel on retrouve une différence plus marquées entre 
 les scores des méthodes : le score de la PCA est à 0.1 tandis que le score du mds est à 0.02 et celui du tSNE est à 0.0.
 
-\subsection{Les index Sokal Sneath}
+\subsubsection{Les index Sokal Sneath}
 
 Pour le premier indice de Sokal Sneath nous pouvons voir que c'est la PCA qui a de meilleurs score pour tous les jeux de données, et que parmis ceux-ci
 c'est avec le premier que l'on trouve la plus grande différence de score entre méthode : le score de la PCA est à 0.1 tandis que le score du mds est à 0.03 et celui du tSNE est à 0.1.
@@ -193,13 +168,13 @@ c'est avec le premier que l'on trouve la plus grande différence de score entre 
 Pour le second indice de Sokal Sneath c'est le tSNE qui semble avoir le meilleur score pour les trois jeux de donnéeS.
 On peut noter que pour le troisième jeu de données, les scores du MDS, du tSNE sont les mêmes 0.8 et que celle de l'ACP s'en rapproche de très près étant donné que sa valeur est de 0.79.
 
-\subsection{Interprétation des résultats}
-Nous pouvons constater que dans une grande majorité des cas c'est l'ACP qui a les meilleurs résultats et que c'est systématiquement le premier jeu de données
+\subsection{Discussion des résultats}
+Nous pouvons constater que dans une grande majorité des cas c'est l'ACP qui a les meilleurs résultats. De plus, c'est systématiquement le premier jeu de données
 (deux clusters qui se chevauchent et un cluster seul) pour lequel cette méthode fonctionne le mieux.
 Néanmoins ces résultats ne permettent pas d'affirmer que l'ACP est la méthode de projection la plus efficace, et ce, pour plusieurs raisons.
 D'une part il serait judicieux d'ajouter à ce programme d'autre techniques de projection, ce qui permet d'avoir plus d'élements de comparaison.
-Tout d'abord, il aurait été intéressant de tester la méthode classNerv, qui au vu des résultats présentés dans la première partie de ce rapport
-semble être particulièrement performante et aurait pu montrer des résultats plus probants que ceux de l'ACP.
+Tout d'abord, il aurait été intéressant de tester la méthode classNerv(qu'il a été compliqué d'impléter suite à des problèmes de compatibilité), qui au vu des résultats présentés dans la première partie de ce rapport
+semble être particulièrement performante et aurait pu montrer des résultats plus probants que ceux de l'ACP. 
 
 De plus, il faudrait diversifier les différents jeux de données c'est à dire faire des tests sur d'autres jeux de données générés , par exemple
 un jeu de données avec trois clusters bien distincts et des outliers, ou bien un jeu de données avec un clusters et plusieurs outliers.
@@ -207,8 +182,18 @@ Il faudrait également tester le programme avec des jeux de données qui provien
 de jeux de donné (bivariés, multivariés, catégoriels...)
 
 
-
 \section{Conclusion}
+Pour conclure, nous avons vu que dans une certaine mesure l'ACP se révèle être la méthode la plus efficace pour trois types de jeux de données générés différents. À savoir :
+\begin{itemize}
+    \item Un jeu de données avec deux clusters superposés avec un seul(Figure 5)
+    \item Un jeu de données avec trois clusters bien distincts(Figure 6)
+    \item Un jeu de données avec trois clusters superposés(Figure 7)
+\end{itemize}
 
-
+Il serait intéressant d'utiliser ClassNerV qui en théorie est la plus performante. Nous pourrions par exemple 
+effectuer un étalonnage des différentes autres méthodes de projection, en l'utilisant en tant que référentiel. 
+C'est à dire que lorsqu'un jeu de donnée serait projeté avec une autre méthode de projection, le résultat obtenu serait comparé à la projection de ce même jeu de donnée obtenue via ClassNerV.
+Puis, en fonction des divergences entre ces deux jeux de données projetés, certains biais seraient mesurés et affichés.
+De plus dans l'objectif d'être le plus précis possible, nous envisageons également de mesurer les différents critères de la projection(clustering, outlying, forme...) et de croiser les résultats obtenus à ceux de la comparaison des deux projections.
+Nous pensons aussi qu'il serait judicieux de mettre en place un système de "scoring", qui permettrait de rendre plus intuitive l'appréhension des résultats relatifs à la qualité de la visualisation. 
 
