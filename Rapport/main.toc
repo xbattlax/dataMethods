@@ -23,19 +23,19 @@
 \contentsline {subsection}{\numberline {3.4}Expérimentation}{16}{subsection.0.3.4}%
 \contentsline {section}{\numberline {4}Analyse des résultats}{16}{section.0.4}%
 \contentsline {subsection}{\numberline {4.1}Analyse de chaques critères}{16}{subsection.0.4.1}%
-\contentsline {subsubsection}{L'index de Czekanowski Dice}{16}{section*.9}%
-\contentsline {subsubsection}{L'index de Folkes Mallow}{16}{section*.10}%
+\contentsline {subsubsection}{L'index de Czekanowski Dice}{17}{section*.9}%
+\contentsline {subsubsection}{L'index de Folkes Mallow}{17}{section*.10}%
 \contentsline {subsubsection}{L'indice de Hubert}{17}{section*.11}%
 \contentsline {subsubsection}{L'indice de Jaccard}{17}{section*.12}%
 \contentsline {subsubsection}{L'indice de Kulczynski}{17}{section*.13}%
 \contentsline {subsubsection}{L'indice de McNemar}{17}{section*.14}%
-\contentsline {subsubsection}{L'indice de Phi}{17}{section*.15}%
+\contentsline {subsubsection}{L'indice de Phi}{18}{section*.15}%
 \contentsline {subsubsection}{L'indice de Jaccard}{18}{section*.16}%
 \contentsline {subsubsection}{L'indice Précision}{18}{section*.17}%
 \contentsline {subsubsection}{L'indice Rand}{18}{section*.18}%
 \contentsline {subsubsection}{L'indice Recall}{18}{section*.19}%
 \contentsline {subsubsection}{L'indice Rogers Tanimoto}{18}{section*.20}%
-\contentsline {subsubsection}{L'indice Russel Rao}{18}{section*.21}%
-\contentsline {subsubsection}{Les indices Sokal Sneath}{18}{section*.22}%
+\contentsline {subsubsection}{L'indice Russel Rao}{19}{section*.21}%
+\contentsline {subsubsection}{Les indices Sokal Sneath}{19}{section*.22}%
 \contentsline {subsection}{\numberline {4.2}Discussion des résultats}{19}{subsection.0.4.2}%
 \contentsline {section}{\numberline {5}Conclusion}{19}{section.0.5}%
