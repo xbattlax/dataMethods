@@ -26,15 +26,16 @@
 \contentsline {subsubsection}{L'index de Czekanowski Dice}{16}{section*.9}%
 \contentsline {subsubsection}{L'index de Folkes Mallow}{16}{section*.10}%
 \contentsline {subsubsection}{L'index de Hubert}{16}{section*.11}%
-\contentsline {subsubsection}{L'index de Jaccard}{16}{section*.12}%
-\contentsline {subsubsection}{L'index de Kulczynski}{17}{section*.13}%
-\contentsline {subsubsection}{L'index de McNemar}{17}{section*.14}%
-\contentsline {subsubsection}{L'index de Jaccard}{17}{section*.15}%
-\contentsline {subsubsection}{L'index Précision}{17}{section*.16}%
-\contentsline {subsubsection}{L'index Rand}{17}{section*.17}%
-\contentsline {subsubsection}{L'index Recall}{17}{section*.18}%
-\contentsline {subsubsection}{L'index Rogers Tanimoto}{17}{section*.19}%
-\contentsline {subsubsection}{L'index Russel Rao}{17}{section*.20}%
-\contentsline {subsubsection}{Les index Sokal Sneath}{18}{section*.21}%
+\contentsline {subsubsection}{L'indice de Jaccard}{16}{section*.12}%
+\contentsline {subsubsection}{L'indice de Kulczynski}{17}{section*.13}%
+\contentsline {subsubsection}{L'indice de McNemar}{17}{section*.14}%
+\contentsline {subsubsection}{L'indice de Phi}{17}{section*.15}%
+\contentsline {subsubsection}{L'indice de Jaccard}{17}{section*.16}%
+\contentsline {subsubsection}{L'indice Précision}{17}{section*.17}%
+\contentsline {subsubsection}{L'indice Rand}{17}{section*.18}%
+\contentsline {subsubsection}{L'indice Recall}{17}{section*.19}%
+\contentsline {subsubsection}{L'indice Rogers Tanimoto}{17}{section*.20}%
+\contentsline {subsubsection}{L'indice Russel Rao}{17}{section*.21}%
+\contentsline {subsubsection}{Les indices Sokal Sneath}{18}{section*.22}%
 \contentsline {subsection}{\numberline {4.2}Discussion des résultats}{18}{subsection.0.4.2}%
 \contentsline {section}{\numberline {5}Conclusion}{18}{section.0.5}%
