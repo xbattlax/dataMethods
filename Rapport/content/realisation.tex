@@ -67,7 +67,7 @@ Nous avons fait varier les paramètres suivants pour obtenir la répartition sou
         
         \includegraphics[width=6cm, keepaspectratio]{imports/three_overlaped.png}
         
-        \caption{Trois clusters se chevauchant}
+        \caption{Trois clusters avec chevauchement}
     \end{figure}
 \end{center}
 
@@ -78,11 +78,9 @@ Nous avons fait varier les paramètres suivants pour obtenir la répartition sou
         
         \includegraphics[width=6cm, keepaspectratio]{imports/two_overlaped_one_alone.png}
         
-        \caption{Deux clusters se chevauchant et un cluster seul}
+        \caption{Deux clusters avec chevauchement et un cluster seul}
     \end{figure}
 \end{center}
-
-
 
 
 \subsection{Fonctionnement du programme}
@@ -105,6 +103,7 @@ Voici un tableau contenant la valeur minimum et Maximum de chaque critères.
 \section{Analyse des résultats}
 
 \subsection{Analyse de chaques critères}
+Dans cette section, nous allons détailler les résultats des jeux de données pour les différentes indices.
 
 \subsubsection{L'index de Czekanowski Dice}
 On peut voir que pour les trois jeux de données c'est l'ACP qui a les meilleurs résultats pour les trois jeux de données.
@@ -114,7 +113,32 @@ Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant
 On peut voir que pour les trois jeux de données c'est l'ACP qui a les meilleurs résultats pour les trois jeux de données.
 Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant et un seul) avec lequel on retrouve de meilleur résultat.
 
-\subsubsection{L'index de Hubert}
+\subsubsection{L'indice de Hubert}
+Pour cet indice les résultats précis sont les suivants : 
+\smallskip
+
+\begin{center}
+    \begin{figure}[!ht]  
+        \begin{tabular}{ | l | c | }
+            \hline			
+            MDS dataset1 & -0.000366 \\ \hline
+            tSNE dataset1 & 0.000334 \\ \hline
+            PCA dataset1 & 0.000119  \\ \hline
+            MDS dataset2 & -0.001389 \\  \hline
+            tSNE dataset2 & 0.000749 \\ \hline
+            PCA dataset2 & 0.00416  \\ \hline
+            MDS dataset3 & -0.000556 \\ \hline
+            tSNE dataset3 & 0.001285 \\ \hline
+            PCA dataset3 & -0.000369  \\ 
+            \hline  
+        \end{tabular}
+    \caption{Résultats des jeux de données pour l'indice de Hubert}
+    \end{figure}
+\end{center}
+\smallskip
+
+Nous pouvons voir que les valeurs $0.0$ et $-0.0$ viennent de l'arrondi des résultats. Les résultats à cet indice sont négligeables la corrélation est donc proche de zéro.
+
 
 \subsubsection{L'indice de Jaccard}
 On peut voir que pour les trois jeux de données c'est l'ACP qui a les meilleurs résultats pour les trois jeux de données.
@@ -133,6 +157,33 @@ Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant
 Néanmoins, son score(394.03) est très proche du second jeux de données(393.52).
 
 \subsubsection{L'indice de Phi}
+
+Pour cet indice les résultats précis sont les suivants : 
+\smallskip
+
+\begin{center}
+    \begin{figure}[!ht]  
+        \begin{tabular}{ | l | c | }
+            \hline			
+            MDS dataset1 & 9.172429e-12 \\ \hline
+            tSNE dataset1 & 3.508708e-12 \\ \hline
+            PCA dataset1 & -2.322457e-12  \\ \hline
+            MDS dataset2 & -0.001389 \\  \hline
+            tSNE dataset2 & 6.570988e-12 \\ \hline
+            PCA dataset2 & 4.064610e-12 \\ \hline
+            MDS dataset3 & -3.519841e-12 \\ \hline
+            tSNE dataset3 & 1.093924e-11 \\ \hline
+            PCA dataset3 & -2.284271e-12  \\ 
+            \hline  
+        \end{tabular}
+    \caption{Résultats des jeux de données pour l'indice Phi}
+    \end{figure}
+\end{center}
+\smallskip
+
+Nous pouvons voir que les valeurs $0.0$ et $-0.0$ viennent de l'arrondi des résultats. Les résultats à cet indice ont pour ordre de grandeur $10^-12$ ils sont
+donc négligeables.
+
 
 
 \subsubsection{L'indice de Jaccard}
