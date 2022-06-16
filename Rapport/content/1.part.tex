@@ -33,7 +33,8 @@ Dans le cas des algorithmes de projection linéaire, l’espace de plus faible d
 Les algorithmes de projection non linéaires partent du principe qu'il existe une variété non linéaire de plus faibles dimensions que l’on peut projeter sans trop de déformations dans un espace 2D(ou 3D). Les données sont ainsi projetées en conservant les propriétés de leur variété. Pour cela, elles utilisent des mesures de stress métriques(selon les distances) ou Non-Métriques(selon le rang des distances). 
 Ensuite plusieurs méthodes d’optimisation sont utilisées telles que la descente de gradient, les réseaux de neurones\cite{hwang1991GradientNeuralNetwork} ou bien le placement par force(pour les jeux de données les moins gros)\cite{dickhaus2014ForceBrute}. 
 Cela permet soit de trouver un optimum global(qui préserve la structure globale) ou un optimum local(dans le cas où les méthodes préservent les voisinages locaux).
-Pour illustrer la présentation de ces méthodes nous utiliserons le jeu de données GLOBE... 
+Pour illustrer la présentation de ces méthodes nous utiliserons le jeu de données GLOBE qui contient 512 données réparties aléatoirement sur la surface d'un globe(donc en trois dimensions).
+Il est composé de deux classes (bleue et rouges) qui correspondent à deux hémisphéres séparés au niveau de l'équateur \cite{colange_steering_2020}.
 \smallskip
 
 

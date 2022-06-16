@@ -94,11 +94,6 @@ J.-N. Hwang, H.~Li, M.~Maechler, R.~D. Martin, and J.~Schimert, ``A comparison
 T.~Dickhaus, ``Simultaneous statistical inference,'' in \emph{With applications
   in the life sciences}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2014.
 
-\bibitem{abdi2007-MDS}
-H.~Abdi, ``Metric multidimensional scaling (mds): analyzing distance
-  matrices,'' \emph{Encyclopedia of measurement and statistics}, pp. 1--13,
-  2007.
-
 \bibitem{colange_steering_2020}
 \BIBentryALTinterwordspacing
 B.~Colange, J.~Peltonen, M.~Aupetit, D.~Dutykh, and S.~Lespinats, ``Steering
@@ -109,6 +104,11 @@ B.~Colange, J.~Peltonen, M.~Aupetit, D.~Dutykh, and S.~Lespinats, ``Steering
   2020, pp. 13\,214--13\,225. [Online]. Available:
   \url{https://proceedings.neurips.cc/paper/2020/file/99607461cdb9c26e2bd5f31b12dcf27a-Paper.pdf}
 \BIBentrySTDinterwordspacing
+
+\bibitem{abdi2007-MDS}
+H.~Abdi, ``Metric multidimensional scaling (mds): analyzing distance
+  matrices,'' \emph{Encyclopedia of measurement and statistics}, pp. 1--13,
+  2007.
 
 \bibitem{hinton2002-SNE}
 G.~Hinton and S.~T. Roweis, ``Stochastic neighbor embedding,'' in \emph{NIPS},
@@ -245,5 +245,15 @@ M.~Fontes and C.~Soneson, ``The projection score-an evaluation criterion for
 E.~Bertini, A.~Tatu, and D.~Keim, ``Quality metrics in high-dimensional data
   visualization: An overview and systematization,'' \emph{IEEE Transactions on
   Visualization and Computer Graphics}, vol.~17, no.~12, pp. 2203--2212, 2011.
+
+\bibitem{desgraupes2018package}
+B.~Desgraupes and M.~B. Desgraupes, ``Package ‘clustercrit’,'' 2018.
+
+\bibitem{scikitpdf}
+W.~T. SCIKIT-LEARN, ``Pdf documentation-scikit-learn.''
+
+\bibitem{desgraupes2013clustering}
+B.~Desgraupes, ``Clustering indices,'' \emph{University of Paris Ouest-Lab
+  Modal’X}, vol.~1, p.~34, 2013.
 
 \end{thebibliography}

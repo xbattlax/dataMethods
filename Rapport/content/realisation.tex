@@ -12,11 +12,9 @@ Encore une fois, en fonction de ce que nous voulons observer certains critères 
 
 
 \medskip
-C'est dans ce but, que dans la partie réalisation de cette UE, nous souhaitons mettre en place une évaluation des différentes méthodes de projections citées.
-Pour faire cela, nous envisageons de procéder de la façon suivante: \newline
-Lister plusieus critères qui permettent d'attester de la qualité d'une projection pour pouvoir établir un scoring pour chaque méthode de projections.
+C'est dans ce but, que dans la partie réalisation de cette UE, nous avons proposé une méthode d'évaluation des différentes méthodes de projections citées.
 Le but de cette démarche est de proposer un outil capable de comparer sa méthode de projection à d'autres via un tableau de scoring pour se rendre compte de la pertinence et de la fidélité des différentes méthodes de projection.
-
+Dans cette partie nous détaillerons l'implémentation, les jeux de données utilisés et le fonctionnement du programme.
 \medskip
 
 
@@ -25,10 +23,10 @@ Le but de cette démarche est de proposer un outil capable de comparer sa métho
 \subsection{Méthodologie} 
 Nous avons donc mis en place un programme avec un système de score qui classe l’efficacité des différentes méthodes de projection pour un même jeu de données. 
 C’est-à-dire que le jeu de donnée va être projeté une fois par chaque méthode, puis le résultat sera évalué.
-Pour mesurer ces résultats nous avons utilisé différents critères issus de la librairie R  \textit{clusterCrit} et \textit{scikit-learn}.
+Pour mesurer ces résultats nous avons utilisé différents critères issus de la librairie R \textit{clusterCrit}\cite{desgraupes2018package} et \textit{scikit-learn}\cite{scikitpdf}.
 ClusterCrit est une librairie R qui fournit une liste de critéres permettant d'attester de la qualité interne des clusters et une liste de critères qui permet 
 de mesurer la similarité entre deux partitions. Ces critères prennent seulement en compte la répartition des points dans les différents cluster et ne permettent pas de 
-mesurer la qualité de la distribution.
+mesurer la qualité de la distribution \cite{desgraupes2013clustering}
 
 \subsection{Jeux de données utilisés}
 Pour comparer les différentes méthodes nous avons générés plusieurs jeux de donnés qui présentent les caractéristiques suivantes :
@@ -37,6 +35,7 @@ Pour comparer les différentes méthodes nous avons générés plusieurs jeux de
     \item Un jeu de données avec trois clusters bien distincts(Figure 6)
     \item Un jeu de données avec trois clusters superposés(Figure 7)
 \end{itemize}
+
 Pour les créer nous avons utilisé la méthode \textit{makeblobs} de la librairie \textit{sklearn}. 
 
 Les paramètres fixes sont :
@@ -108,21 +107,21 @@ Voici un tableau contenant la valeur minimum et Maximum de chaque critères.
 \subsection{Analyse de chaques critères}
 
 \subsubsection{L'index de Czekanowski Dice}
-On peut voir que pour les trois jeux de données c'est la PCA qui a les meilleurs résultats pour les trois jeux de données.
+On peut voir que pour les trois jeux de données c'est l'ACP qui a les meilleurs résultats pour les trois jeux de données.
 Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant et un seul) avec lequel on retrouve de meilleur résultat.
 
 \subsubsection{L'index de Folkes Mallow}
-On peut voir que pour les trois jeux de données c'est la PCA qui a les meilleurs résultats pour les trois jeux de données.
+On peut voir que pour les trois jeux de données c'est l'ACP qui a les meilleurs résultats pour les trois jeux de données.
 Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant et un seul) avec lequel on retrouve de meilleur résultat.
 
 \subsubsection{L'index de Hubert}
 
 \subsubsection{L'indice de Jaccard}
-On peut voir que pour les trois jeux de données c'est la PCA qui a les meilleurs résultats pour les trois jeux de données.
+On peut voir que pour les trois jeux de données c'est l'ACP qui a les meilleurs résultats pour les trois jeux de données.
 Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant et un seul) avec lequel on retrouve de meilleur résultat.
 
 \subsubsection{L'indice de Kulczynski}
-On peut voir que pour les trois jeux de données c'est la PCA qui a les meilleurs résultats pour les trois jeux de données.
+On peut voir que pour les trois jeux de données c'est l'ACP qui a les meilleurs résultats pour les trois jeux de données.
 Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant et un seul) avec lequel on retrouve de meilleur résultat.
 On peut noter que pour le troisième jeu de données (trois clusters se chevauchant) toutes les méthodes de réduction ont la même efficacité : 
 elles ont toutes les trois eu un score de 0.18.
@@ -135,8 +134,9 @@ Néanmoins, son score(394.03) est très proche du second jeux de données(393.52
 
 \subsubsection{L'indice de Phi}
 
+
 \subsubsection{L'indice de Jaccard}
-On peut voir que pour les trois jeux de données c'est la PCA qui a les meilleurs résultats pour les trois jeux de données.
+On peut voir que pour les trois jeux de données c'est l'ACP qui a les meilleurs résultats pour les trois jeux de données.
 Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant et un seul) avec lequel on retrouve de meilleur résultat.
 
 \subsubsection{L'indice Précision}
@@ -149,7 +149,7 @@ Pour le troisième jeu de données, toutes les techniques semblent se valoir : e
 
 
 \subsubsection{L'indice Recall}
-Pour cet indice c'est la PCA qui obtient de meilleurs scores pour les trois jeux de données.
+Pour cet indice c'est l'ACP qui obtient de meilleurs scores pour les trois jeux de données.
 On peut noter que la différence de score entre les méthodes est beaucoup plus marquée pour le premier jeu de données.
 
 
@@ -158,13 +158,13 @@ Pour cet indice c'est principalement toutes les techniques ont sensiblement le m
 pour la tSNE a être plus efficace. Elle est de 0.5 pour les trois jeux de données.
 
 \subsubsection{L'indice Russel Rao}
-Pour cet indice, nous pouvons voir que pour les trois jeux de données c'est la PCA qui a les meilleurs résultats pour les trois jeux de données.
+Pour cet indice, nous pouvons voir que pour les trois jeux de données c'est l'ACP qui a les meilleurs résultats pour les trois jeux de données.
 Parmis les trois jeux de données c'est le premier (deux clusters se chevauchant et un seul) avec lequel on retrouve une différence plus marquées entre 
-les scores des méthodes : le score de la PCA est à 0.1 tandis que le score du mds est à 0.02 et celui du tSNE est à 0.0.
+les scores des méthodes : le score de l'ACP est à 0.1 tandis que le score du mds est à 0.02 et celui du tSNE est à 0.0.
 
 \subsubsection{Les indices Sokal Sneath}
 
-Pour le premier indice de Sokal Sneath nous pouvons voir que c'est la PCA qui a de meilleurs score pour tous les jeux de données, et que parmis ceux-ci
+Pour le premier indice de Sokal Sneath nous pouvons voir que c'est l'ACP qui a de meilleurs score pour tous les jeux de données, et que parmis ceux-ci
 c'est avec le premier que l'on trouve la plus grande différence de score entre méthode : le score de la PCA est à 0.1 tandis que le score du mds est à 0.03 et celui du tSNE est à 0.1.
 
 Pour le second indice de Sokal Sneath c'est le tSNE qui semble avoir le meilleur score pour les trois jeux de donnéeS.
