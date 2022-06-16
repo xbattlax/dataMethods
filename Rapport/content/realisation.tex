@@ -100,6 +100,21 @@ Celle-ci va itérer à travers tous les critèrs de la liste \textit{crit} et ap
 Les résultats seront stockés sous la forme d'un tableau comprenant les résultats de chaque méthode pour chaque jeux de données. 
 Voici un tableau contenant la valeur minimum et Maximum de chaque critères.
 
+\begin{center}
+    \begin{figure}[!ht] 
+ \resizebox{\textwidth}{!}{\begin{tabular}{ |*{15}{c|}}
+                    \hline
+                    & Czekanowski& Folkes& Hubert & Jaccard & Kulczynski & McNemar & Phi & Precision & Rand & Recall & SokalS1 & SokalS2\\ \hline
+                    Min & 0 & 0 & -1 & 0 & 0 & 0 & -1 & 0 & 0 & 0 & 0 & 0 \\ \hline
+                    Max & 1 & 1 & 1 & 1 & 1 & 1 & $\infty$ &1 &1 &1 &1 &1 \\ 
+                    \hline  
+                \end{tabular}}
+        \caption{Résultats des jeux de données pour l'indice de Hubert}
+    \end{figure}
+
+\end{center}
+
+
 \section{Analyse des résultats}
 
 \subsection{Analyse de chaques critères}
@@ -181,9 +196,8 @@ Pour cet indice les résultats précis sont les suivants :
 \end{center}
 \smallskip
 
-Nous pouvons voir que les valeurs $0.0$ et $-0.0$ viennent de l'arrondi des résultats. Les résultats à cet indice ont pour ordre de grandeur $10^-12$ ils sont
+Nous pouvons voir que les valeurs $0.0$ et $-0.0$ viennent de l'arrondi des résultats. Les résultats à cet indice ont pour ordre de grandeur $10^{-12}$, ils sont
 donc négligeables.
-
 
 
 \subsubsection{L'indice de Jaccard}

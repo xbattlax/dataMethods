@@ -25,7 +25,7 @@
 \contentsline {subsection}{\numberline {4.1}Analyse de chaques critères}{16}{subsection.0.4.1}%
 \contentsline {subsubsection}{L'index de Czekanowski Dice}{16}{section*.9}%
 \contentsline {subsubsection}{L'index de Folkes Mallow}{16}{section*.10}%
-\contentsline {subsubsection}{L'indice de Hubert}{16}{section*.11}%
+\contentsline {subsubsection}{L'indice de Hubert}{17}{section*.11}%
 \contentsline {subsubsection}{L'indice de Jaccard}{17}{section*.12}%
 \contentsline {subsubsection}{L'indice de Kulczynski}{17}{section*.13}%
 \contentsline {subsubsection}{L'indice de McNemar}{17}{section*.14}%
@@ -37,5 +37,5 @@
 \contentsline {subsubsection}{L'indice Rogers Tanimoto}{18}{section*.20}%
 \contentsline {subsubsection}{L'indice Russel Rao}{18}{section*.21}%
 \contentsline {subsubsection}{Les indices Sokal Sneath}{18}{section*.22}%
-\contentsline {subsection}{\numberline {4.2}Discussion des résultats}{18}{subsection.0.4.2}%
+\contentsline {subsection}{\numberline {4.2}Discussion des résultats}{19}{subsection.0.4.2}%
 \contentsline {section}{\numberline {5}Conclusion}{19}{section.0.5}%
