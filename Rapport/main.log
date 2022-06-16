@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  16 JUN 2022 22:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  16 JUN 2022 23:19
 entering extended mode
 **c:/Users/Cyril/Desktop/dataMethods/Rapport/main.tex
 (c:/Users/Cyril/Desktop/dataMethods/Rapport/main.tex
@@ -1422,57 +1422,57 @@ File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 <imports/classNervSphere.png, id=234, 593.21625pt x 555.07375pt>
 File: imports/classNervSphere.png Graphic file (type png)
 <use imports/classNervSphere.png>
-Package pdftex.def Info: imports/classNervSphere.png  used on input line 105.
+Package pdftex.def Info: imports/classNervSphere.png  used on input line 104.
 (pdftex.def)             Requested size: 199.16928pt x 186.35951pt.
 
 [6 <./imports/MDS.png>]
-<imports/tsne.png, id=252, 642.4pt x 481.8pt>
+<imports/tsne.png, id=250, 642.4pt x 481.8pt>
 File: imports/tsne.png Graphic file (type png)
 <use imports/tsne.png>
 Package pdftex.def Info: imports/tsne.png  used on input line 138.
 (pdftex.def)             Requested size: 199.16928pt x 149.37851pt.
- [7 <./imports/classNervSphere.png> <./imports/tsne.png (PNG copy)>]
+ [7 <./imports/classNervSphere.png>]
 Overfull \hbox (23.64767pt too wide) in paragraph at lines 150--156
 \T1/cmr/m/n/10.95 Nous pou-vons égale-ment retrou-ver le Sam-mon mapping[[]], l
 e \T1/cmr/m/it/10.95 curvi-lin-ear com-po-nents anal-y-sis\T1/cmr/m/n/10.95 (CC
 A)[[]],
  []
 
-) [8] (content/2.part.tex [9] [10]
+[8 <./imports/tsne.png (PNG copy)>]) [9] (content/2.part.tex [10] [11]
 Overfull \hbox (2.52739pt too wide) in paragraph at lines 126--128
 []\T1/cmr/m/n/10.95 Une des façons de raison-ner en graphe et d'utiliser le con
 -cept de \T1/cmr/m/it/10.95 Min-i-mum Span-ning Tree\T1/cmr/m/n/10.95 (MST)
  []
 
-[11] [12]) [13] (content/realisation.tex [14]
-<imports/three_distincts.png, id=361, 430.0065pt x 327.02174pt>
+[12] [13]) [14] (content/realisation.tex [15]
+<imports/three_distincts.png, id=365, 430.0065pt x 327.02174pt>
 File: imports/three_distincts.png Graphic file (type png)
 <use imports/three_distincts.png>
 Package pdftex.def Info: imports/three_distincts.png  used on input line 58.
 (pdftex.def)             Requested size: 170.71652pt x 129.82834pt.
-<imports/three_overlaped.png, id=362, 420.3705pt x 307.1475pt>
+<imports/three_overlaped.png, id=366, 420.3705pt x 307.1475pt>
 File: imports/three_overlaped.png Graphic file (type png)
 <use imports/three_overlaped.png>
 Package pdftex.def Info: imports/three_overlaped.png  used on input line 68.
 (pdftex.def)             Requested size: 170.71652pt x 124.73618pt.
-<imports/two_overlaped_one_alone.png, id=363, 423.38174pt x 313.77225pt>
+<imports/two_overlaped_one_alone.png, id=367, 423.38174pt x 313.77225pt>
 File: imports/two_overlaped_one_alone.png Graphic file (type png)
 <use imports/two_overlaped_one_alone.png>
 Package pdftex.def Info: imports/two_overlaped_one_alone.png  used on input lin
 e 79.
 (pdftex.def)             Requested size: 170.71652pt x 126.51689pt.
- [15 <./imports/three_distincts.png> <./imports/three_overlaped.png>] [16 <./im
-ports/two_overlaped_one_alone.png>] [17] [18] [19]) [20] (content/conclusion.te
+ [16 <./imports/three_distincts.png> <./imports/three_overlaped.png>] [17 <./im
+ports/two_overlaped_one_alone.png>] [18] [19] [20]) [21] (content/conclusion.te
 x) (content/0.bibliography.tex
-(main.bbl [21
+(main.bbl [22
 
-] [22]))) (cover/cover_out.tex) [23] (main.aux)
+] [23]))) (cover/cover_out.tex) [24] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 4D2E0250CC6C3715621BA7BDF007515D;3823.
  ) 
 Here is how much of TeX's memory you used:
- 26531 strings out of 478681
- 519571 string characters out of 2846535
+ 26532 strings out of 478681
+ 519578 string characters out of 2846535
  815370 words of memory out of 3000000
  43936 multiletter control sequences out of 15000+600000
  421632 words of font info for 74 fonts, out of 8000000 for 9000
@@ -1501,9 +1501,9 @@ X/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Cyril/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Cyril/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Cyril/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (26 pages, 1474915 bytes).
+Output written on main.pdf (27 pages, 1475788 bytes).
 PDF statistics:
- 965 PDF objects out of 1000 (max. 8388607)
- 125 named destinations out of 1000 (max. 500000)
+ 969 PDF objects out of 1000 (max. 8388607)
+ 126 named destinations out of 1000 (max. 500000)
  239 words of extra memory for PDF output out of 10000 (max. 10000000)
 

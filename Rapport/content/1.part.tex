@@ -97,7 +97,6 @@ La méthode est implémentée dans la librairie \href{https://scikit-learn.org/s
  
  \noindent
  Par exemple sur le Dataset Globe (deux classes séparées en deux hémisphères, représentation d'origine en 3D), on obtient les résultats suivants :
- 
  \begin{center}
     \begin{figure}[ht!]
         \centering
@@ -107,11 +106,12 @@ La méthode est implémentée dans la librairie \href{https://scikit-learn.org/s
         \caption{Réduction du dataset Globe par ClassNerV}
     \end{figure}
 \end{center}
+\newpage\vfill\mbox{ }
 
 On peut remarquer que l'on obtient un meilleur résultat avec un $\varepsilon$ de 0.25 et un $\tau^*$ de 0.75, c'est-à-dire une supervision moyenne et en privilégiant les faux voisins plutôt que les voisins manqués.
 Il est également important de noter que cette méthode est très coûteuse en temps de calcul. 
 
-Le code Python nécessaire pour l'implémentation de cette méthode est accessible ici : \href{https://zenodo.org/record/4094851#.YaxeoS_pO-w}{link}.
+Le code Python nécessaire pour l'implémentation de cette méthode est accessible ici : \href{https://zenodo.org/record/4094851#.YaxeoS_pO-w}{classNerv}.
 
 
 
