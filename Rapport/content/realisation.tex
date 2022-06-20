@@ -95,7 +95,7 @@ Dans notre cas, $k = 3$.
 Une fois ces deux opérations effectuées, il y a deux variables \textit{rds} (qui représente le résultat de la méthode de réduction), et \textit{rdsOriginal} (qui représente le jeu de
 donnée original après kmean.) Pour comparer, ces deux jeux de données nous les passons en paramètre de la fonction \textit{metricsCalcul}.
 Celle-ci va itérer à travers tous les critèrs de la liste \textit{crit} et appliquer l'évaluation de chaque critères.
-
+Le code peut se retrouver à cette adresse : https://github.com/xbattlax/dataMethods . 
 \subsection{Expérimentation}
 Les résultats seront stockés sous la forme d'un tableau comprenant les résultats de chaque méthode pour chaque jeux de données. 
 Voici un tableau contenant la valeur minimum et Maximum de chaque critères.
@@ -279,7 +279,7 @@ Pour conclure, nous avons vu que dans une certaine mesure l'ACP se révèle êtr
     \item Un jeu de données avec trois clusters superposés(Figure 7)
 \end{itemize}
 
-Il serait intéressant d'utiliser ClassNerV qui en théorie est la plus performante. Nous pourrions par exemple 
+Il serait intéressant d'utiliser ClassNerV, qui en théorie est la plus performante. Nous pourrions par exemple 
 effectuer un étalonnage des différentes autres méthodes de projection, en l'utilisant en tant que référentiel. 
 C'est à dire que lorsqu'un jeu de donnée serait projeté avec une autre méthode de projection, le résultat obtenu serait comparé à la projection de ce même jeu de donnée obtenue via ClassNerV.
 Puis, en fonction des divergences entre ces deux jeux de données projetés, certains biais seraient mesurés et affichés.
